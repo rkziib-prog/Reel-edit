@@ -34,6 +34,7 @@ To update, re-copy the `skills/` folder of each upstream repo over `.claude/skil
 | Node 22 / npm / bun | preinstalled | |
 | Python 3.13 | preinstalled | pip needs `--break-system-packages` |
 | yt-dlp | pip | |
+| gdown | pip | Google Drive downloads: `gdown --fuzzy "<share link>" -O input/` (file must be "Anyone with the link") |
 | faster-whisper | pip | preferred for transcripts (int8 on CPU); needs `av<16` |
 | openai-whisper | pip (CPU torch) | `whisper file --model base.en --fp16 False` |
 | hyperframes CLI | `npm i -g hyperframes` | telemetry disabled |
@@ -45,7 +46,7 @@ The cloud container is fresh each session. If `yt-dlp`, `whisper` or `hyperframe
 
 ```bash
 pip3 install --break-system-packages -q torch --index-url https://download.pytorch.org/whl/cpu
-pip3 install --break-system-packages -q yt-dlp faster-whisper 'av<16' openai-whisper
+pip3 install --break-system-packages -q yt-dlp gdown faster-whisper 'av<16' openai-whisper
 pip3 install --break-system-packages -q playwright==1.63.0 opencv-python-headless brotli fonttools matplotlib
 npm install -g --silent hyperframes@latest remotion@latest
 hyperframes telemetry disable; hyperframes browser ensure
