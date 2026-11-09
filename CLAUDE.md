@@ -7,7 +7,7 @@ yt-dlp, HyperFrames and Remotion.
 
 Vendored in `.claude/skills/` (load automatically):
 
-- HyperFrames (from `heygen-com/hyperframes@a73572c`, `skills/`): `hyperframes`, `hyperframes-cli`,
+- HyperFrames (from `heygen-com/hyperframes@ad6f785`, `skills/`): `hyperframes`, `hyperframes-cli`,
   `hyperframes-registry`, `media-use`, `figma`, `reverse-any-video`, `remotion-to-hyperframes`,
   `slideshow`, `style-sampling`
 - Remotion (from `remotion-dev/skills@1af7e69`, `skills/`): `remotion-*`
