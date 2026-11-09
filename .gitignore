@@ -1,0 +1,14 @@
+# media and build output
+input/
+output/
+work/
+*.mp4
+*.mov
+*.mkv
+*.webm
+*.wav
+*.mp3
+*.m4a
+node_modules/
+.remotion/
+__pycache__/
