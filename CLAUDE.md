@@ -23,6 +23,10 @@ Vendored in `.claude/skills/` (load automatically):
   launch motion films. **PolyForm Noncommercial licence: not for client or business work** (that needs onetake Pro).
   Films go in `films/<name>/`. Needs python `playwright==1.63.0` (matches the preinstalled Chromium),
   `opencv-python-headless`, `brotli`.
+- `teal-orange-cinematic-grade` and `beat-sync-cinematic-edit` (Look 01 by @shakirc.ai, from a zip the user
+  shared on Drive): the LUT grade (`luts/*.cube`) is **for Sony S-Log3 / S-Gamut3.Cine only**: on phone (Rec.709)
+  footage it blows skin out to red, so don't use it there. The beat-sync edit needs `rembg[cpu]` (its
+  `isnet-general-use` model, 179 MB, downloads to `~/.rembg` on first use).
 
 To update, re-copy the `skills/` folder of each upstream repo over `.claude/skills/`.
 
@@ -47,7 +51,7 @@ The cloud container is fresh each session. If `yt-dlp`, `whisper` or `hyperframe
 ```bash
 pip3 install --break-system-packages -q torch --index-url https://download.pytorch.org/whl/cpu
 pip3 install --break-system-packages -q yt-dlp gdown faster-whisper 'av<16' openai-whisper
-pip3 install --break-system-packages -q playwright==1.63.0 opencv-python-headless brotli fonttools matplotlib
+pip3 install --break-system-packages -q playwright==1.63.0 opencv-python-headless brotli fonttools matplotlib 'rembg[cpu]'
 npm install -g --silent hyperframes@latest remotion@latest
 hyperframes telemetry disable; hyperframes browser ensure
 pip3 install --break-system-packages -q "earshot[mcp] @ git+https://github.com/Leonxlnx/earshot@4ac3d2a"
