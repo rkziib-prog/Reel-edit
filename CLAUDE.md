@@ -16,6 +16,9 @@ Vendored in `.claude/skills/` (load automatically):
 - earshot (from `Leonxlnx/earshot@4ac3d2a`, `skills/`): `earshot` (listen to / judge / time-align audio,
   252-sound SFX bank, `kit` for a film's effects) and `real-sound` (full soundtrack from licensed recordings).
   Needs the `earshot` Python package and its two CPU models (below).
+- `lemo-opuscar` (from `lemomo-ai/lemo-opuscar@143f387`, `plugin/skills/`): films in 66 code-made styles. On first
+  use its `setup.sh` downloads the style library to `~/lemo-opuscar`; `setup.sh deps` installs its packages. Needs
+  ffmpeg 7+: use `/opt/ffmpeg8/bin` (below) via `PATH=/opt/ffmpeg8/bin:$PATH` for library commands only.
 
 To update, re-copy the `skills/` folder of each upstream repo over `.claude/skills/`.
 
@@ -31,6 +34,7 @@ To update, re-copy the `skills/` folder of each upstream repo over `.claude/skil
 | openai-whisper | pip (CPU torch) | `whisper file --model base.en --fp16 False` |
 | hyperframes CLI | `npm i -g hyperframes` | telemetry disabled |
 | remotion CLI | `npm i -g remotion` + per-project deps | |
+| ffmpeg 8.1 (static) | BtbN build in `/opt/ffmpeg8` (checksum-verified) | only for Lemo-Opuscar; system `ffmpeg` stays 6.1 |
 | earshot 0.4.1 | pip from git + `earshot doctor --fetch` (~1.1 GB models in `~/.cache/earshot`) | each CLI call loads models (~20 s); batch via `from earshot import api` |
 
 The cloud container is fresh each session. If `yt-dlp`, `whisper` or `hyperframes` is missing, run:
@@ -42,6 +46,10 @@ npm install -g --silent hyperframes@latest remotion@latest
 hyperframes telemetry disable; hyperframes browser ensure
 pip3 install --break-system-packages -q "earshot[mcp] @ git+https://github.com/Leonxlnx/earshot@4ac3d2a"
 earshot doctor --fetch
+# Lemo-Opuscar: ffmpeg 7+ in its own folder, then the library and its core packages
+N=ffmpeg-n8.1-latest-linux64-gpl-8.1; curl -sSfLO https://github.com/BtbN/FFmpeg-Builds/releases/download/latest/$N.tar.xz
+mkdir -p /opt/ffmpeg8 && tar -xJf $N.tar.xz -C /opt/ffmpeg8 --strip-components=1 && rm $N.tar.xz
+PATH=/opt/ffmpeg8/bin:$PATH sh .claude/skills/lemo-opuscar/scripts/setup.sh deps
 ```
 
 ## Gotchas in this sandbox
