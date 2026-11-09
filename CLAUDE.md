@@ -27,7 +27,14 @@ To update, re-copy the `skills/` folder of each upstream repo over `.claude/skil
 | hyperframes CLI | `npm i -g hyperframes` | telemetry disabled |
 | remotion CLI | `npm i -g remotion` + per-project deps | |
 
-The environment's setup script installs the pip/npm pieces on each fresh container.
+The cloud container is fresh each session. If `yt-dlp`, `whisper` or `hyperframes` is missing, run:
+
+```bash
+pip3 install --break-system-packages -q torch --index-url https://download.pytorch.org/whl/cpu
+pip3 install --break-system-packages -q yt-dlp faster-whisper 'av<16' openai-whisper
+npm install -g --silent hyperframes@latest remotion@latest
+hyperframes telemetry disable; hyperframes browser ensure
+```
 
 ## Gotchas in this sandbox
 
