@@ -13,6 +13,9 @@ Vendored in `.claude/skills/` (load automatically):
 - Remotion (from `remotion-dev/skills@1af7e69`, `skills/`): `remotion-*`
 - `clawd-animation` (from `JohnHeibel/ClaudeAnimationBase@0ac8bf2`, wrapped as a skill with the
   starter kit in `kit/`; local patches listed in its SKILL.md). Projects go in `animations/<name>/`.
+- earshot (from `Leonxlnx/earshot@4ac3d2a`, `skills/`): `earshot` (listen to / judge / time-align audio,
+  252-sound SFX bank, `kit` for a film's effects) and `real-sound` (full soundtrack from licensed recordings).
+  Needs the `earshot` Python package and its two CPU models (below).
 
 To update, re-copy the `skills/` folder of each upstream repo over `.claude/skills/`.
 
@@ -28,6 +31,7 @@ To update, re-copy the `skills/` folder of each upstream repo over `.claude/skil
 | openai-whisper | pip (CPU torch) | `whisper file --model base.en --fp16 False` |
 | hyperframes CLI | `npm i -g hyperframes` | telemetry disabled |
 | remotion CLI | `npm i -g remotion` + per-project deps | |
+| earshot 0.4.1 | pip from git + `earshot doctor --fetch` (~1.1 GB models in `~/.cache/earshot`) | each CLI call loads models (~20 s); batch via `from earshot import api` |
 
 The cloud container is fresh each session. If `yt-dlp`, `whisper` or `hyperframes` is missing, run:
 
@@ -36,6 +40,8 @@ pip3 install --break-system-packages -q torch --index-url https://download.pytor
 pip3 install --break-system-packages -q yt-dlp faster-whisper 'av<16' openai-whisper
 npm install -g --silent hyperframes@latest remotion@latest
 hyperframes telemetry disable; hyperframes browser ensure
+pip3 install --break-system-packages -q "earshot[mcp] @ git+https://github.com/Leonxlnx/earshot@4ac3d2a"
+earshot doctor --fetch
 ```
 
 ## Gotchas in this sandbox
