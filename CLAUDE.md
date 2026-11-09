@@ -19,6 +19,10 @@ Vendored in `.claude/skills/` (load automatically):
 - `lemo-opuscar` (from `lemomo-ai/lemo-opuscar@143f387`, `plugin/skills/`): films in 66 code-made styles. On first
   use its `setup.sh` downloads the style library to `~/lemo-opuscar`; `setup.sh deps` installs its packages. Needs
   ffmpeg 7+: use `/opt/ffmpeg8/bin` (below) via `PATH=/opt/ffmpeg8/bin:$PATH` for library commands only.
+- `onetake` (from `feitangyuan/onetake@abb6d17`, root skill, case films left out): one-continuous-take product /
+  launch motion films. **PolyForm Noncommercial licence: not for client or business work** (that needs onetake Pro).
+  Films go in `films/<name>/`. Needs python `playwright==1.63.0` (matches the preinstalled Chromium),
+  `opencv-python-headless`, `brotli`.
 
 To update, re-copy the `skills/` folder of each upstream repo over `.claude/skills/`.
 
@@ -42,6 +46,7 @@ The cloud container is fresh each session. If `yt-dlp`, `whisper` or `hyperframe
 ```bash
 pip3 install --break-system-packages -q torch --index-url https://download.pytorch.org/whl/cpu
 pip3 install --break-system-packages -q yt-dlp faster-whisper 'av<16' openai-whisper
+pip3 install --break-system-packages -q playwright==1.63.0 opencv-python-headless brotli fonttools matplotlib
 npm install -g --silent hyperframes@latest remotion@latest
 hyperframes telemetry disable; hyperframes browser ensure
 pip3 install --break-system-packages -q "earshot[mcp] @ git+https://github.com/Leonxlnx/earshot@4ac3d2a"
