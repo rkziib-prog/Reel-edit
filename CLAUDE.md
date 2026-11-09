@@ -11,6 +11,8 @@ Vendored in `.claude/skills/` (load automatically):
   `hyperframes-registry`, `media-use`, `figma`, `reverse-any-video`, `remotion-to-hyperframes`,
   `slideshow`, `style-sampling`
 - Remotion (from `remotion-dev/skills@1af7e69`, `skills/`): `remotion-*`
+- `clawd-animation` (from `JohnHeibel/ClaudeAnimationBase@0ac8bf2`, wrapped as a skill with the
+  starter kit in `kit/`; local patches listed in its SKILL.md). Projects go in `animations/<name>/`.
 
 To update, re-copy the `skills/` folder of each upstream repo over `.claude/skills/`.
 
