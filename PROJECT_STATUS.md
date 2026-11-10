@@ -16,6 +16,7 @@ Updated: 2026-11-10
 - Six reference photos verified (accessible, 3024x4032 iPhone 17 Pro Max, sharp faces, no clipping); mapped to
   REF_01..REF_05 + back view; copies in input/tos_refs/.
 
+- Assessment APPROVED by user; extra photos being shot.
 - Reference assessment delivered: identity, 3/4 x2, one profile, back, full body sufficient; gaps = second
   profile and expressions (optional extra photos REF_04b, REF_07 fear, REF_08 imposter smile, REF_06 watch).
 
@@ -29,5 +30,6 @@ Updated: 2026-11-10
 - [ ] Generate shots scene by scene, check continuity, assemble, subtitles, sound, master (1080p24)
 
 ## Next recommended step
-User approves the assessment and chooses: shoot the extra photos, or proceed with six. Then build the real-photo
-identity board (A, no AI) here; the AI wardrobe/expression sheet (B) follows in the user's image tool.
+User uploads 4 extra photos (opposite profile, fear, cold smile, right-wrist watch; no necklace, same light) to
+Drive Edit. Then: verify all 10 (existing six untouched) -> build the real-photo identity board (no AI) -> user
+approves -> only then the AI character sheet.
