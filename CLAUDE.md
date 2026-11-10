@@ -16,7 +16,7 @@ Vendored in `.claude/skills/` (load automatically):
 - earshot (from `Leonxlnx/earshot@4ac3d2a`, `skills/`): `earshot` (listen to / judge / time-align audio,
   252-sound SFX bank, `kit` for a film's effects) and `real-sound` (full soundtrack from licensed recordings).
   Needs the `earshot` Python package and its two CPU models (below).
-- `lemo-opuscar` (from `lemomo-ai/lemo-opuscar@143f387`, `plugin/skills/`): films in 66 code-made styles. On first
+- `lemo-opuscar` (from `lemomo-ai/lemo-opuscar@9eb7739`, `plugin/skills/`): films in 66 code-made styles. On first
   use its `setup.sh` downloads the style library to `~/lemo-opuscar`; `setup.sh deps` installs its packages. Needs
   ffmpeg 7+: use `/opt/ffmpeg8/bin` (below) via `PATH=/opt/ffmpeg8/bin:$PATH` for library commands only.
 - `onetake` (from `feitangyuan/onetake@abb6d17`, root skill, case films left out): one-continuous-take product /
