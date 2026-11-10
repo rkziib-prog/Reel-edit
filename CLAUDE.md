@@ -9,6 +9,13 @@ A tattoo artist making Instagram reels of their work (first edit: a Shiva backpi
 `edits/tattoo-backpiece/`). Typical footage: iPhone 4K/60 vertical clips of the session plus photos of the
 healed or finished piece. Clips go in the Drive **Edit** folder and music in **Audio** (see Google Drive below).
 
+**Standing rule for every tattoo reel: trim dead starts (and dead ends) before editing.** The cameraman often
+starts recording before the work begins (no hands in frame, hand not on skin, wiping/setting up, camera still
+being aimed or settled). Run `python3 tools/clip_starts.py <folder> --seconds 8`: it flags camera shake/settling
+and writes a timestamped strip per clip to `work/starts/`. Then look at every strip and set each clip's in point
+at the first moment the needle is on skin (or the shot is properly framed for reveal clips). Do the same for the
+last seconds (camera lowered, reaching to stop). Audio can't detect this: room noise and talking mask the machine.
+
 ## Skills
 
 Vendored in `.claude/skills/` (load automatically):
