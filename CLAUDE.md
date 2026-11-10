@@ -57,6 +57,7 @@ To update, re-copy the `skills/` folder of each upstream repo over `.claude/skil
 | hyperframes CLI | `npm i -g hyperframes` | telemetry disabled |
 | remotion CLI | `npm i -g remotion` + per-project deps | |
 | ffmpeg 8.1 (static) | BtbN build in `/opt/ffmpeg8` (checksum-verified) | only for Lemo-Opuscar; system `ffmpeg` stays 6.1 |
+| insightface 2.1 + onnxruntime | pip; models `buffalo_l` (auto) and `inswapper_128.onnx` from insightface's GitHub release, in `~/.insightface/models` | face swap: see `edits/couple-cinema/faceswap_reel.py` (match faces by identity, not gender) |
 | earshot 0.4.1 | pip from git + `earshot doctor --fetch` (~1.1 GB models in `~/.cache/earshot`) | each CLI call loads models (~20 s); batch via `from earshot import api` |
 
 The cloud container is fresh each session. If `yt-dlp`, `whisper` or `hyperframes` is missing, run:
@@ -64,7 +65,8 @@ The cloud container is fresh each session. If `yt-dlp`, `whisper` or `hyperframe
 ```bash
 pip3 install --break-system-packages -q torch --index-url https://download.pytorch.org/whl/cpu
 pip3 install --break-system-packages -q yt-dlp gdown faster-whisper 'av<16' openai-whisper
-pip3 install --break-system-packages -q playwright==1.63.0 opencv-python-headless brotli fonttools matplotlib 'rembg[cpu]'
+pip3 install --break-system-packages -q playwright==1.63.0 opencv-python-headless brotli fonttools matplotlib 'rembg[cpu]' insightface onnxruntime
+mkdir -p ~/.insightface/models && curl -sSLo ~/.insightface/models/inswapper_128.onnx https://github.com/deepinsight/insightface/releases/download/model-zoo/inswapper_128.onnx
 npm install -g --silent hyperframes@latest remotion@latest
 hyperframes telemetry disable; hyperframes browser ensure
 pip3 install --break-system-packages -q "earshot[mcp] @ git+https://github.com/Leonxlnx/earshot@4ac3d2a"
