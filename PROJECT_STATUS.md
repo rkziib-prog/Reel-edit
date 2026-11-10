@@ -27,9 +27,14 @@ Updated: 2026-11-10
 - Identity board V2 built (V1 kept unchanged): cold smile IMG_8813; user's digital watch locked as the prop;
   plan doc wardrobe prompt and continuity checklist updated to the digital watch.
 
+- Identity board V2 APPROVED (11 Nov).
+- AI character-sheet prompts written (not run): edits/the-other-side/prompts/ — _common.md (identity, light,
+  negative), A turnaround (8 panels), B expressions (5), C costume & continuity (8 incl. day-7 and light tests).
+
 ## Remaining
 - [ ] User confirms the other 29 Malayalam lines -> lock screenplay
-- [ ] Approve the character-sheet prompts -> generate the sheet (user's image tool) -> lock identity
+- [ ] User approves prompts A/B/C and names the image tool -> generate panels -> I check each against the
+  originals -> assemble the sheet locally -> lock identity
 - [ ] Optional: right-wrist watch close-up photo (REF_06)
 - [ ] Choose image/video generation tools (sets clip-length splits)
 - [ ] Dr. Thomas voice test: choose Google TTS (needs API key) or Meta MMS (noncommercial, timing only)
@@ -37,5 +42,4 @@ Updated: 2026-11-10
 - [ ] Generate shots scene by scene, check continuity, assemble, subtitles, sound, master (1080p24)
 
 ## Next recommended step
-User gives final approval of identity board V2 (output/tos_identity_board_v2.jpg). Then prepare the AI
-character-sheet prompts for the user's image tool, with V2 as the face/wardrobe reference.
+Review prompts A, B, C; approve or edit; tell me the image tool so I can adapt reference settings.
