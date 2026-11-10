@@ -16,6 +16,9 @@ Updated: 2026-11-10
 - Six reference photos verified (accessible, 3024x4032 iPhone 17 Pro Max, sharp faces, no clipping); mapped to
   REF_01..REF_05 + back view; copies in input/tos_refs/.
 
+- Reference assessment delivered: identity, 3/4 x2, one profile, back, full body sufficient; gaps = second
+  profile and expressions (optional extra photos REF_04b, REF_07 fear, REF_08 imposter smile, REF_06 watch).
+
 ## Remaining
 - [ ] User confirms the other 29 Malayalam lines -> lock screenplay
 - [ ] Approve the character-sheet prompts -> generate the sheet (user's image tool) -> lock identity
@@ -26,5 +29,5 @@ Updated: 2026-11-10
 - [ ] Generate shots scene by scene, check continuity, assemble, subtitles, sound, master (1080p24)
 
 ## Next recommended step
-Approve the photo mapping; then I prepare the final character-sheet prompts (with these photos attached as the
-face reference). In parallel: confirm the remaining 29 dialogue lines.
+User approves the assessment and chooses: shoot the extra photos, or proceed with six. Then build the real-photo
+identity board (A, no AI) here; the AI wardrobe/expression sheet (B) follows in the user's image tool.
