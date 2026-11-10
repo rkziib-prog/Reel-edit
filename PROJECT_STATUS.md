@@ -31,6 +31,8 @@ Updated: 2026-11-10
 - AI character-sheet prompts written (not run): edits/the-other-side/prompts/ — _common.md (identity, light,
   negative), A turnaround (8 panels), B expressions (5), C costume & continuity (8 incl. day-7 and light tests).
 
+- User's identity-lock wording adopted as the master IDENTITY block (prompts/_common.md).
+
 ## Remaining
 - [ ] User confirms the other 29 Malayalam lines -> lock screenplay
 - [ ] User approves prompts A/B/C and names the image tool -> generate panels -> I check each against the

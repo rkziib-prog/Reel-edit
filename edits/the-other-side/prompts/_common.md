@@ -4,11 +4,15 @@
 single original photo named for that panel (better face detail than the board). Set the tool's reference strength
 to its maximum for face/character.
 
-**IDENTITY** — the exact man in the attached reference photos: same facial structure, face shape, eye shape and
-spacing, nose, lips, jawline, ears, skin tone, natural skin texture with pores, moles and marks as they are;
-shoulder-length wavy black hair swept back with natural loose strands; short trimmed beard and moustache exactly as
-in the references; real adult male body proportions as in the full-body reference. No beautification, no skin
-smoothing, no slimming, no de-ageing, no reshaping.
+**IDENTITY (user's identity lock, approved 11 Nov — paste at the top of every prompt)** —
+Use the attached Aadhi Identity Board V2 and the matching original photograph as strict identity references. The
+character must represent the same real person shown in the photographs. Preserve exact facial structure and natural
+facial proportions; preserve eye shape, eyebrows, nose, lips, jawline and ears; maintain the same natural skin tone
+and texture; preserve shoulder-length wavy black hair, natural hairline, short beard and moustache; maintain
+realistic body proportions. No beautification, face slimming, artificial symmetry or age changes. Never mirror or
+flip the character. Do not invent facial details that contradict the reference photographs. Generate only the
+requested panel; no extra panels, captions, labels or text. Photorealistic cinematic character-reference
+photography, natural skin texture, realistic anatomy, consistent lighting, high detail.
 
 **LIGHT** — soft, even studio light from a large frontal softbox, gentle fill, neutral 5600 K, no hard shadows;
 plain seamless mid-grey background (#808080); photorealistic, 85 mm lens look, f/8, sharp focus on the eyes,
@@ -16,7 +20,7 @@ true-to-life colour, film-still realism.
 
 **NEGATIVE** — beautified, airbrushed, smoothed or plastic skin, makeup, changed face shape, slimmer face, younger
 face, different nose, different eyes, different beard or hairstyle, extra or duplicated facial features, asymmetrical
-or melted eyes, extra fingers, distorted hands, necklace, chain, jewellery, rings, tattoos not in the references,
+or melted eyes, extra fingers, distorted hands, necklace, chain, jewellery, artificial symmetry, mirrored or flipped face, extra panels, labels, rings, tattoos not in the references,
 logos, printed text on clothing, watermark, captions, cartoon, illustration, 3D render, CGI look, oversaturated,
 HDR halo, blurry, low resolution.
 
