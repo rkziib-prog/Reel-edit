@@ -3,6 +3,12 @@
 Video editing workspace. Claude edits the user's videos here with FFmpeg, Whisper,
 yt-dlp, HyperFrames and Remotion.
 
+## About the user
+
+A tattoo artist making Instagram reels of their work (first edit: a Shiva backpiece, process to reveal; see
+`edits/tattoo-backpiece/`). Typical footage: iPhone 4K/60 vertical clips of the session plus photos of the
+healed or finished piece. Clips go in the Drive **Edit** folder and music in **Audio** (see Google Drive below).
+
 ## Skills
 
 Vendored in `.claude/skills/` (load automatically):
