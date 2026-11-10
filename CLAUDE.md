@@ -16,6 +16,29 @@ and writes a timestamped strip per clip to `work/starts/`. Then look at every st
 at the first moment the needle is on skin (or the shot is properly framed for reveal clips). Do the same for the
 last seconds (camera lowered, reaching to stop). Audio can't detect this: room noise and talking mask the machine.
 
+## THE OTHER SIDE (മറുവശം) — film project
+
+Malayalam psychological thriller short, 4:28 (268 s), 16:9 1920x1080, 24 fps, AI-generated footage.
+- Screenplay: Drive PDF `THE OTHER SIDE (മറുവശം).pdf` (id `1JHUjXhfC13J8ZdAWRiWH8fqDIHSW1Dnl`). Its text layer breaks
+  Malayalam conjuncts; use the restored lines in the plan doc, not the raw PDF text.
+- Production plan (Claude Docs, the working source of truth): https://claude.ai/artifact/LLEWBct3zUjBXM8c5dNtiv
+- Progress: `PROJECT_STATUS.md` (update at the end of every task: done, remaining, next step).
+- Locked decisions: English subtitles only (Malayalam is spoken, never on screen); smash exactly at 3:33.00
+  (frame 5112); realistic sound design, a subtle drone only in Scenes 4-5; watch on the RIGHT wrist and right
+  hand dominant in every generated frame, imposter shots flipped in the edit only.
+
+### Working rules (from the user)
+
+1. Never reinstall tools that are already installed; check with `command -v` / import first.
+2. Never rescan the whole project; inspect only the files the task needs.
+3. Prefer FFmpeg batch scripts for repetitive video operations.
+4. Short answers: no unnecessary explanations or repeated confirmations.
+5. Before every major operation, say which files will be created or modified.
+6. Never overwrite original footage: sources stay read-only in `input/`; every output gets a new name.
+7. Keep workflows iPad-friendly: results via Drive / SendUserFile, review in Claude Docs or hosted pages.
+8. Keep this file current with every important project instruction.
+9. No generating footage, building the dashboard or rendering until the user approves each step.
+
 ## Skills
 
 Vendored in `.claude/skills/` (load automatically):
