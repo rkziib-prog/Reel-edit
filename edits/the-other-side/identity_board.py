@@ -1,17 +1,19 @@
 #!/usr/bin/env python3
 """THE OTHER SIDE: identity board from the user's original reference photos only (no AI, no retouching).
 Crops and scaling only; face boxes from insightface detection (fixed below). Originals in input/tos_refs/ are read-only.
-Run from the repo root: python3 edits/the-other-side/identity_board.py  ->  output/tos_identity_board.jpg
+Run from the repo root: python3 edits/the-other-side/identity_board.py [--v2]  ->  output/tos_identity_board[_v2].jpg
 """
 import subprocess
 from PIL import Image, ImageOps, ImageDraw, ImageFont
 
-SRC, OUT = "input/tos_refs", "output/tos_identity_board.jpg"
+import sys
+V2 = "--v2" in sys.argv   # v2: cold smile IMG_8813, the user's own digital watch as the locked prop
+SRC, OUT = "input/tos_refs", "output/tos_identity_board_v2.jpg" if V2 else "output/tos_identity_board.jpg"
 ML_FONT = "edits/the-other-side/fonts/NotoSansMalayalam-Bold.ttf"  # Google Fonts, OFL
 W, H, BG, INK = 3840, 2160, (128, 128, 128), (245, 245, 245)
 FACES = {"8749": (1444, 679, 2017, 1513), "8708": (1725, 1302, 2053, 1795), "8722": (1303, 1215, 1657, 1776),
          "8729": (1453, 1269, 1694, 1763), "8780": (1717, 918, 2173, 1767), "8799": (1173, 902, 1912, 2010),
-         "8832": (1256, 904, 1985, 1990)}
+         "8832": (1256, 904, 1985, 1990), "8813": (1304, 898, 2013, 1895)}
 
 
 def font(size, bold=False):
@@ -55,7 +57,7 @@ def main():
     d.text((x, 40), "മറുവശം", font=ml, fill=INK)
     x += d.textlength("മറുവശം", font=ml)
     d.text((x, 36), ")  —  Aadhi identity board", font=font(52, True), fill=INK)
-    d.text((140, 98), "Original photographs only: cropped and scaled, no AI, no retouching, no colour change.", font=font(30), fill=INK)
+    d.text((140, 98), ("V2  ·  " if V2 else "") + "Original photographs only: cropped and scaled, no AI, no retouching, no colour change.", font=font(30), fill=INK)
     heads = [("8749", "REF_01  Front  ·  IMG_8749"), ("8708", "REF_02  Three-quarter, left  ·  IMG_8708"),
              ("8722", "REF_03  Three-quarter, right  ·  IMG_8722"), ("8729", "REF_04  Left profile  ·  IMG_8729"),
              ("8780", "REF_04b  Right profile  ·  IMG_8780")]
@@ -69,8 +71,10 @@ def main():
              (column("8708", 1889, bw, bh), "3/4 body  ·  IMG_8708"),
              (column("8772", 1660, bw, bh), "Back  ·  IMG_8772"),
              (head("8799", ew, eh), "REF_07  Fear  ·  IMG_8799"),
+             (head("8813", ew, eh), "REF_08  Cold smile (imposter)  ·  IMG_8813") if V2 else
              (head("8832", ew, eh), "REF_08  Smile (warm, not cold)  ·  IMG_8832, retake"),
-             (column("8843", 1680, ew, eh, 1016, 1016 + 2000 * 1.0), "REF_06  Wrist position only  ·  IMG_8843, prop differs")]
+             (column("8843", 1680, ew, eh, 1016, 1016 + 2000 * 1.0),
+              "REF_06  Watch: his own, right wrist (locked)  ·  IMG_8843" if V2 else "REF_06  Wrist position only  ·  IMG_8843, prop differs")]
     x = (W - (sum(t.width for t, _ in tiles) + 5 * gap)) // 2
     for t, label in tiles:
         place(board, d, t, x, y2 + (bh - t.height), label)

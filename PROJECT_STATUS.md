@@ -24,6 +24,9 @@ Updated: 2026-11-10
   (script edits/the-other-side/identity_board.py). Issues: REF_08 is a warm grin (not cold smile); necklace still
   on in fear/smile; watch photo is a digital model (position only) and wrist ownership to confirm.
 
+- Identity board V2 built (V1 kept unchanged): cold smile IMG_8813; user's digital watch locked as the prop;
+  plan doc wardrobe prompt and continuity checklist updated to the digital watch.
+
 ## Remaining
 - [ ] User confirms the other 29 Malayalam lines -> lock screenplay
 - [ ] Approve the character-sheet prompts -> generate the sheet (user's image tool) -> lock identity
@@ -34,6 +37,5 @@ Updated: 2026-11-10
 - [ ] Generate shots scene by scene, check continuity, assemble, subtitles, sound, master (1080p24)
 
 ## Next recommended step
-Layout and original-photo-only approach APPROVED. User uploads a corrected cold-smile photo and a steel-watch
-reference to Drive Edit. Then build output/tos_identity_board_v2.jpg (v1 and all originals stay unchanged) and
-show it for final approval. No AI character sheet yet.
+User gives final approval of identity board V2 (output/tos_identity_board_v2.jpg). Then prepare the AI
+character-sheet prompts for the user's image tool, with V2 as the face/wardrobe reference.
