@@ -29,6 +29,10 @@ Malayalam psychological thriller short, 4:28 (268 s), 16:9 1920x1080, 24 fps, AI
   is the LOCKED prop (user decision 11 Nov; do not suggest a steel watch). Its lettering mirrors on flipped imposter shots.
   Identity board (real photos, no AI): V1 `output/tos_identity_board.jpg`, V2 (current) `output/tos_identity_board_v2.jpg` (`--v2`), from `edits/the-other-side/identity_board.py`. Visible look: shoulder-length wavy black hair swept
   back, short trimmed beard and moustache. He wears a thin chain in the photos: prompts must say no necklace.
+- Character sheet: prompts A/B/C APPROVED (11 Nov). Image tool: ChatGPT Image Generation (ChatGPT app, iPad), one panel per
+  new chat, references = Identity Board V2 + the panel's original photo, identity lock in every prompt, negative prompt as a
+  final "Avoid:" line. Exact prompts: `edits/the-other-side/prompts/CHATGPT_PANELS.md`. Never generate images in Claude
+  Code; the user generates, uploads `<panel>_vN.png` to Drive Edit, I check against the originals and assemble.
 - Progress: `PROJECT_STATUS.md` (update at the end of every task: done, remaining, next step).
 - Locked decisions: English subtitles only (Malayalam is spoken, never on screen); smash exactly at 3:33.00
   (frame 5112); realistic sound design, a subtle drone only in Scenes 4-5; watch on the RIGHT wrist and right

@@ -33,9 +33,12 @@ Updated: 2026-11-10
 
 - User's identity-lock wording adopted as the master IDENTITY block (prompts/_common.md).
 
+- Prompts A/B/C APPROVED; tool = ChatGPT Image Generation (iPad). 21 exact copy-paste prompts in
+  edits/the-other-side/prompts/CHATGPT_PANELS.md.
+
 ## Remaining
 - [ ] User confirms the other 29 Malayalam lines -> lock screenplay
-- [ ] User approves prompts A/B/C and names the image tool -> generate panels -> I check each against the
+- [ ] User generates panels in ChatGPT (A1 first), uploads <panel>_vN.png to Drive Edit -> I check each against the
   originals -> assemble the sheet locally -> lock identity
 - [ ] Optional: right-wrist watch close-up photo (REF_06)
 - [ ] Choose image/video generation tools (sets clip-length splits)
@@ -44,4 +47,5 @@ Updated: 2026-11-10
 - [ ] Generate shots scene by scene, check continuity, assemble, subtitles, sound, master (1080p24)
 
 ## Next recommended step
-Review prompts A, B, C; approve or edit; tell me the image tool so I can adapt reference settings.
+Generate A1 (front view) in ChatGPT with the prompt from CHATGPT_PANELS.md; upload A1_v1.png to Drive Edit;
+I check it against IMG_8749 before you continue to A2.

@@ -24,6 +24,12 @@ or melted eyes, extra fingers, distorted hands, necklace, chain, jewellery, arti
 logos, printed text on clothing, watermark, captions, cartoon, illustration, 3D render, CGI look, oversaturated,
 HDR halo, blurry, low resolution.
 
+**Tool (selected 11 Nov): ChatGPT Image Generation, ChatGPT app on iPad.** Exact per-panel prompts:
+`CHATGPT_PANELS.md` (built by `build_chatgpt_prompts.py`). Rules: one panel per new chat; attach Identity Board V2
+plus the panel's original photo; keep the identity lock at the top of every prompt; ChatGPT has no negative field, so
+the negative prompt is the final "Avoid:" line; originals and the approved board are never edited; no images are
+generated in Claude Code.
+
 **Workflow** — generate each panel as its own image (identity holds far better than one big sheet), 2–4 variants
 each; I compare every variant against the original photos and assemble the approved panels into the final sheet
 locally, as with the identity board. Never mirror or flip any panel.
