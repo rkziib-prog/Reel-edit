@@ -74,6 +74,19 @@ PATH=/opt/ffmpeg8/bin:$PATH sh .claude/skills/lemo-opuscar/scripts/setup.sh deps
 - If Remotion can't download its browser, pass
   `--browser-executable=/opt/pw-browsers/chromium_headless_shell-*/chrome-headless-shell-linux64/chrome-headless-shell`.
 
+## Google Drive (connected)
+
+The user's Drive (`btattoo09@gmail.com`) is connected through the Google Drive connector (`mcp__Google_Drive__*`):
+use it to find and list files. Its download/upload tools pass content through the chat, so don't use them for
+videos: download with `curl -L "https://drive.usercontent.google.com/download?id=<id>&export=download&confirm=t"`
+(the `doc-*-docs.googleusercontent.com` hosts gdown uses are blocked). That needs link sharing, which the user
+turned on for these folders (view-only, by link):
+
+- **Edit** (clips to edit): `15wLpsUzKk8bN_Cdat31XAfWClJ6ul3YN`
+- **Audio** (music for reels): `1dq-9BE4ufQt1bxQ1AstxteERaRH9RiXU`
+- **Result** (`1t2vaQ-tsyGi8Uv3z-y-tJ0hSYCZuumLU`) is private; finished reels are too big to upload through the
+  connector, so send them with SendUserFile instead.
+
 ## Working conventions
 
 - Put source footage in `input/`, renders in `output/`, scratch in `work/` (all git-ignored).
