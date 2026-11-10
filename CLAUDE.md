@@ -22,6 +22,10 @@ Malayalam psychological thriller short, 4:28 (268 s), 16:9 1920x1080, 24 fps, AI
 - Screenplay: Drive PDF `THE OTHER SIDE (മറുവശം).pdf` (id `1JHUjXhfC13J8ZdAWRiWH8fqDIHSW1Dnl`). Its text layer breaks
   Malayalam conjuncts; use the restored lines in the plan doc, not the raw PDF text.
 - Production plan (Claude Docs, the working source of truth): https://claude.ai/artifact/LLEWBct3zUjBXM8c5dNtiv
+- Character references (verified 10 Nov; copies in `input/tos_refs/`, originals in Drive Edit): REF_01 front = IMG_8749,
+  REF_02 three-quarter (head to frame-left) = IMG_8708, REF_03 three-quarter (frame-right) = IMG_8722, REF_04 profile =
+  IMG_8729, REF_05 full body = IMG_8759, extra back view = IMG_8772. Visible look: shoulder-length wavy black hair swept
+  back, short trimmed beard and moustache. He wears a thin chain in the photos: prompts must say no necklace.
 - Progress: `PROJECT_STATUS.md` (update at the end of every task: done, remaining, next step).
 - Locked decisions: English subtitles only (Malayalam is spoken, never on screen); smash exactly at 3:33.00
   (frame 5112); realistic sound design, a subtle drone only in Scenes 4-5; watch on the RIGHT wrist and right

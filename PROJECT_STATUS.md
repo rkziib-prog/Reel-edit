@@ -13,14 +13,18 @@ Updated: 2026-11-10
 - Reference-photo spec for the character sheet given (5 photos, full-res, soft daylight; upload to Drive Edit
   folder 15wLpsUzKk8bN_Cdat31XAfWClJ6ul3YN, file names REF_01..REF_05).
 
+- Six reference photos verified (accessible, 3024x4032 iPhone 17 Pro Max, sharp faces, no clipping); mapped to
+  REF_01..REF_05 + back view; copies in input/tos_refs/.
+
 ## Remaining
 - [ ] User confirms the other 29 Malayalam lines -> lock screenplay
-- [ ] User uploads 3-5 reference photos -> character reference sheet (Stage 2) -> lock identity
+- [ ] Approve the character-sheet prompts -> generate the sheet (user's image tool) -> lock identity
+- [ ] Optional: right-wrist watch close-up photo (REF_06)
 - [ ] Choose image/video generation tools (sets clip-length splits)
 - [ ] Dr. Thomas voice test: choose Google TTS (needs API key) or Meta MMS (noncommercial, timing only)
 - [ ] Build the iPad editing dashboard from the plan (after approval)
 - [ ] Generate shots scene by scene, check continuity, assemble, subtitles, sound, master (1080p24)
 
 ## Next recommended step
-Upload REF_01..REF_05 to the Drive Edit folder; then I check them and prepare the character-sheet prompts.
-In parallel: confirm the remaining 29 dialogue lines.
+Approve the photo mapping; then I prepare the final character-sheet prompts (with these photos attached as the
+face reference). In parallel: confirm the remaining 29 dialogue lines.
