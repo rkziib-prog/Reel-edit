@@ -20,6 +20,10 @@ Updated: 2026-11-10
 - Reference assessment delivered: identity, 3/4 x2, one profile, back, full body sufficient; gaps = second
   profile and expressions (optional extra photos REF_04b, REF_07 fear, REF_08 imposter smile, REF_06 watch).
 
+- All 10 references verified; identity board built from originals only: output/tos_identity_board.jpg
+  (script edits/the-other-side/identity_board.py). Issues: REF_08 is a warm grin (not cold smile); necklace still
+  on in fear/smile; watch photo is a digital model (position only) and wrist ownership to confirm.
+
 ## Remaining
 - [ ] User confirms the other 29 Malayalam lines -> lock screenplay
 - [ ] Approve the character-sheet prompts -> generate the sheet (user's image tool) -> lock identity
@@ -30,6 +34,5 @@ Updated: 2026-11-10
 - [ ] Generate shots scene by scene, check continuity, assemble, subtitles, sound, master (1080p24)
 
 ## Next recommended step
-User uploads 4 extra photos (opposite profile, fear, cold smile, right-wrist watch; no necklace, same light) to
-Drive Edit. Then: verify all 10 (existing six untouched) -> build the real-photo identity board (no AI) -> user
-approves -> only then the AI character sheet.
+User approves the identity board. Optional fixes first: retake the cold, closed-mouth smile (no necklace) and
+confirm the wrist photo is the user's right wrist. Then: AI character sheet in the user's image tool.

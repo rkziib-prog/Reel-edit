@@ -24,7 +24,9 @@ Malayalam psychological thriller short, 4:28 (268 s), 16:9 1920x1080, 24 fps, AI
 - Production plan (Claude Docs, the working source of truth): https://claude.ai/artifact/LLEWBct3zUjBXM8c5dNtiv
 - Character references (verified 10 Nov; copies in `input/tos_refs/`, originals in Drive Edit): REF_01 front = IMG_8749,
   REF_02 three-quarter (head to frame-left) = IMG_8708, REF_03 three-quarter (frame-right) = IMG_8722, REF_04 profile =
-  IMG_8729, REF_05 full body = IMG_8759, extra back view = IMG_8772. Visible look: shoulder-length wavy black hair swept
+  IMG_8729, REF_05 full body = IMG_8759, extra back view = IMG_8772; added 11 Nov: REF_04b right profile = IMG_8780, REF_07 fear = IMG_8799, REF_08 smile
+  = IMG_8832 (warm grin, cold smile still to retake), REF_06 wrist = IMG_8843 (digital watch: position only, not the prop).
+  Identity board (real photos, no AI): `output/tos_identity_board.jpg` from `edits/the-other-side/identity_board.py`. Visible look: shoulder-length wavy black hair swept
   back, short trimmed beard and moustache. He wears a thin chain in the photos: prompts must say no necklace.
 - Progress: `PROJECT_STATUS.md` (update at the end of every task: done, remaining, next step).
 - Locked decisions: English subtitles only (Malayalam is spoken, never on screen); smash exactly at 3:33.00
