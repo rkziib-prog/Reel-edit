@@ -34,5 +34,6 @@ Updated: 2026-11-10
 - [ ] Generate shots scene by scene, check continuity, assemble, subtitles, sound, master (1080p24)
 
 ## Next recommended step
-User approves the identity board. Optional fixes first: retake the cold, closed-mouth smile (no necklace) and
-confirm the wrist photo is the user's right wrist. Then: AI character sheet in the user's image tool.
+Layout and original-photo-only approach APPROVED. User uploads a corrected cold-smile photo and a steel-watch
+reference to Drive Edit. Then build output/tos_identity_board_v2.jpg (v1 and all originals stay unchanged) and
+show it for final approval. No AI character sheet yet.
