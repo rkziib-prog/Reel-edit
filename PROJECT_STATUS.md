@@ -63,7 +63,7 @@ Updated: 2026-11-10
 
 - B5_v2 (CE4713CD) reviewed: visible closed-lip smile, mouth corners lifted, calm unsmiling eyes; identity
   matches approved B1 (0.87) and IMG_8749 (0.85); hair, beard, plain charcoal tee, no necklace OK.
-  Verdict: PASS, recommended for approval (awaiting user sign-off).
+  Verdict: PASS. APPROVED by user (11 Nov): B5 = B5_v2.
 
 ## Remaining
 - [ ] User confirms the other 29 Malayalam lines -> lock screenplay
@@ -76,4 +76,5 @@ Updated: 2026-11-10
 - [ ] Generate shots scene by scene, check continuity, assemble, subtitles, sound, master (1080p24)
 
 ## Next recommended step
-User signs off B5_v2. Then generate and upload C6_v2 and C7_v2 (REDO_v2.md, with approved C5 attached) for review.
+User generates C6_v2 (REDO_v2.md; attach Board V2 + IMG_8749 + approved C5) and uploads C6_v2.png; then I review.
+C7_v2 after that.
