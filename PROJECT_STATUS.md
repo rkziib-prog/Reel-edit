@@ -61,6 +61,10 @@ Updated: 2026-11-10
   A6_v3, face 0.86 vs own ref. A-set complete: A1-A5, A6_v3, A7_v2, A8.
 - Review tool: edits/the-other-side/review_panel.py (copy, scores, side-by-side; visual check decides).
 
+- B5_v2 (CE4713CD) reviewed: visible closed-lip smile, mouth corners lifted, calm unsmiling eyes; identity
+  matches approved B1 (0.87) and IMG_8749 (0.85); hair, beard, plain charcoal tee, no necklace OK.
+  Verdict: PASS, recommended for approval (awaiting user sign-off).
+
 ## Remaining
 - [ ] User confirms the other 29 Malayalam lines -> lock screenplay
 - [ ] User generates panels in ChatGPT (A1 first), uploads <panel>_vN.png to Drive Edit -> I check each against the
@@ -72,5 +76,4 @@ Updated: 2026-11-10
 - [ ] Generate shots scene by scene, check continuity, assemble, subtitles, sound, master (1080p24)
 
 ## Next recommended step
-Generate B5_v2, C6_v2, C7_v2 from REDO_v2.md (each with its approved anchor panel attached); upload; I review
-each against the originals before approval. B3_v2 optional. Then assemble the final character sheet.
+User signs off B5_v2. Then generate and upload C6_v2 and C7_v2 (REDO_v2.md, with approved C5 attached) for review.

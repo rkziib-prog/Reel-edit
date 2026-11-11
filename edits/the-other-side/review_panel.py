@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Review one regenerated character-sheet panel against the original reference photos (read-only).
-Usage (repo root): python3 edits/the-other-side/review_panel.py <panel> <drive_file_id> [previous_local_png]
+Usage (repo root): python3 edits/the-other-side/review_panel.py <panel> <drive_file_id> [label=png ...]
 Downloads a copy to input/tos_panels/<panel>_<id8>.png (the Drive original is never changed), prints face
 similarity to the front photo and the panel's own references, and writes work/review_<panel>.jpg
 (references | previous version | new version) for visual inspection. Scores support, never replace, that look."""
@@ -12,7 +12,7 @@ from insightface.app import FaceAnalysis
 REFS = {"A6": ["8759"], "A7": ["8708", "8759"], "B3": ["8749", "8708"], "B5": ["8813", "8749"],
         "C6": ["8749"], "C7": ["8749"], "C8": ["8749"]}
 panel, fid = sys.argv[1], sys.argv[2]
-prev = sys.argv[3] if len(sys.argv) > 3 else None
+extras = [a.split('=', 1) if '=' in a else ('previous', a) for a in sys.argv[3:]]
 out = f"input/tos_panels/{panel}_{fid[:8]}.png"
 if not os.path.exists(out):
     subprocess.run(["curl", "-sS", "-L", "--retry", "3", "-o", out,
@@ -35,13 +35,12 @@ refs = ["8749"] + [r for r in REFS.get(panel, []) if r != "8749"]
 for r in refs:
     fr = face(load(f"input/tos_refs/IMG_{r}.JPG"))
     print(f"{panel} vs IMG_{r}: " + ("no face" if fn is None or fr is None else f"{float(fn @ fr):.2f}"))
-if prev and fn is not None:
-    fp = face(load(prev))
-    print(f"previous version vs IMG_8749: {float(fp @ face(load('input/tos_refs/IMG_8749.JPG'))):.2f}" if fp is not None else "previous: no face")
+for lab, pth in extras:
+    fp = face(load(pth))
+    print(f"{lab} vs NEW: " + (f"{float(fp @ fn):.2f}" if fp is not None and fn is not None else "no face"))
 H = 700
 tiles = [(f"IMG_{r}", load(f"input/tos_refs/IMG_{r}.JPG")) for r in REFS.get(panel, ["8749"])]
-if prev:
-    tiles.append(("previous", load(prev)))
+tiles += [(lab, load(pth)) for lab, pth in extras]
 tiles.append((f"NEW {panel}", new))
 tiles = [(l, i.resize((round(i.width * H / i.height), H))) for l, i in tiles]
 sheet = Image.new("RGB", (sum(i.width + 8 for _, i in tiles), H + 24), "white")
