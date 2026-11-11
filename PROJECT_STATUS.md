@@ -65,6 +65,11 @@ Updated: 2026-11-10
   matches approved B1 (0.87) and IMG_8749 (0.85); hair, beard, plain charcoal tee, no necklace OK.
   Verdict: PASS. APPROVED by user (11 Nov): B5 = B5_v2.
 
+- C6_v2 (FE23E826) reviewed: clear improvement over old C6 (no forehead lines, less ageing; 0.74 vs IMG_8749,
+  old 0.64). Exhaustion cues correct (bloodshot eyes, cracked lips, damp hair, skin sheen; costume OK). Remaining
+  drift: face slightly narrower with mild hollowing under the cheekbones, and very dark, sunken under-eyes add a
+  few years. Verdict: ONE CORRECTION recommended (C6_v3), not approved yet.
+
 ## Remaining
 - [ ] User confirms the other 29 Malayalam lines -> lock screenplay
 - [ ] User generates panels in ChatGPT (A1 first), uploads <panel>_vN.png to Drive Edit -> I check each against the
@@ -76,5 +81,5 @@ Updated: 2026-11-10
 - [ ] Generate shots scene by scene, check continuity, assemble, subtitles, sound, master (1080p24)
 
 ## Next recommended step
-User generates C6_v2 (REDO_v2.md; attach Board V2 + IMG_8749 + approved C5) and uploads C6_v2.png; then I review.
-C7_v2 after that.
+User decides: generate C6_v3 with the correction line (face width and cheeks as C5, milder under-eyes), or accept
+C6_v2. Then C7_v2.
