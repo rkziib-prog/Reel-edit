@@ -38,6 +38,14 @@ Updated: 2026-11-10
 
 - All 21 ChatGPT panel prompts (A1-A8, B1-B5, C1-C8) handed to the user one by one (11 Nov).
 
+- 21 generated panels found in Drive Edit (UUID names, uploaded together); copies in input/tos_panels/.
+  Mapping: A1 A49AE7DA, A2 98B62E03, A3 97BE6DC9, A4 31F18098, A5 A64DD957, A6 E3FC0924, A7 19846521, A8 020E8ADD,
+  B1 C70DA14A, B2 772986A4, B3 AB7E0F4D, B4 05C021BC, B5 CDAE5B09, C1 92B8149B, C2 D86B337D, C3 A51F5074,
+  C4 5B48BC7A, C5 C735A6EB, C6 BABDDB70, C7 C4EA58E9, C8 8E112F8E.
+- A1-A8 checked (ArcFace similarity to originals 0.69-0.94, profile lower as expected; A8 back no face): identity
+  PASS; minor notes: slightly neater hair, slightly fuller arms in A6/A7. Lower scores to review later: C6 0.64,
+  C7 0.59.
+
 ## Remaining
 - [ ] User confirms the other 29 Malayalam lines -> lock screenplay
 - [ ] User generates panels in ChatGPT (A1 first), uploads <panel>_vN.png to Drive Edit -> I check each against the
@@ -49,6 +57,4 @@ Updated: 2026-11-10
 - [ ] Generate shots scene by scene, check continuity, assemble, subtitles, sound, master (1080p24)
 
 ## Next recommended step
-User uploads the generated panels to Drive Edit as <panel>_v1.png. I check every panel against the original
-photos (face, hair, beard, proportions, right-wrist watch, left pocket, no necklace), flag redos, then assemble
-the approved panels into the character sheet.
+User decides on A1-A8 (approve or redo A6/A7 for body build). Then I check B1-B5 and C1-C8 the same way.
