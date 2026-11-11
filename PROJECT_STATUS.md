@@ -54,6 +54,9 @@ Updated: 2026-11-10
   copied the orange T-shirt with printed brand text from the reference -> fails costume. A7 redo not received.
   REDO_v2 A6/A7 prompts now say: do not copy the reference clothing or text.
 
+- A6_v3 (D9F5F235) APPROVED: plain charcoal tee, no text, slim build (shoulders a touch broader than IMG_8759,
+  acceptable), face 0.78. Approved A6 = A6_v3; old A6 (E3FC0924) and 9DCC9524 superseded.
+
 ## Remaining
 - [ ] User confirms the other 29 Malayalam lines -> lock screenplay
 - [ ] User generates panels in ChatGPT (A1 first), uploads <panel>_vN.png to Drive Edit -> I check each against the
@@ -65,5 +68,5 @@ Updated: 2026-11-10
 - [ ] Generate shots scene by scene, check continuity, assemble, subtitles, sound, master (1080p24)
 
 ## Next recommended step
-Regenerate A6 (as A6_v3) and A7 with the updated REDO_v2.md prompts, plus B5, C6, C7 (B3 optional); upload;
-I review, then assemble the final character sheet.
+User generates A7_v2 in ChatGPT (REDO_v2 A7 prompt + A6_v3 attached as body/costume anchor), uploads A7_v2.png;
+I review. Then B5, C6, C7 (B3 optional).
