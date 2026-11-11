@@ -1,5 +1,7 @@
 # THE OTHER SIDE — regeneration prompts v2 (11 Nov review)
 
+Review workflow for each upload: I run `python3 edits/the-other-side/review_panel.py <panel> <drive id> <previous png>` (face scores vs the originals + a side-by-side sheet), then check by eye: identity (eyes, brows, nose, beard, age), expression or condition asked for, costume and pocket side, hair, hands, lighting. Scores never approve a panel alone. Approved panels are never edited; each new attempt gets a new name (_v2, _v3).
+
 Same steps as before: new chat, attach `tos_identity_board_v2.jpg` + the reference photo(s), paste exactly. Save as `<panel>_v2.png` (A6/A7 third try: `_v3.png`) in the Drive Edit folder.
 
 ## A6 — Full body front (v2)
@@ -24,7 +26,7 @@ Avoid: beautified, airbrushed, smoothed or plastic skin, makeup, changed face sh
 
 ## A7 — Full body three-quarter (v2)
 
-- Attach: `tos_identity_board_v2.jpg` + `IMG_8708 + IMG_8759`
+- Attach: `tos_identity_board_v2.jpg` + `IMG_8708 + IMG_8759 + approved A6_v3`
 - Format: portrait
 - Save as: `A7_v2.png`
 
@@ -64,7 +66,7 @@ Avoid: beautified, airbrushed, smoothed or plastic skin, makeup, changed face sh
 
 ## B5 — Cold mysterious smile (v2)
 
-- Attach: `tos_identity_board_v2.jpg` + `IMG_8813`
+- Attach: `tos_identity_board_v2.jpg` + `IMG_8813 + approved B1 (neutral, same face)`
 - Format: portrait
 - Save as: `B5_v2.png`
 
@@ -84,7 +86,7 @@ Avoid: beautified, airbrushed, smoothed or plastic skin, makeup, changed face sh
 
 ## C6 — Real Aadhi, day 7 (v2)
 
-- Attach: `tos_identity_board_v2.jpg` + `IMG_8749`
+- Attach: `tos_identity_board_v2.jpg` + `IMG_8749 + approved C5 (costume, same face)`
 - Format: portrait
 - Save as: `C6_v2.png`
 
@@ -104,7 +106,7 @@ Avoid: beautified, airbrushed, smoothed or plastic skin, makeup, changed face sh
 
 ## C7 — Light test: mirror side (v2)
 
-- Attach: `tos_identity_board_v2.jpg` + `IMG_8749`
+- Attach: `tos_identity_board_v2.jpg` + `IMG_8749 + approved C5 (costume, same face)`
 - Format: portrait
 - Save as: `C7_v2.png`
 

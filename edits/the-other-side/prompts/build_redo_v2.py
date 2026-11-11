@@ -17,7 +17,13 @@ FIX = {
  "C7": ("The face must stay fully recognisable as the man in IMG_8749: add a soft fill on the shadow side so the eyes, brows and nose read clearly; beard and moustache trimmed exactly as in the reference.",
         ", heavier brows, hooded eyes, wider nose, thicker moustache, older, different face"),
 }
+ANCHOR = {"A7": " + approved A6_v3", "B5": " + approved B1 (neutral, same face)", "C6": " + approved C5 (costume, same face)",
+          "C7": " + approved C5 (costume, same face)"}
 out = ["# THE OTHER SIDE — regeneration prompts v2 (11 Nov review)", "",
+       "Review workflow for each upload: I run `python3 edits/the-other-side/review_panel.py <panel> <drive id> <previous png>`"
+       " (face scores vs the originals + a side-by-side sheet), then check by eye: identity (eyes, brows, nose, beard, age),"
+       " expression or condition asked for, costume and pocket side, hair, hands, lighting. Scores never approve a panel alone."
+       " Approved panels are never edited; each new attempt gets a new name (_v2, _v3).", "",
        "Same steps as before: new chat, attach `tos_identity_board_v2.jpg` + the reference photo(s), paste exactly. "
        "Save as `<panel>_v2.png` (A6/A7 third try: `_v3.png`) in the Drive Edit folder.", ""]
 for pid, title, ref, fmt, text, cloth, light, avoid in b.P:
@@ -25,6 +31,7 @@ for pid, title, ref, fmt, text, cloth, light, avoid in b.P:
     fix, extra = FIX[pid]
     body = "\n\n".join([b.IDENTITY, f"Panel {pid}, {title}: {text}", fix, cloth, light or b.LIGHT, b.AVOID + avoid + extra + "."])
     ref2 = ref if pid not in ("A6", "A7") else ref + (" + IMG_8759" if "8759" not in ref else "")
+    ref2 += ANCHOR.get(pid, "")
     out += [f"## {pid} — {title} (v2)", "", f"- Attach: `tos_identity_board_v2.jpg` + `{ref2}`", f"- Format: {fmt}",
             f"- Save as: `{pid}_v2.png`", "", "```text", body, "```", ""]
 open("REDO_v2.md", "w").write("\n".join(out))

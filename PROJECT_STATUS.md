@@ -57,6 +57,10 @@ Updated: 2026-11-10
 - A6_v3 (D9F5F235) APPROVED: plain charcoal tee, no text, slim build (shoulders a touch broader than IMG_8759,
   acceptable), face 0.78. Approved A6 = A6_v3; old A6 (E3FC0924) and 9DCC9524 superseded.
 
+- A7_v2 (0312E52C) APPROVED: turned frame-left like IMG_8708, plain charcoal tee, slim build consistent with
+  A6_v3, face 0.86 vs own ref. A-set complete: A1-A5, A6_v3, A7_v2, A8.
+- Review tool: edits/the-other-side/review_panel.py (copy, scores, side-by-side; visual check decides).
+
 ## Remaining
 - [ ] User confirms the other 29 Malayalam lines -> lock screenplay
 - [ ] User generates panels in ChatGPT (A1 first), uploads <panel>_vN.png to Drive Edit -> I check each against the
@@ -68,5 +72,5 @@ Updated: 2026-11-10
 - [ ] Generate shots scene by scene, check continuity, assemble, subtitles, sound, master (1080p24)
 
 ## Next recommended step
-User generates A7_v2 in ChatGPT (REDO_v2 A7 prompt + A6_v3 attached as body/costume anchor), uploads A7_v2.png;
-I review. Then B5, C6, C7 (B3 optional).
+Generate B5_v2, C6_v2, C7_v2 from REDO_v2.md (each with its approved anchor panel attached); upload; I review
+each against the originals before approval. B3_v2 optional. Then assemble the final character sheet.
