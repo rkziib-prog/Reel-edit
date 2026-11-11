@@ -33,6 +33,9 @@ Malayalam psychological thriller short, 4:28 (268 s), 16:9 1920x1080, 24 fps, AI
   new chat, references = Identity Board V2 + the panel's original photo, identity lock in every prompt, negative prompt as a
   final "Avoid:" line. Exact prompts: `edits/the-other-side/prompts/CHATGPT_PANELS.md`. Never generate images in Claude
   Code; the user generates, uploads `<panel>_vN.png` to Drive Edit, I check against the originals and assemble.
+- Character panels: ALL APPROVED and FROZEN (11 Nov): never modify or regenerate them; read-only copies in
+  `input/tos_panels/` (mapping in PROJECT_STATUS.md). Character identity sheet: `output/tos_character_sheet_p{1,2,3}.jpg`
+  from `edits/the-other-side/character_sheet.py` (awaiting user sign-off; no video editing before it).
 - Progress: `PROJECT_STATUS.md` (update at the end of every task: done, remaining, next step).
 - Locked decisions: English subtitles only (Malayalam is spoken, never on screen); smash exactly at 3:33.00
   (frame 5112); realistic sound design, a subtle drone only in Scenes 4-5; watch on the RIGHT wrist and right

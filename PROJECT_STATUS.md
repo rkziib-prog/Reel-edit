@@ -74,6 +74,12 @@ Updated: 2026-11-10
   shape and jawline match; natural age; exhaustion only through eyes (bloodshot, mild under-eyes, wet), lips, skin
   sheen and damp hair; costume, beard, skin texture OK. APPROVED by user (11 Nov): C6 = C6_v3.
 
+- C7_v2 (1eLJfMK6, C85B0EF3) APPROVED by user (11 Nov): C7 = C7_v2. All panels approved.
+- FROZEN (11 Nov, user): approved panels are final; never modify or regenerate. Read-only copies in input/tos_panels/:
+  A1 A49AE7DA, A2 98B62E03, A3 97BE6DC9, A4 31F18098, A5 A64DD957, A6_v3 D9F5F235_A6_v3, A7_v2 A7_1s2_1QR9,
+  A8 020E8ADD, B1 C70DA14A, B2 772986A4, B4 05C021BC, B5_v2 B5_1RU_e6JO, C1 92B8149B, C2 D86B337D, C3 A51F5074,
+  C4 5B48BC7A, C5 C735A6EB, C6_v3 C6_1Fdez8s5, C7_v2 C7_1eLJfMK6, C8 8E112F8E.
+
 ## Remaining
 - [ ] User confirms the other 29 Malayalam lines -> lock screenplay
 - [ ] User generates panels in ChatGPT (A1 first), uploads <panel>_vN.png to Drive Edit -> I check each against the
@@ -85,8 +91,6 @@ Updated: 2026-11-10
 - [ ] Generate shots scene by scene, check continuity, assemble, subtitles, sound, master (1080p24)
 
 ## Next recommended step
-C7_v2 uploaded (Drive 1eLJfMK6rpotTskBwa8DUocyU6Ekr7o3R, copy input/tos_panels/C7_1eLJfMK6.png) and reviewed
-(work/review_C7.jpg, work/review_C7_faces.jpg): old C7 drift fixed (brows, open eyes, nose, moustache, face width
-match C5/IMG_8749); amber lamp key frame-left, teal shadows; charcoal shirt matches. Recommended APPROVE; only
-nit: hair damper and more forward than C5. AWAITING USER REVIEW. After approval: assemble the character sheet
-from the approved panels (B3 optional redo) for sign-off.
+Complete character identity sheet built (output/tos_character_sheet_p1-3.jpg, edits/the-other-side/character_sheet.py)
+from the user's list (A1-A5, A6_v3, A7_v2, A8, B1, B5_v2, C5, C6_v3, C7_v2). AWAITING USER SIGN-OFF. No video editing
+until approved.
