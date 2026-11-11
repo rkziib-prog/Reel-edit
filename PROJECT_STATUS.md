@@ -94,6 +94,13 @@ Updated: 2026-11-10
   in C1-C4 (checked by eye), shirt pocket LEFT chest, no necklace; 20/20 frozen panels byte-identical (sha256) to the
   Drive originals and read-only; exported pages = a fresh render (max pixel diff 0) = the files sent. ALL PASS.
 
+- CHARACTER IDENTITY SHEET APPROVED by user (11 Nov): output/tos_character_sheet_p1-3.jpg, all 20 panels.
+  Panels stay frozen and read-only; never regenerate or modify. Face, build, hair, beard, costume and watch locked.
+- Editing execution plan written (Claude Docs): https://claude.ai/artifact/WqHq7p9THMuo4WZEjYt2FT
+  All 7 scenes / 59 shots: duration, panel refs per shot, camera and cuts, grade per look, sound tracks A1-A7,
+  music (none; drone Sc4-5 only), VFX, subtitles, masters, gates. Found: 13 production-plan prompts still say
+  "steel watch" (1.2 1.7 1.8 2.1 2.3 4.5 5.2b 5.3 5.9 6.5 6.6 7.2 7.5): fix only with user OK.
+
 ## Remaining
 - [ ] User confirms the other 29 Malayalam lines -> lock screenplay
 - [ ] User generates panels in ChatGPT (A1 first), uploads <panel>_vN.png to Drive Edit -> I check each against the
@@ -105,4 +112,6 @@ Updated: 2026-11-10
 - [ ] Generate shots scene by scene, check continuity, assemble, subtitles, sound, master (1080p24)
 
 ## Next recommended step
-Sheet V2 verified (all checks pass); awaiting the user's FINAL APPROVAL. No video editing before it.
+User reviews the editing execution plan. Then, in order: fix the 13 watch prompts (with OK), user decides video tool,
+Dr. Thomas voice, dialogue recording, and confirms the 29 Malayalam lines; optional animatic; plates scene by scene.
+No assembly or rendering before approval.
