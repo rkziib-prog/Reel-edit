@@ -46,6 +46,10 @@ Updated: 2026-11-10
   PASS; minor notes: slightly neater hair, slightly fuller arms in A6/A7. Lower scores to review later: C6 0.64,
   C7 0.59.
 
+- Visual review of all 21 panels done (11 Nov). APPROVED: A1-A5, A8, B1, B2, B4, C1, C2, C3, C4, C5, C8.
+  REGENERATE: A6, A7 (build too muscular), B5 (smile too faint), C6 (aged/gaunt, reads older), C7 (brows, eyes,
+  moustache drift in lamp light). OPTIONAL: B3 (glare, slightly gaunter). Redo prompts: prompts/REDO_v2.md.
+
 ## Remaining
 - [ ] User confirms the other 29 Malayalam lines -> lock screenplay
 - [ ] User generates panels in ChatGPT (A1 first), uploads <panel>_vN.png to Drive Edit -> I check each against the
@@ -57,4 +61,5 @@ Updated: 2026-11-10
 - [ ] Generate shots scene by scene, check continuity, assemble, subtitles, sound, master (1080p24)
 
 ## Next recommended step
-User decides on A1-A8 (approve or redo A6/A7 for body build). Then I check B1-B5 and C1-C8 the same way.
+Regenerate A6, A7, B5, C6, C7 (and optionally B3) with prompts/REDO_v2.md; upload as <panel>_v2.png; I review
+them, then assemble the final character sheet from the approved panels.
