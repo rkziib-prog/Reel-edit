@@ -7,7 +7,9 @@ yt-dlp, HyperFrames and Remotion.
 
 A tattoo artist making Instagram reels of their work (first edit: a Shiva backpiece, process to reveal; see
 `edits/tattoo-backpiece/`). Typical footage: iPhone 4K/60 vertical clips of the session plus photos of the
-healed or finished piece. Clips go in the Drive **Edit** folder and music in **Audio** (see Google Drive below).
+healed or finished piece. Clips go in the Drive **Edit** folder and music in **Audio** (see Google Drive below). Second reel (Arjuna/Krishna
+forearm sleeve, `edits/tattoo2/build.py`, v1 sent 11 Nov) uses Drive folders **Tattoo edit** `1pUr_FFlTQesHX1R_fR1OcMu-Dm7t7PSH`,
+**Reel reference** `1fguODIn9SoL9vZcDczVxR4ALTN5Z-Prx`, **Tattoo audio** `1IOrQgUnrxvyy047bKp6p9lCIBS4-azRm` (link-shared).
 
 **Standing rule for every tattoo reel: trim dead starts (and dead ends) before editing.** The cameraman often
 starts recording before the work begins (no hands in frame, hand not on skin, wiping/setting up, camera still
