@@ -36,6 +36,8 @@ Updated: 2026-11-10
 - Prompts A/B/C APPROVED; tool = ChatGPT Image Generation (iPad). 21 exact copy-paste prompts in
   edits/the-other-side/prompts/CHATGPT_PANELS.md.
 
+- All 21 ChatGPT panel prompts (A1-A8, B1-B5, C1-C8) handed to the user one by one (11 Nov).
+
 ## Remaining
 - [ ] User confirms the other 29 Malayalam lines -> lock screenplay
 - [ ] User generates panels in ChatGPT (A1 first), uploads <panel>_vN.png to Drive Edit -> I check each against the
@@ -47,5 +49,6 @@ Updated: 2026-11-10
 - [ ] Generate shots scene by scene, check continuity, assemble, subtitles, sound, master (1080p24)
 
 ## Next recommended step
-Generate A1 (front view) in ChatGPT with the prompt from CHATGPT_PANELS.md; upload A1_v1.png to Drive Edit;
-I check it against IMG_8749 before you continue to A2.
+User uploads the generated panels to Drive Edit as <panel>_v1.png. I check every panel against the original
+photos (face, hair, beard, proportions, right-wrist watch, left pocket, no necklace), flag redos, then assemble
+the approved panels into the character sheet.
