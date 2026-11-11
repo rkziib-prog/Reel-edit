@@ -72,7 +72,7 @@ Updated: 2026-11-10
 
 - C6_v3 (B6AA8B88) final review: face width and cheek fullness back to C5 / IMG_8749, no hollowing; nose, brow
   shape and jawline match; natural age; exhaustion only through eyes (bloodshot, mild under-eyes, wet), lips, skin
-  sheen and damp hair; costume, beard, skin texture OK. Verdict: APPROVE (awaiting user sign-off).
+  sheen and damp hair; costume, beard, skin texture OK. APPROVED by user (11 Nov): C6 = C6_v3.
 
 ## Remaining
 - [ ] User confirms the other 29 Malayalam lines -> lock screenplay
@@ -85,4 +85,5 @@ Updated: 2026-11-10
 - [ ] Generate shots scene by scene, check continuity, assemble, subtitles, sound, master (1080p24)
 
 ## Next recommended step
-User signs off C6_v3. Then C7_v2 (oil lamp) from REDO_v2.md with approved C5 attached; upload for review.
+User generates C7_v2 (oil lamp) from REDO_v2.md with approved C5 attached, uploads C7_v2.png; I review against
+IMG_8749 and C5 and report; no approval until the user reviews.
