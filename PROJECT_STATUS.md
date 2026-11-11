@@ -132,6 +132,10 @@ Updated: 2026-11-10
   audio off; Line 18 lip-sync checkpoints (pp closure, final aa) within 2 frames; full QC checklist. Test doc Test A
   points to the package. Nothing generated, no credits spent.
 
+- SHOT 5.7 KEYFRAME APPROVED by user (11 Nov, visual approval). Approved image location: PENDING (user to provide;
+  record it here and in tests/SHOT_5.7_TEST_PACKAGE.md). Frozen identity references unchanged. Kling animation prompt
+  and Line 18 lip-sync requirements stay ready in the package. No video generated, no Kling credits spent.
+
 ## Remaining
 - [x] User confirms the other 29 Malayalam lines -> lock screenplay (done 11 Nov)
 - [ ] User generates panels in ChatGPT (A1 first), uploads <panel>_vN.png to Drive Edit -> I check each against the
@@ -143,5 +147,6 @@ Updated: 2026-11-10
 - [ ] Generate shots scene by scene, check continuity, assemble, subtitles, sound, master (1080p24)
 
 ## Next recommended step
-User: record Line 18 (L18_aadhi.m4a) and make the 5.7 keyframe in ChatGPT (5.7_key_v1.png) from the package; upload.
-Me: run the keyframe checklist. Kling only on explicit user OK. Then tests 7.4 and 3.1 the same way.
+User: send the approved 5.7 keyframe location (Drive file or link) and record Line 18 (L18_aadhi.m4a).
+Me: record the location, copy the keyframe read-only to input/tos_keyframes/, run the package's keyframe checklist as a
+record. Kling 5.7 clip only on explicit user OK to spend credits.

@@ -4,6 +4,17 @@ First video-generation test (Test A, dialogue). Preparation only: nothing is gen
 subscription bought. Script, dialogue and character identity are unchanged. Sources: production plan (shot 5.7,
 prompt blocks, Scene 5 light), Dialogue Shot Map (Line 18 row), frozen character panels, continuity rules.
 
+## Status
+
+| Stage | State |
+| --- | --- |
+| Keyframe `5.7_key_v1.png` | **APPROVED by the user (11 Nov), visual approval.** Approved image location: _pending, the user will provide it_ |
+| My keyframe checklist (section 6) | To run as a record once the file location is provided; the approval stands as given |
+| Line 18 recording `L18_aadhi.m4a` | Not yet received |
+| Kling clip `5.7_v1.mp4` | NOT generated; waits for the user's explicit OK to spend credits. Prompts in section 3, ready |
+| Lip-sync `5.7_v1_lipsync.mp4` | Not started; needs the clip and the Line 18 take. Requirements in section 4, ready |
+| Identity references | Unchanged: the six frozen files in section 1 stay the references for every later stage |
+
 ## The shot
 
 | | |
