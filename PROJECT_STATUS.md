@@ -50,6 +50,10 @@ Updated: 2026-11-10
   REGENERATE: A6, A7 (build too muscular), B5 (smile too faint), C6 (aged/gaunt, reads older), C7 (brows, eyes,
   moustache drift in lamp light). OPTIONAL: B3 (glare, slightly gaunter). Redo prompts: prompts/REDO_v2.md.
 
+- A6 redo received (9DCC9524, single image, not a full A1-A8 sheet): build now slim and matches IMG_8759; but it
+  copied the orange T-shirt with printed brand text from the reference -> fails costume. A7 redo not received.
+  REDO_v2 A6/A7 prompts now say: do not copy the reference clothing or text.
+
 ## Remaining
 - [ ] User confirms the other 29 Malayalam lines -> lock screenplay
 - [ ] User generates panels in ChatGPT (A1 first), uploads <panel>_vN.png to Drive Edit -> I check each against the
@@ -61,5 +65,5 @@ Updated: 2026-11-10
 - [ ] Generate shots scene by scene, check continuity, assemble, subtitles, sound, master (1080p24)
 
 ## Next recommended step
-Regenerate A6, A7, B5, C6, C7 (and optionally B3) with prompts/REDO_v2.md; upload as <panel>_v2.png; I review
-them, then assemble the final character sheet from the approved panels.
+Regenerate A6 (as A6_v3) and A7 with the updated REDO_v2.md prompts, plus B5, C6, C7 (B3 optional); upload;
+I review, then assemble the final character sheet.

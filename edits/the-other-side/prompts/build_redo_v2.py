@@ -4,10 +4,10 @@ build_chatgpt_prompts.py unchanged and adds one correction line plus extra Avoid
 import build_chatgpt_prompts as b
 
 FIX = {
- "A6": ("Body build: slim, lean build exactly as in the full-body reference IMG_8759: slender arms, narrow shoulders, no visible muscle definition.",
-        ", muscular, athletic build, defined biceps, broad shoulders, gym physique"),
- "A7": ("Body build: slim, lean build exactly as in the full-body reference IMG_8759: slender arms, narrow shoulders, no visible muscle definition.",
-        ", muscular, athletic build, defined biceps, broad shoulders, gym physique"),
+ "A6": ("Body build: slim, lean build exactly as in the full-body reference IMG_8759: slender arms, narrow shoulders, no visible muscle definition. Use the reference photos for the face and body only: do NOT copy their orange T-shirt or its printed text; wear only the clothing described below.",
+        ", muscular, athletic build, defined biceps, broad shoulders, gym physique, orange T-shirt, printed graphic, brand text"),
+ "A7": ("Body build: slim, lean build exactly as in the full-body reference IMG_8759: slender arms, narrow shoulders, no visible muscle definition. Use the reference photos for the face and body only: do NOT copy their orange T-shirt or its printed text; wear only the clothing described below.",
+        ", muscular, athletic build, defined biceps, broad shoulders, gym physique, orange T-shirt, printed graphic, brand text"),
  "B3": ("Keep the eyes and brows exactly as in the reference; the suspicion is subtle, a slight narrowing only, not a glare; face not thinner.",
         ", glare, scowl, gaunt face, sunken cheeks"),
  "B5": ("The smile must be clearly visible but small: closed lips, the corners of the mouth lifted as in IMG_8813, eyes calm.",
@@ -19,7 +19,7 @@ FIX = {
 }
 out = ["# THE OTHER SIDE — regeneration prompts v2 (11 Nov review)", "",
        "Same steps as before: new chat, attach `tos_identity_board_v2.jpg` + the reference photo(s), paste exactly. "
-       "Save as `<panel>_v2.png` in the Drive Edit folder.", ""]
+       "Save as `<panel>_v2.png` (A6/A7 third try: `_v3.png`) in the Drive Edit folder.", ""]
 for pid, title, ref, fmt, text, cloth, light, avoid in b.P:
     if pid not in FIX: continue
     fix, extra = FIX[pid]

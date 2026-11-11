@@ -1,6 +1,6 @@
 # THE OTHER SIDE — regeneration prompts v2 (11 Nov review)
 
-Same steps as before: new chat, attach `tos_identity_board_v2.jpg` + the reference photo(s), paste exactly. Save as `<panel>_v2.png` in the Drive Edit folder.
+Same steps as before: new chat, attach `tos_identity_board_v2.jpg` + the reference photo(s), paste exactly. Save as `<panel>_v2.png` (A6/A7 third try: `_v3.png`) in the Drive Edit folder.
 
 ## A6 — Full body front (v2)
 
@@ -13,13 +13,13 @@ Use the attached Aadhi Identity Board V2 and the matching original photograph as
 
 Panel A6, Full body front: Full body standing, head to bare feet in frame, facing the camera, arms relaxed at his sides, natural posture, neutral expression.
 
-Body build: slim, lean build exactly as in the full-body reference IMG_8759: slender arms, narrow shoulders, no visible muscle definition.
+Body build: slim, lean build exactly as in the full-body reference IMG_8759: slender arms, narrow shoulders, no visible muscle definition. Use the reference photos for the face and body only: do NOT copy their orange T-shirt or its printed text; wear only the clothing described below.
 
 Clothing: plain charcoal-grey crew-neck T-shirt with no print, plain black knee-length shorts, barefoot.
 
 Lighting: soft, even studio light from a large frontal softbox, gentle fill, neutral 5600 K, no hard shadows; plain seamless mid-grey background; 85 mm lens look, f/8, sharp focus on the eyes, true-to-life colour, film-still realism.
 
-Avoid: beautified, airbrushed, smoothed or plastic skin, makeup, changed face shape, slimmer face, younger face, different nose, different eyes, different beard or hairstyle, extra or duplicated facial features, asymmetrical or melted eyes, extra fingers, distorted hands, necklace, chain, jewellery, artificial symmetry, mirrored or flipped face, extra panels, labels, rings, tattoos not in the references, logos, printed text on clothing, watermark, captions, cartoon, illustration, 3D render, CGI look, oversaturated, HDR halo, blurry, low resolution, muscular, athletic build, defined biceps, broad shoulders, gym physique.
+Avoid: beautified, airbrushed, smoothed or plastic skin, makeup, changed face shape, slimmer face, younger face, different nose, different eyes, different beard or hairstyle, extra or duplicated facial features, asymmetrical or melted eyes, extra fingers, distorted hands, necklace, chain, jewellery, artificial symmetry, mirrored or flipped face, extra panels, labels, rings, tattoos not in the references, logos, printed text on clothing, watermark, captions, cartoon, illustration, 3D render, CGI look, oversaturated, HDR halo, blurry, low resolution, muscular, athletic build, defined biceps, broad shoulders, gym physique, orange T-shirt, printed graphic, brand text.
 ```
 
 ## A7 — Full body three-quarter (v2)
@@ -33,13 +33,13 @@ Use the attached Aadhi Identity Board V2 and the matching original photograph as
 
 Panel A7, Full body three-quarter: Full body standing, turned 45 degrees to frame-left, head to bare feet in frame, arms relaxed, neutral expression.
 
-Body build: slim, lean build exactly as in the full-body reference IMG_8759: slender arms, narrow shoulders, no visible muscle definition.
+Body build: slim, lean build exactly as in the full-body reference IMG_8759: slender arms, narrow shoulders, no visible muscle definition. Use the reference photos for the face and body only: do NOT copy their orange T-shirt or its printed text; wear only the clothing described below.
 
 Clothing: plain charcoal-grey crew-neck T-shirt with no print, plain black knee-length shorts, barefoot.
 
 Lighting: soft, even studio light from a large frontal softbox, gentle fill, neutral 5600 K, no hard shadows; plain seamless mid-grey background; 85 mm lens look, f/8, sharp focus on the eyes, true-to-life colour, film-still realism.
 
-Avoid: beautified, airbrushed, smoothed or plastic skin, makeup, changed face shape, slimmer face, younger face, different nose, different eyes, different beard or hairstyle, extra or duplicated facial features, asymmetrical or melted eyes, extra fingers, distorted hands, necklace, chain, jewellery, artificial symmetry, mirrored or flipped face, extra panels, labels, rings, tattoos not in the references, logos, printed text on clothing, watermark, captions, cartoon, illustration, 3D render, CGI look, oversaturated, HDR halo, blurry, low resolution, muscular, athletic build, defined biceps, broad shoulders, gym physique.
+Avoid: beautified, airbrushed, smoothed or plastic skin, makeup, changed face shape, slimmer face, younger face, different nose, different eyes, different beard or hairstyle, extra or duplicated facial features, asymmetrical or melted eyes, extra fingers, distorted hands, necklace, chain, jewellery, artificial symmetry, mirrored or flipped face, extra panels, labels, rings, tattoos not in the references, logos, printed text on clothing, watermark, captions, cartoon, illustration, 3D render, CGI look, oversaturated, HDR halo, blurry, low resolution, muscular, athletic build, defined biceps, broad shoulders, gym physique, orange T-shirt, printed graphic, brand text.
 ```
 
 ## B3 — Suspicion (v2)
