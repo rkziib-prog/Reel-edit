@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""THE OTHER SIDE: Dialogue Shot Map, every one of the 59 shots with its dialogue, delivery, lip-sync need,
+"""THE OTHER SIDE: Dialogue Shot Map. Authoritative timing = the approved plan's subtitle list (42 IDs, speakers,
+start/end times, kept as written). Two tables: by dialogue ID, and every one of the 59 shots with its dialogue, delivery, lip-sync need,
 lip-sync framing and performance. Malayalam and English are copied verbatim from the approved production plan
 (Claude Docs export at work/verify/plan.txt), never retyped. Shot order, timing and durations are the plan's.
 Checks: shots sum to 268.0 s, every one of the 42 subtitle events is placed exactly once, inside its shot's time.
@@ -26,7 +27,8 @@ def events():
     while i + 6 <= len(rows):
         n, t_in, t_out, who, ml, en = rows[i:i + 6]
         ml = ml.replace('\\"', '"').replace(" (locked)", "")
-        ev[n] = dict(n=n, t_in=sec(t_in), t_out=sec(t_out), who=who, ml=ml, en=en.replace('\\"', '"'))
+        ev[n] = dict(n=n, t_in=sec(t_in), t_out=sec(t_out), raw_in=t_in, raw_out=t_out, who=who, ml=ml,
+                     en=en.replace('\\"', '"'), order=len(ev))
         i += 6
     assert len(ev) == 42, len(ev)
     return ev
@@ -150,6 +152,29 @@ SHOTS = [
 ]
 
 
+CLASS = {"Aadhi (V.O.)": "Voice-over", "Real Aadhi (V.O.)": "Voice-over",
+         "Aadhi": "Visible lip-sync candidate", "Aadhi (whisper)": "Visible lip-sync candidate",
+         "Reflection": "Visible lip-sync candidate", "Dr. Thomas (phone)": "Phone dialogue",
+         "Note (on screen)": "On-screen note (text overlay)"}
+
+
+def lipsync(e, deliv, shot_ls, shot):
+    c = CLASS[e["who"]]
+    if c == "Voice-over":
+        return "No (voice-over)"
+    if c.startswith("On-screen"):
+        return "No (text overlay, not spoken)"
+    if c == "Phone dialogue":
+        return "No (phone; his face is never shown)"
+    if deliv == OFF:
+        return "No: face not in this shot (candidate)"
+    if shot_ls == "Conditional":
+        return "CONDITIONAL: decide on the plate"
+    if shot_ls.startswith("Yes"):
+        return "YES"
+    return f"No: wide shot, mouth too small (candidate)"
+
+
 def main():
     ev = events()
     assert len(SHOTS) == 59
@@ -157,53 +182,83 @@ def main():
     assert abs(total - 268.0) < 1e-6, total
     placed = [e for s in SHOTS for e, _ in s[5]]
     assert sorted(placed) == sorted(ev), set(ev) ^ set(placed)
-    for shot, a, b, _, _, evs, *_ in SHOTS:
-        for e, _ in evs:
-            assert sec(a) - 0.01 <= ev[e]["t_in"] < sec(b), (shot, e)   # each line starts inside its shot
-
-    lip = [s for s in SHOTS if s[6].startswith("Yes")]
-    cond = [s for s in SHOTS if s[6] == "Conditional"]
-    dia = [s for s in SHOTS if any(d != TEXT for _, d in s[5])]
-    out = ["# THE OTHER SIDE (മറുവശം) — Dialogue Shot Map", "",
-           "All 59 shots of the approved plan (7 scenes, 268.0 s, 24 fps), in film order. Shot order, times and durations "
-           "are the production plan's; the Malayalam and English are copied verbatim from it by "
-           "`edits/the-other-side/dialogue_shot_map.py` (all 31 lines approved and locked 11 Nov). Nothing is generated "
-           "from this map; it is preparation only.", "",
-           "## Summary", "",
-           f"- Shots with spoken dialogue: **{len(dia)}** of 59; on-screen notes only: 3 (4.2–4.4).",
-           f"- Visible lip-sync required: **{len(lip)} shots** — {', '.join(s[0] for s in lip)}.",
-           f"- Conditional lip-sync: {', '.join(s[0] for s in cond)} (mouth small at medium; decided on the plate).",
-           "- Voice-over: Lines 1, 2a, 2b (1.2, 1.4), 31 (7.7). Dr. Thomas is always off-screen on the phone "
-           "(6, 8a–8c, 10a–10b, 12a–12b, 25, 27, 29). Off-screen in scene, face not shown: Line 4 (2.1), Line 20 (5.9). "
-           "Wide, too small to sync: 22a–22b (5.11).",
-           "- Lip-sync runs on the unflipped clip, before the flip (Aadhi's shots) and before the glass haze "
-           "(Reflection's shots); a flip changes neither timing nor audio.",
-           "- Shots are fitted to your recorded takes: the times below are the plan's estimates; each line snaps to "
-           "your actual words.", "",
-           "**Lip-sync framing rules (all sync shots):** close-up or medium close-up; face at least about a third of "
-           "frame height; mouth never covered (phone, hands, palms, tears); key light reaching the mouth; camera "
-           "movement small enough that the mouth stays sharp on the line; cuts and clip splits only in pauses, never "
-           "mid-line.", "",
-           "## Shot by shot", "",
-           "| Shot | Time | Picture | Flip | Dialogue | Line | Speaker | Approved Malayalam (spoken) | English subtitle | "
-           "Delivery | Lip-sync | Lip-sync framing | Performance |",
-           "| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |"]
+    idx = {s[0]: k for k, s in enumerate(SHOTS)}
+    rows, per_shot, confirm = [], {}, []
     for shot, a, b, pic, flip, evs, ls, lf, perf in SHOTS:
-        dur = sec(b) - sec(a)
-        if not evs:
-            out.append(f"| {shot} | {a}–{b} ({dur:g} s) | {pic} | {flip} | No | – | – | – | – | – | {ls} | {lf} | {perf} |")
-            continue
-        for k, (e, d) in enumerate(evs):
-            x = ev[e]
-            head = (f"| {shot} | {a}–{b} ({dur:g} s) | {pic} | {flip} | " +
-                    ("No (text)" if d == TEXT else "Yes")) if k == 0 else "| ″ | | | | ″"
-            tail = f" | {ls} | {lf} | {perf} |" if k == 0 else " | ″ | | |"
-            out.append(f"{head} | {e} | {x['who']} | {x['ml']} | {x['en']} | {d}{tail}")
-    out += ["", "″ = same shot, next line. Lines 18 and 30 were locked on 10 Nov; all others approved 11 Nov; "
-            "Line 31 is covered by the Line 1 approval (intentional repetition).", ""]
+        for e_id, d in evs:
+            e = ev[e_id]
+            if not (sec(a) - 0.01 <= e["t_in"] < sec(b)):
+                match = "NEEDS CONFIRMATION"
+                confirm.append(e_id)
+            elif e["t_out"] > sec(b) + 0.01:
+                nxt = SHOTS[idx[shot] + 1][0]
+                match = f"{shot} (ends {e['t_out'] - sec(b):.1f} s into {nxt})"
+            else:
+                match = shot
+            rows.append((e["order"], e, d, match, lipsync(e, d, ls, shot), lf, perf))
+            per_shot.setdefault(shot, []).append((e, d, lipsync(e, d, ls, shot)))
+    rows.sort(key=lambda r: r[0])
+
+    def cats(shot):
+        c = []
+        for e, d, l in per_shot.get(shot, []):
+            k = ("Visible Malayalam lip-sync" if l == "YES" else "Lip-sync (conditional)" if l.startswith("CONDITIONAL")
+                 else CLASS[e["who"]].replace("Visible lip-sync candidate", "Spoken, not lip-synced")
+                 .replace("Phone dialogue", "Phone audio").replace("On-screen note (text overlay)", "Text overlay"))
+            if k not in c:
+                c.append(k)
+        return ", ".join(c) or "No dialogue"
+
+    over = [f"{e['n']} {m.split('(')[1].rstrip(')')}" for _, e, d, m, *_ in rows if '(ends' in m]
+    sync = [s[0] for s in SHOTS if "Visible Malayalam lip-sync" in cats(s[0])]
+    vo = [s[0] for s in SHOTS if "Voice-over" in cats(s[0])]
+    ph = [s[0] for s in SHOTS if "Phone audio" in cats(s[0])]
+    tx = [s[0] for s in SHOTS if "Text overlay" in cats(s[0])]
+    cond = [s[0] for s in SHOTS if "conditional" in cats(s[0])]
+    nosync = [s[0] for s in SHOTS if "Spoken, not lip-synced" in cats(s[0])]
+    out = ["# THE OTHER SIDE (മറുവശം) — Dialogue Shot Map", "",
+           "Timing reference: the approved production plan's subtitle list (42 IDs). IDs, speaker labels, start and end "
+           "times are kept exactly as written there, split IDs included. The Malayalam and English are copied verbatim "
+           "from the approved plan (all 31 lines approved 11 Nov); where a list showed a line cut short, the full "
+           "approved text is used, nothing added. Shot order and durations are the plan's: 59 shots, 268.0 s. "
+           "Preparation only; nothing is generated from this map.", "",
+           "## Summary", "",
+           f"- **Visible Malayalam lip-sync ({len(sync)} shots):** {', '.join(sync)}.",
+           f"- **Lip-sync conditional (1 shot):** {', '.join(cond)}: mouth small at medium in the rain; decided on the plate.",
+           f"- **Spoken by Aadhi/Reflection but not lip-synced ({len(nosync)} shots):** {', '.join(nosync)}: face not in "
+           "shot (2.1 overhead hands, 5.9 hand insert) or too wide (5.11 profile composite).",
+           f"- **Voice-over ({len(vo)} shots):** {', '.join(vo)}: Lines 1, 2a, 2b (Aadhi V.O.), 31 (Real Aadhi V.O.).",
+           f"- **Phone audio ({len(ph)} shots):** {', '.join(ph)}: Dr. Thomas, never on screen, so never lip-synced.",
+           f"- **Text overlays ({len(tx)} shots):** {', '.join(tx)}: notes N1–N3, subtitled, not spoken.",
+           f"- **NEEDS CONFIRMATION:** {', '.join(confirm) if confirm else 'none; all 42 IDs start inside one planned shot'}. "
+           f"{len(over)} lines run past their shot's end and are marked in the table ({'; '.join(over)}). None is a "
+           "matching doubt: each starts inside its shot, and the overhang plays off-screen over the next shot (the plan "
+           "places 22b over 5.12 on purpose; V.O. and phone lines are unaffected; 23b's 0.2 s tail falls on Aadhi's "
+           "5.14 close-up, before his Line 24).",
+           "- Lip-sync runs on the unflipped clip, before the flip and before the Reflection's glass haze. Final times "
+           "snap to your recorded takes; the IDs and order do not change.", "",
+           "**Lip-sync framing rules:** close-up or medium close-up; face at least about a third of frame height; mouth "
+           "never covered (phone, hands, palms, tears); key light reaching the mouth; camera movement small enough to keep "
+           "the mouth sharp; cuts and clip splits only in pauses, never mid-line.", "",
+           "## By dialogue ID (42)", "",
+           "| ID | Speaker | Start | End | Class | Shot | Lip-sync | Approved Malayalam | English subtitle | "
+           "Framing for lip-sync | Performance |",
+           "| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |"]
+    for _, e, d, match, l, lf, perf in rows:
+        f = lf if l in ("YES",) or l.startswith("CONDITIONAL") else "–"
+        out.append(f"| {e['n']} | {e['who']} | {e['raw_in']} | {e['raw_out']} | {CLASS[e['who']]} | {match} | {l} | "
+                   f"{e['ml']} | {e['en']} | {f} | {perf} |")
+    out += ["", "## By shot (59)", "",
+            "| Shot | Time | Sec | Picture | Flip | Dialogue IDs | Category | Performance |",
+            "| --- | --- | --- | --- | --- | --- | --- | --- |"]
+    for shot, a, b, pic, flip, evs, ls, lf, perf in SHOTS:
+        ids = ", ".join(e for e, _ in evs) or "–"
+        out.append(f"| {shot} | {a}–{b} | {sec(b) - sec(a):g} | {pic} | {flip} | {ids} | {cats(shot)} | {perf} |")
+    out += ["", "Lines 18 and 30 locked 10 Nov; all others approved 11 Nov; Line 31 is covered by the Line 1 approval "
+            "(intentional repetition).", ""]
     open(OUT, "w").write("\n".join(out))
-    print(f"wrote {OUT}: 59 shots, {len(placed)} subtitle events placed, total {total:g} s; "
-          f"dialogue shots {len(dia)}, lip-sync {len(lip)}, conditional {len(cond)}")
+    print(f"wrote {OUT}: 42 IDs, 59 shots, {total:g} s; sync {len(sync)}, cond {len(cond)}, spoken-no-sync "
+          f"{len(nosync)}, VO {len(vo)}, phone {len(ph)}, text {len(tx)}; needs confirmation: {confirm or 'none'}")
 
 
 if __name__ == "__main__":
