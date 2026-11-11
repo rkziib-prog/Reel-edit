@@ -42,7 +42,8 @@ Malayalam psychological thriller short, 4:28 (268 s), 16:9 1920x1080, 24 fps, AI
   never spend Kling credits without user OK. Tests first (5.7, 7.4, 3.1): https://claude.ai/artifact/4TxzAyd9mATow64pAEPbBS
 - Dialogue: user records Aadhi and Reflection; shots fit to the takes; lip-sync only where the mouth is clearly
   visible. 29-line review: https://claude.ai/artifact/48jnz6JzsTKhmrHUfycwmD. ALL 31 LINES APPROVED and locked (11 Nov):
-  never change dialogue wording or subtitles without the user.
+  never change dialogue wording or subtitles without the user. Per-shot dialogue, delivery and lip-sync:
+  `edits/the-other-side/DIALOGUE_SHOT_MAP.md` (from `dialogue_shot_map.py`).
 - Dr. Thomas: Google Cloud TTS test first, samples shown before choosing (needs the user's API key).
 - Progress: `PROJECT_STATUS.md` (update at the end of every task: done, remaining, next step).
 - Locked decisions: English subtitles only (Malayalam is spoken, never on screen); smash exactly at 3:33.00
