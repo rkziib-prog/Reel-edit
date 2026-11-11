@@ -88,6 +88,12 @@ Updated: 2026-11-10
   panels; p3 all 20 panels vs originals (face match 0.73-0.96 over 17 face panels, median 0.86; A8/C3 back views,
   C4 watch vs IMG_8843).
 
+- Final verification of sheet V2 (11 Nov, `character_sheet.py --verify`): 20/20 panels placed, each exactly once
+  per section (turnaround 11 + progression 7 + C4/C5 = 20 primary tiles; C1-C3 also as wrist crops); page 2
+  head-scale strip 19 tiles (C4 excluded), no duplicates; page 3 20/20 correct comparisons; watch on the RIGHT wrist
+  in C1-C4 (checked by eye), shirt pocket LEFT chest, no necklace; 20/20 frozen panels byte-identical (sha256) to the
+  Drive originals and read-only; exported pages = a fresh render (max pixel diff 0) = the files sent. ALL PASS.
+
 ## Remaining
 - [ ] User confirms the other 29 Malayalam lines -> lock screenplay
 - [ ] User generates panels in ChatGPT (A1 first), uploads <panel>_vN.png to Drive Edit -> I check each against the
@@ -99,5 +105,4 @@ Updated: 2026-11-10
 - [ ] Generate shots scene by scene, check continuity, assemble, subtitles, sound, master (1080p24)
 
 ## Next recommended step
-Revised character identity sheet V2 (output/tos_character_sheet_p1-3.jpg, all 20 panels) sent for FINAL SIGN-OFF.
-No video editing until the user approves it.
+Sheet V2 verified (all checks pass); awaiting the user's FINAL APPROVAL. No video editing before it.

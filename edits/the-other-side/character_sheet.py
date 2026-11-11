@@ -7,7 +7,8 @@ Pages (3840x2160 each):
   p3  identity reference comparisons: all 20 panels beside their original photo, ArcFace face match (support only)
 Run from the repo root: python3 edits/the-other-side/character_sheet.py  ->  output/tos_character_sheet_p{1,2,3}.jpg
 """
-import subprocess
+import hashlib, os, subprocess, sys
+from collections import Counter
 import numpy as np
 from PIL import Image, ImageOps, ImageDraw, ImageFont
 from insightface.app import FaceAnalysis
@@ -22,7 +23,7 @@ P = {"A1": "A49AE7DA", "A2": "98B62E03", "A3": "97BE6DC9", "A4": "31F18098", "A5
      "B1": "C70DA14A", "B2": "772986A4", "B4": "05C021BC", "B5_v2": "B5_1RU_e6JO",
      "C1": "92B8149B", "C2": "D86B337D", "C3": "A51F5074", "C4": "5B48BC7A", "C5": "C735A6EB",
      "C6_v3": "C6_1Fdez8s5", "C7_v2": "C7_1eLJfMK6", "C8": "8E112F8E"}
-USED = {1: set(), 2: set(), 3: set()}
+LOG = []   # (page, section, panel, detail): every placement, for --verify
 # watch centres (x, y) in the panel's own pixels, found by eye on the frozen panels
 WATCH = {"C1": (315, 767), "C2": (417, 790), "C3": (697, 775), "C4": (471, 753)}
 
@@ -111,8 +112,8 @@ def section(d, x, y, text):
     d.text((x, y), text.upper(), font=font(30, True), fill=ACC)
 
 
-def use(page, *keys):
-    USED[page].update(keys)
+def use(page, section, *keys, detail=""):
+    LOG.extend((page, section, k, detail) for k in keys)
 
 
 def wrist(key, tw, th, span=330):
@@ -133,7 +134,7 @@ def page1():
                     ("A5", "A5  Right profile", "IMG_8780")]:
         place(b, d, fit(k, tw, th), x, 205, [(t, INK), (f"ref {r}", DIM)])
         x += tw + gap
-        use(1, k)
+        use(1, "turnaround", k)
     bw, bh, gap = 540, 820, 36
     x0 = (W - (6 * bw + 5 * gap + 60)) // 2
     section(d, x0, 1080, "Full body  ·  base look: charcoal tee, black shorts, barefoot")
@@ -147,7 +148,7 @@ def page1():
         x = x0 + i * (bw + gap) + (60 if i >= 3 else 0)
         lines = [(t, INK), (r, DIM)] + ([(w, OK)] if w else [])
         place(b, d, fit(k, bw, bh), x, 1125, lines)
-        use(1, k)
+        use(1, "turnaround", k)
     sx = x0 + 3 * (bw + gap) + 30 - gap // 2
     d.line((sx, 1125, sx, 1125 + bh), fill=(70, 70, 75), width=3)
     return b
@@ -173,7 +174,7 @@ def page2():
             ax, ay = x + tw + 8, 205 + th // 2
             d.polygon([(ax, ay - 14), (ax, ay + 14), (ax + gap - 16, ay)], fill=ACC)
         x += tw + gap
-        use(2, k)
+        use(2, "progression", k)
 
     y = 930
     section(d, 120, y, "Costume and watch continuity  ·  his own black digital watch, locked prop, RIGHT wrist in every generated frame")
@@ -187,11 +188,11 @@ def page2():
                     ("C3", "back: frame-right = his right")]:
         place(b, d, wrist(k, 330, ch), x, ty, [(f"{k}  wrist", INK), (note, OK)], 29)
         x += 330 + 30
-        use(2, k)
+        use(2, "costume", k)
     x += 10
     place(b, d, fit("C5", 376, ch), x, ty, [("C5  Shirt detail", INK), ("pocket on LEFT chest", OK)], 29)
     x += 376 + 60
-    use(2, "C4", "C5")
+    use(2, "costume", "C4", "C5")
     notes = [("Film costume (C1-C8)", ACC),
              ("Charcoal cotton shirt, single pocket on the LEFT", INK),
              ("chest, top button open, sleeves rolled; dark", INK),
@@ -215,7 +216,7 @@ def page2():
         tile = back_head(k, sw, sh) if k in ("A8", "C3") else head(k, sw, sh)
         place(b, d, tile, x, y + 45, [(k, INK)], 25)
         x += sw + sg
-        use(2, k)
+        use(2, "strip", k)
     d.text((120, 1940), "Hair: shoulder-length, wavy, black, swept back, the same volume from every side; damp only where the story asks "
            "(C6_v3 day 7, C7_v2 night). Beard and moustache: short, trimmed, unchanged.", font=font(29), fill=INK)
     return b
@@ -258,7 +259,7 @@ def page3():
         note = (f"face match {s:.2f}" if s is not None else
                 "same watch, RIGHT wrist" if k == "C4" else "back view: hair and build only")
         d.text((x, y + th + 44), note, font=font(25), fill=ACC if s is not None else OK if k == "C4" else DIM)
-        use(3, k)
+        use(3, "compare", k, detail=r)
     v = sorted(scores)
     low = ", ".join(f"{k} {s:.2f}" for s, k in v[:4])
     d.text((120, 2085), f"Face match over {len(v)} panels: {v[0][0]:.2f} - {v[-1][0]:.2f}, median {np.median([s for s, _ in v]):.2f}. "
@@ -268,14 +269,27 @@ def page3():
 
 
 def main():
+    verify = "--verify" in sys.argv
+    outdir = "work/verify" if verify else "output"
+    os.makedirs(outdir, exist_ok=True)
     for n, f in enumerate([page1, page2, page3], 1):
-        out = f"output/tos_character_sheet_p{n}.jpg"
+        out = f"{outdir}/tos_character_sheet_p{n}.jpg"
         f().save(out, quality=92)
         print("wrote", out)
-    allp = set(USED[1] | USED[2] | USED[3])
+    allp = {k for _, _, k, _ in LOG}
     missing = set(P) - allp
-    print(f"panels placed: {len(allp)}/{len(P)}; page 3 comparisons: {len(USED[3])}/{len(P)}; missing: {sorted(missing) or 'none'}")
-    assert not missing and USED[3] == set(P)
+    print(f"panels placed: {len(allp)}/{len(P)}; missing: {sorted(missing) or 'none'}")
+    assert not missing
+    if verify:
+        for sec in ["turnaround", "progression", "costume", "strip", "compare"]:
+            c = Counter(k for _, s, k, _ in LOG if s == sec)
+            dup = [k for k, v in c.items() if v > 1]
+            print(f"{sec:12s} tiles {sum(c.values()):2d}  unique {len(c):2d}  duplicates {dup or 'none'}  {sorted(c)}")
+        print("compare pairs:", ", ".join(f"{k}<-{d}" for _, s, k, d in LOG if s == "compare"))
+        for n in (1, 2, 3):
+            a = np.asarray(Image.open(f"output/tos_character_sheet_p{n}.jpg"), np.int16)
+            b = np.asarray(Image.open(f"work/verify/tos_character_sheet_p{n}.jpg"), np.int16)
+            print(f"p{n}: exported vs fresh render  size {a.shape == b.shape}  max pixel diff {int(np.abs(a - b).max())}")
 
 
 if __name__ == "__main__":
