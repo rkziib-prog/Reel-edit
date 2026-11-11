@@ -70,6 +70,10 @@ Updated: 2026-11-10
   drift: face slightly narrower with mild hollowing under the cheekbones, and very dark, sunken under-eyes add a
   few years. Verdict: ONE CORRECTION recommended (C6_v3), not approved yet.
 
+- C6_v3 (B6AA8B88) final review: face width and cheek fullness back to C5 / IMG_8749, no hollowing; nose, brow
+  shape and jawline match; natural age; exhaustion only through eyes (bloodshot, mild under-eyes, wet), lips, skin
+  sheen and damp hair; costume, beard, skin texture OK. Verdict: APPROVE (awaiting user sign-off).
+
 ## Remaining
 - [ ] User confirms the other 29 Malayalam lines -> lock screenplay
 - [ ] User generates panels in ChatGPT (A1 first), uploads <panel>_vN.png to Drive Edit -> I check each against the
@@ -81,5 +85,4 @@ Updated: 2026-11-10
 - [ ] Generate shots scene by scene, check continuity, assemble, subtitles, sound, master (1080p24)
 
 ## Next recommended step
-User decides: generate C6_v3 with the correction line (face width and cheeks as C5, milder under-eyes), or accept
-C6_v2. Then C7_v2.
+User signs off C6_v3. Then C7_v2 (oil lamp) from REDO_v2.md with approved C5 attached; upload for review.
