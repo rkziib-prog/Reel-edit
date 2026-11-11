@@ -41,7 +41,8 @@ Malayalam psychological thriller short, 4:28 (268 s), 16:9 1920x1080, 24 fps, AI
 - Video tool: Kling AI (user, iPad), image-to-video from ChatGPT keyframes built on the frozen panels; clips <= 10 s;
   never spend Kling credits without user OK. Tests first (5.7, 7.4, 3.1): https://claude.ai/artifact/4TxzAyd9mATow64pAEPbBS
 - Dialogue: user records Aadhi and Reflection; shots fit to the takes; lip-sync only where the mouth is clearly
-  visible. 29-line review: https://claude.ai/artifact/48jnz6JzsTKhmrHUfycwmD (never assume approval or change meaning).
+  visible. 29-line review: https://claude.ai/artifact/48jnz6JzsTKhmrHUfycwmD. ALL 31 LINES APPROVED and locked (11 Nov):
+  never change dialogue wording or subtitles without the user.
 - Dr. Thomas: Google Cloud TTS test first, samples shown before choosing (needs the user's API key).
 - Progress: `PROJECT_STATUS.md` (update at the end of every task: done, remaining, next step).
 - Locked decisions: English subtitles only (Malayalam is spoken, never on screen); smash exactly at 3:33.00

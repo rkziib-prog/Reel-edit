@@ -112,8 +112,13 @@ Updated: 2026-11-10
 - Test-shot doc (Kling workflow, splits for 2.3/3.3/3.5/6.7, Tests A 5.7 Line 18, B 7.4, C 3.1/K3, prompts,
   settings, review checklist): https://claude.ai/artifact/4TxzAyd9mATow64pAEPbBS
 
+- MALAYALAM DIALOGUE APPROVED by user (11 Nov), no wording changes; review doc updated (all 29 verdicts Approved):
+  Lines 1-17 approved as written; Line 18 locked earlier (10 Nov); Lines 19-29 approved as written; Line 30 locked
+  earlier (10 Nov); Line 31 covered by the Line 1 approval (intentional repetition). Malayalam and English subtitles
+  unchanged. All 31 lines locked; the screenplay dialogue is final.
+
 ## Remaining
-- [ ] User confirms the other 29 Malayalam lines -> lock screenplay
+- [x] User confirms the other 29 Malayalam lines -> lock screenplay (done 11 Nov)
 - [ ] User generates panels in ChatGPT (A1 first), uploads <panel>_vN.png to Drive Edit -> I check each against the
   originals -> assemble the sheet locally -> lock identity
 - [ ] Optional: right-wrist watch close-up photo (REF_06)
@@ -123,6 +128,6 @@ Updated: 2026-11-10
 - [ ] Generate shots scene by scene, check continuity, assemble, subtitles, sound, master (1080p24)
 
 ## Next recommended step
-User: review the 29 lines; record Line 18 (L18_aadhi.m4a); make keyframes 5.7, 7.4, 3.1 in ChatGPT and upload.
+Dialogue locked. User: record Line 18 (L18_aadhi.m4a); make keyframes 5.7, 7.4, 3.1 in ChatGPT and upload.
 Me: check keyframes against panels; on user OK they run the 3 Kling clips; I review and send a short test edit.
-No full production, no Kling credits spent without user approval.
+No video generation and no credits spent without user approval.
