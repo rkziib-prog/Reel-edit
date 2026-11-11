@@ -85,5 +85,8 @@ Updated: 2026-11-10
 - [ ] Generate shots scene by scene, check continuity, assemble, subtitles, sound, master (1080p24)
 
 ## Next recommended step
-User generates C7_v2 (oil lamp) from REDO_v2.md with approved C5 attached, uploads C7_v2.png; I review against
-IMG_8749 and C5 and report; no approval until the user reviews.
+C7_v2 uploaded (Drive 1eLJfMK6rpotTskBwa8DUocyU6Ekr7o3R, copy input/tos_panels/C7_1eLJfMK6.png) and reviewed
+(work/review_C7.jpg, work/review_C7_faces.jpg): old C7 drift fixed (brows, open eyes, nose, moustache, face width
+match C5/IMG_8749); amber lamp key frame-left, teal shadows; charcoal shirt matches. Recommended APPROVE; only
+nit: hair damper and more forward than C5. AWAITING USER REVIEW. After approval: assemble the character sheet
+from the approved panels (B3 optional redo) for sign-off.
