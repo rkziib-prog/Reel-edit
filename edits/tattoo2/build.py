@@ -9,6 +9,8 @@ CL = f"{R}/input/tattoo2/clips"
 W = f"{R}/work/tattoo2/build"
 os.makedirs(W, exist_ok=True)
 FPS = 30
+NOGRADE = "--nograde" in sys.argv          # v2+: user wants the original camera colour
+VER = "v2" if NOGRADE else "v1"
 FONT = "/usr/share/fonts/opentype/inter/Inter-ExtraBold.otf"
 
 GRADE = ("huesaturation=colors=b:saturation=-0.85:intensity=-0.35:strength=60,"
@@ -65,7 +67,7 @@ def segments():
         else:
             z = "1"
         vf = (f"setpts=(PTS-STARTPTS)/{sp},fps={FPS},scale=1080:1920,"
-              f"scale=w='trunc(1080*({z})/2)*2':h=-2:eval=frame,crop=1080:1920,{GRADE},{FIX_SEG.get(i, FIX.get(c, 'null'))},"
+              f"scale=w='trunc(1080*({z})/2)*2':h=-2:eval=frame,crop=1080:1920,{'null' if NOGRADE else GRADE + ',' + FIX_SEG.get(i, FIX.get(c, 'null'))},"
               f"tpad=stop_mode=clone:stop_duration=1,trim=end_frame={nf},setsar=1")
         af = f"asetpts=PTS-STARTPTS,atempo={sp}" if sp >= 0.5 else "asetpts=PTS-STARTPTS"
         if sp > 2:
@@ -78,7 +80,7 @@ def segments():
 
 def assets():
     # orange radial light leak (alpha = soft blob from the right edge)
-    run(f'ffmpeg -nostdin -v error -y -f lavfi -i color=c=0xff7a1a:s=1080x1920:d=1 -vf "format=rgba,'
+    run(f'ffmpeg -nostdin -v error -y -f lavfi -i color=c={'0xfff4e8' if NOGRADE else '0xff7a1a'}:s=1080x1920:d=1 -vf "format=rgba,'
         f"geq=r='r(X,Y)':g='g(X,Y)':b='b(X,Y)':a='255*exp(-((X-1150)*(X-1150)+(Y-700)*(Y-700))/(2*420*420))'\" "
         f'-frames:v 1 {W}/leak.png')
     # SFX synthesised with ffmpeg (stereo 48k)
@@ -113,7 +115,7 @@ def assemble(tag, with_music):
             "shadowcolor=black@0.75:shadowx=0:shadowy=5:" % FONT) + alpha
     txt = (line % ("WAIT FOR", "h*0.17")) + "," + (line % ("THE REVEAL", "h*0.17+140"))
     fc.append(f"[{last}]rgbashift=rh=-14:bh=14:enable='between(t,1.17,1.37)+between(t,5.18,5.28)',"
-              f"{txt},vignette=PI/5,noise=alls=5:allf=t,fade=t=out:st={END-0.6}:d=0.6,format=yuv420p[vout]")
+              f"{txt},{'null' if NOGRADE else 'vignette=PI/5,noise=alls=5:allf=t'},fade=t=out:st={END-0.6}:d=0.6,format=yuv420p[vout]")
 
     # audio: music + needle bed (process clips, low) + sfx
     sfx_in, mixes = [], []
@@ -134,7 +136,7 @@ def assemble(tag, with_music):
           + f"[mu][bed]{labels}amix={2+len(mixes)}:normalize=0:duration=first,"
           + ("loudnorm=I=-14:TP=-1:LRA=11" if with_music else "alimiter=limit=0.7") + ",aresample=48000[aout]")
     music_in = f"-i {R}/input/tattoo2/audio/track.mp4"
-    out = f"{R}/output/tattoo2_reel_v1{tag}.mp4"
+    out = f"{R}/output/tattoo2_reel_{VER}{tag}.mp4"
     run(f'ffmpeg -nostdin -v error -y -i {W}/cat.mov {leak_in} {music_in} {" ".join(sfx_in)} '
         f'-filter_complex "{";".join(fc)};{fa}" -map "[vout]" -map "[aout]" -t {END} '
         f'-c:v libx264 -preset slow -crf 21 -profile:v high -r {FPS} -c:a aac -b:a 160k -movflags +faststart {out}')
