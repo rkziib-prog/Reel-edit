@@ -38,6 +38,11 @@ Malayalam psychological thriller short, 4:28 (268 s), 16:9 1920x1080, 24 fps, AI
   from `edits/the-other-side/character_sheet.py` (`--verify` re-checks it): APPROVED 11 Nov.
 - Editing execution plan (Claude Docs, shot-by-shot edit spec): https://claude.ai/artifact/WqHq7p9THMuo4WZEjYt2FT.
   No assembly or rendering until the user approves it and each gate in it.
+- Video tool: Kling AI (user, iPad), image-to-video from ChatGPT keyframes built on the frozen panels; clips <= 10 s;
+  never spend Kling credits without user OK. Tests first (5.7, 7.4, 3.1): https://claude.ai/artifact/4TxzAyd9mATow64pAEPbBS
+- Dialogue: user records Aadhi and Reflection; shots fit to the takes; lip-sync only where the mouth is clearly
+  visible. 29-line review: https://claude.ai/artifact/48jnz6JzsTKhmrHUfycwmD (never assume approval or change meaning).
+- Dr. Thomas: Google Cloud TTS test first, samples shown before choosing (needs the user's API key).
 - Progress: `PROJECT_STATUS.md` (update at the end of every task: done, remaining, next step).
 - Locked decisions: English subtitles only (Malayalam is spoken, never on screen); smash exactly at 3:33.00
   (frame 5112); realistic sound design, a subtle drone only in Scenes 4-5; watch on the RIGHT wrist and right

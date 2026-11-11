@@ -101,6 +101,17 @@ Updated: 2026-11-10
   music (none; drone Sc4-5 only), VFX, subtitles, masters, gates. Found: 13 production-plan prompts still say
   "steel watch" (1.2 1.7 1.8 2.1 2.3 4.5 5.2b 5.3 5.9 6.5 6.6 7.2 7.5): fix only with user OK.
 
+- User decisions (11 Nov): Kling AI = video tool (image-to-video from ChatGPT keyframes made with the frozen
+  panels; clips planned <= 10 s; Kling 4.0 reported 3-30 s, 3.0 up to 15 s, unverified: kling.ai blocked here);
+  Dr. Thomas = Google Cloud TTS test first (key form declined: waiting; user can add a network secret for
+  texttospeech.googleapis.com, header X-Goog-Api-Key); user records Aadhi + Reflection, shots fit to takes,
+  lip-sync only where the mouth is clearly visible; no background score (drone Sc4-5 only); panels frozen.
+- Production plan: the 13 "steel watch" prompts changed to "black digital watch" (0 "steel" left; nothing else).
+- Malayalam dialogue review doc (29 lines, restored vs PDF text, verdict dropdowns, nothing assumed approved):
+  https://claude.ai/artifact/48jnz6JzsTKhmrHUfycwmD
+- Test-shot doc (Kling workflow, splits for 2.3/3.3/3.5/6.7, Tests A 5.7 Line 18, B 7.4, C 3.1/K3, prompts,
+  settings, review checklist): https://claude.ai/artifact/4TxzAyd9mATow64pAEPbBS
+
 ## Remaining
 - [ ] User confirms the other 29 Malayalam lines -> lock screenplay
 - [ ] User generates panels in ChatGPT (A1 first), uploads <panel>_vN.png to Drive Edit -> I check each against the
@@ -112,6 +123,6 @@ Updated: 2026-11-10
 - [ ] Generate shots scene by scene, check continuity, assemble, subtitles, sound, master (1080p24)
 
 ## Next recommended step
-User reviews the editing execution plan. Then, in order: fix the 13 watch prompts (with OK), user decides video tool,
-Dr. Thomas voice, dialogue recording, and confirms the 29 Malayalam lines; optional animatic; plates scene by scene.
-No assembly or rendering before approval.
+User: review the 29 lines; record Line 18 (L18_aadhi.m4a); make keyframes 5.7, 7.4, 3.1 in ChatGPT and upload.
+Me: check keyframes against panels; on user OK they run the 3 Kling clips; I review and send a short test edit.
+No full production, no Kling credits spent without user approval.
