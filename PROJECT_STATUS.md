@@ -126,6 +126,12 @@ Updated: 2026-11-10
   1.4, 7.7; phone 3.3-3.6, 6.7; text 4.2-4.4. NEEDS CONFIRMATION: none. Overhangs: 2b +0.2 s into 1.5, 22b +0.6 s
   into 5.12 (planned), 23b +0.2 s into 5.14, 29 +0.7 s into 6.8. Dialogue, shot order and durations unchanged.
 
+- TEST SHOT 5.7 PACKAGE ready (11 Nov, preparation only): edits/the-other-side/tests/SHOT_5.7_TEST_PACKAGE.md +
+  reference strip output/tos_5.7_reference_set.jpg. Attach: Identity Board V2, A1, A2, B4, C5, C7_v2 (frozen; sha256
+  checked; C4 only if hands show). Keyframe = instant before the shout (better for Kling lip-sync); Kling 5 s, 1080p,
+  audio off; Line 18 lip-sync checkpoints (pp closure, final aa) within 2 frames; full QC checklist. Test doc Test A
+  points to the package. Nothing generated, no credits spent.
+
 ## Remaining
 - [x] User confirms the other 29 Malayalam lines -> lock screenplay (done 11 Nov)
 - [ ] User generates panels in ChatGPT (A1 first), uploads <panel>_vN.png to Drive Edit -> I check each against the
@@ -137,6 +143,5 @@ Updated: 2026-11-10
 - [ ] Generate shots scene by scene, check continuity, assemble, subtitles, sound, master (1080p24)
 
 ## Next recommended step
-Dialogue locked. User: record Line 18 (L18_aadhi.m4a); make keyframes 5.7, 7.4, 3.1 in ChatGPT and upload.
-Me: check keyframes against panels; on user OK they run the 3 Kling clips; I review and send a short test edit.
-No video generation and no credits spent without user approval.
+User: record Line 18 (L18_aadhi.m4a) and make the 5.7 keyframe in ChatGPT (5.7_key_v1.png) from the package; upload.
+Me: run the keyframe checklist. Kling only on explicit user OK. Then tests 7.4 and 3.1 the same way.
