@@ -80,6 +80,14 @@ Updated: 2026-11-10
   A8 020E8ADD, B1 C70DA14A, B2 772986A4, B4 05C021BC, B5_v2 B5_1RU_e6JO, C1 92B8149B, C2 D86B337D, C3 A51F5074,
   C4 5B48BC7A, C5 C735A6EB, C6_v3 C6_1Fdez8s5, C7_v2 C7_1eLJfMK6, C8 8E112F8E.
 
+- Character identity sheet V1 (13 panels) reviewed by user; asked to add B2, B4, C1-C4, C8.
+- Character identity sheet V2 (11 Nov): all 20 approved panels, frozen files, crop and scale only (script asserts
+  20/20 placed and 20/20 compared). p1 turnaround A1-A8 + C1-C3; p2 emotional progression in plan-doc story order
+  (B1 baseline -> C7_v2 Sc1-2 -> B2 Sc3-4 -> B4 Sc5 -> C6_v3 Sc5 reflection -> C8 Sc6 -> B5_v2 Sc7), costume and watch
+  continuity (C4 + C1/C2/C3 wrist crops: watch on his RIGHT wrist in all; C5 pocket on LEFT chest), hair strip of 19
+  panels; p3 all 20 panels vs originals (face match 0.73-0.96 over 17 face panels, median 0.86; A8/C3 back views,
+  C4 watch vs IMG_8843).
+
 ## Remaining
 - [ ] User confirms the other 29 Malayalam lines -> lock screenplay
 - [ ] User generates panels in ChatGPT (A1 first), uploads <panel>_vN.png to Drive Edit -> I check each against the
@@ -91,6 +99,5 @@ Updated: 2026-11-10
 - [ ] Generate shots scene by scene, check continuity, assemble, subtitles, sound, master (1080p24)
 
 ## Next recommended step
-Complete character identity sheet built (output/tos_character_sheet_p1-3.jpg, edits/the-other-side/character_sheet.py)
-from the user's list (A1-A5, A6_v3, A7_v2, A8, B1, B5_v2, C5, C6_v3, C7_v2). AWAITING USER SIGN-OFF. No video editing
-until approved.
+Revised character identity sheet V2 (output/tos_character_sheet_p1-3.jpg, all 20 panels) sent for FINAL SIGN-OFF.
+No video editing until the user approves it.
