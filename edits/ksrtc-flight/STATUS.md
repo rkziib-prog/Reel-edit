@@ -16,4 +16,7 @@ Done
 Remaining
 - User feedback on v1. No music yet (can be added in Instagram).
 
-Next step: wait for the user's notes on v1.
+- v2: `output/ksrtc_plane_speed_v2.mp4` (60.0 s, -14.0 LUFS), voice = user's ElevenLabs "Akhil" recording
+  (`input/ksrtc/voice_akhil_el.mp3`, kept with its own pacing; timing from `timeline_el.py`); sent to the user.
+
+Next step: wait for the user's notes on v2.
