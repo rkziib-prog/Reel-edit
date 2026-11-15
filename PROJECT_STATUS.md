@@ -193,6 +193,9 @@ Updated: 2026-11-10
   edits/the-other-side/tests/SHOT_5.7_V2_REVIEW.md with a v3 prompt fix. Original C55A5E62 unchanged, still approved.
   Readiness doc corrected (original yaw +6.9, not -5). No video, no credits.
 
+- 15 Nov re-check: no new keyframe uploaded. The v2 file (Drive id 19OCPNtkPNOdKR-X_C1YvGsiHnK2-3NBp, byte-identical) was
+  renamed in Drive to "5.7_key_v1.png" at 17:04; it is still the PROPOSED v2, not the approved original. Review unchanged.
+
 ## Remaining
 - [x] User confirms the other 29 Malayalam lines -> lock screenplay (done 11 Nov)
 - [ ] User generates panels in ChatGPT (A1 first), uploads <panel>_vN.png to Drive Edit -> I check each against the

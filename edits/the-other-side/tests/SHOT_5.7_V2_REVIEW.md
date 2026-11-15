@@ -8,7 +8,7 @@ version. No video, no Kling credits.
 | Approved original | `C55A5E62-52B4-4F3F-B83F-1E5265C1E023.png` | Drive Edit (id `1OSS-agAWJRjwaVxalzPehxnasD0VNp4Y`); read-only copy `input/tos_keyframes/` | `e9d3a28fd9f959e4…` (unchanged) |
 | Proposed v2 | `086CA352-00B1-4BCA-A7A9-7428FAE0BDA0.png` | Drive Edit (id `19OCPNtkPNOdKR-X_C1YvGsiHnK2-3NBp`, uploaded 15 Nov 17:03); read-only copy `input/tos_keyframes/` | `4f45300c32c58797…` |
 
-No file named `5.7_key_v2.png` exists in Drive. The v2 above is the only image uploaded after the correction brief;
+**Update 15 Nov 17:04:** this same Drive file (same id, byte-identical, sha256 `4f45300c32c58797…`) was renamed to **`5.7_key_v1.png`**. It is still the proposed v2 (the corrected version), not the approved original; the name `v1` may cause confusion with the original `C55A5E62…png`. No new image has been uploaded since; no file named `5.7_key_v2.png` exists. The v2 above is the only image uploaded after the correction brief;
 **please confirm it is your v2.**
 
 Sheets: `output/tos_5.7_v2_comparison.jpg` (full frames + Identity Board V2, A2, B4) and `output/tos_5.7_v2_faces.jpg`
