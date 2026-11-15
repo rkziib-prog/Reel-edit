@@ -62,6 +62,18 @@ Malayalam psychological thriller short, 4:28 (268 s), 16:9 1920x1080, 24 fps, AI
 8. Keep this file current with every important project instruction.
 9. No generating footage, building the dashboard or rendering until the user approves each step.
 
+## Pathira Chinthakal (new Instagram account, AI/cartoon "what if" reels)
+
+Kerala-style absurd "what if" stories, ~50 s, Malayalam AI narration + English subtitles, inside a vertical frame
+(night background, "2 AM ചിന്തകൾ 🌙" caption, 16:9 card, handle `@pathira.chinthakal` (placeholder name)). Format inspired by
+a reference reel the user shared; keep our own frame and captions, never copy that page's look.
+- Reel #1 "KSRTC at plane speed": script APPROVED (15 lines, `edits/ksrtc-flight/lines.tsv`). Status: `edits/ksrtc-flight/STATUS.md`.
+- Animation: user chose 2D cartoon made by me (`animations/ksrtc-flight/`, clawd-animation kit). Local kit patches there:
+  `PROJECT.density` (.5 = half-res painting, ~2.5 s/frame instead of ~8), page-ready timeout 400 s. Render on twos:
+  `--frames --fps=12 --workers=2`, then `--encode --fps=12`. Full-res frames are slow because SwiftShader paints them.
+- Voice: user chose free Meta MMS Malayalam TTS (`edits/ksrtc-flight/tts_sample.py`); needs torch (CPU), transformers, scipy.
+- Layers: `overlays.py <dir>` (frame + subtitle PNGs via Chromium, needs python playwright), `compose.sh` (card + subs + voice).
+
 ## Skills
 
 Vendored in `.claude/skills/` (load automatically):
