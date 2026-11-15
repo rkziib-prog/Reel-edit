@@ -136,6 +136,16 @@ Updated: 2026-11-10
   record it here and in tests/SHOT_5.7_TEST_PACKAGE.md). Frozen identity references unchanged. Kling animation prompt
   and Line 18 lip-sync requirements stay ready in the package. No video generated, no Kling credits spent.
 
+- AADHI VOICE (15 Nov): user approved the ElevenLabs male voice sample as Aadhi's official voice reference. File: Drive
+  Audio `L18_Aadhi_Take01.mp3.m4a` (id 15MY1qZ-C7EM5Jp-BjRSqrPRMfoiAv4NV), Line 18 take 1; duplicate
+  `Poojaveli Thuruthan Kaval Road.m4a` has identical audio. Frozen read-only copies in input/tos_voice/ (unmodified).
+  Measured: speech 1.74 s, median f0 ~142 Hz, -23.3 LUFS; earshot: "an angry man shouting" strong (z +4.2), real voice.
+  Plan: edits/the-other-side/AADHI_VOICE_CONTINUITY.md (18 Aadhi events incl. Real Aadhi L31, emotion bands, identity
+  lock, per-line checklist, Shot 5.7 / Line 18 lip-sync test using the reference take: trim 0.27-2.41 s, speech at
+  3:02.20). Reflection and Dr. Thomas separate voices (user). OPEN: ElevenLabs voice ID/model/settings to record;
+  licence check; story decision: Reflection = real Aadhi, so (a) same voice for Reflection, or (b) Line 31 in the
+  Reflection voice. No audio or video generated, no credits spent.
+
 ## Remaining
 - [x] User confirms the other 29 Malayalam lines -> lock screenplay (done 11 Nov)
 - [ ] User generates panels in ChatGPT (A1 first), uploads <panel>_vN.png to Drive Edit -> I check each against the
@@ -147,6 +157,5 @@ Updated: 2026-11-10
 - [ ] Generate shots scene by scene, check continuity, assemble, subtitles, sound, master (1080p24)
 
 ## Next recommended step
-User: send the approved 5.7 keyframe location (Drive file or link) and record Line 18 (L18_aadhi.m4a).
-Me: record the location, copy the keyframe read-only to input/tos_keyframes/, run the package's keyframe checklist as a
-record. Kling 5.7 clip only on explicit user OK to spend credits.
+User: send the 5.7 keyframe location; record the ElevenLabs voice ID/model/settings; choose (a)/(b)/keep for the
+Reflection voice. Then, on explicit OK for credits: Kling 5.7 clip, then Kling Lip Sync with the Line 18 reference take.
