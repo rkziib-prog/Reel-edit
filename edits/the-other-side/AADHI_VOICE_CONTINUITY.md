@@ -6,23 +6,41 @@ by script from `edits/the-other-side/DIALOGUE_SHOT_MAP.md`.
 
 ## 1. Approved voice reference (Aadhi)
 
+**Correction (15 Nov):** the first version of this plan named `L18_Aadhi_Take01.mp3.m4a` as the ElevenLabs reference.
+That was wrong. The ElevenLabs sample is the file uploaded today at 16:03 (below). The L18 m4a, and its duplicate
+`Poojaveli Thuruthan Kaval Road.m4a` (an iPhone Voice Memos place-name title), is a recorded human take of Line 18;
+it stays preserved and is not the voice reference.
+
 | | |
 | --- | --- |
-| Status | **APPROVED by the user (15 Nov) as Aadhi's official voice reference**: ElevenLabs male voice |
-| Drive file (Audio folder) | `L18_Aadhi_Take01.mp3.m4a` · id `15MY1qZ-C7EM5Jp-BjRSqrPRMfoiAv4NV` · uploaded 11 Nov 13:34 |
-| Duplicate in Drive | `Poojaveli Thuruthan Kaval Road.m4a` (id `1pPdzG_Oz6JCrnzof0WCUdcggnJKY6pq9`): **identical audio** (decoded PCM matches); only the file's creation-time tag differs (13:31 vs 13:34). Treated as the same take; the L18 file is the reference |
-| Frozen local copy | `input/tos_voice/L18_Aadhi_Take01.mp3.m4a`, read-only, 25,619 bytes, sha256 `4a52a2659cb0ac98…` (file), decoded audio `3c61bb618b27e9e6…` |
-| Content | Line 18, എന്റെ വീട്ടീന്ന് ഇറങ്ങിപ്പോടാ! (so the reference is also Line 18 take 1) |
-| Format | AAC-LC in M4A, mono, 44.1 kHz, ~69 kbps, 2.95 s (the `.mp3.m4a` name suggests an ElevenLabs MP3 converted to M4A) |
-| Measured (my analysis) | speech 0.47–2.21 s (1.74 s) after a short click at 0.03 s · median pitch ~142 Hz (10th–90th percentile 93–172 Hz) · −23.3 LUFS integrated, −5.7 dBFS peak · pauses at 1.38–1.46 s and 1.72–1.77 s |
-| Listening check (earshot) | earshot hears 'an angry man shouting': strong (z +4.2; 95% vs calm man / woman shouting / frightened whisper); against 'synthetic text-to-speech voice' it reads as a real recorded human voice (>99%); noise floor −44.4 dBFS. Matches Line 18's Angry band |
+| Status | **APPROVED by the user (15 Nov) as Aadhi's official voice reference** |
+| Drive file (Audio folder) | `ElevenLabs_2026-11-15T15_54_09_Abhilash S - Fun, Encouraging Friend_pvc_s50_sim99_v4.mp3` · id `1mjhQ2UgRC_6eOTTQOr2SdczVhP7b7jYP` · uploaded 15 Nov 16:03 |
+| Frozen local copy | `input/tos_voice/ElevenLabs_2026-11-15T15_54_09_Abhilash_S_pvc_s50_sim99_v4.mp3` (spaces and the comma removed from the local name only), read-only, 44,522 bytes, sha256 `3d7143de9756b840…` |
+| Voice (from the file name) | ElevenLabs Voice Library voice **"Abhilash S - Fun, Encouraging Friend"**, a Professional Voice Clone (`pvc`). `s50` and `sim99` read as stability 50 and similarity 99 in ElevenLabs' download names; `v4` is not decodable from the name; please confirm the model and any style/speed settings |
+| Content | Please confirm which words it speaks. Its two speech phrases (0.09–0.65 s and 0.66–1.38 s) fit Line 18's shape (എന്റെ വീട്ടീന്ന് / ഇറങ്ങിപ്പോടാ!), but I cannot read Malayalam words from audio reliably |
+| Format | MP3, 128 kbps, mono, 44.1 kHz, 1.72 s |
+| Measured (my analysis) | speech 0.09–1.38 s (1.29 s) · median pitch ~216 Hz (10th–90th percentile 150–278 Hz), a shouted register · −14.2 LUFS (earshot), −17.7 LUFS integrated (ffmpeg), −2.5 dBFS peak, noise floor −40 dBFS |
+| Listening check (earshot) | 'an angry man shouting': plausible (z +2.8; 99% vs calm man / woman shouting / frightened whisper). 'A synthetic text-to-speech voice': **strong** (z +4.3; 94% vs a real recorded voice). Closest overall descriptions: 'funk music', 'celebratory and joyful music' (z +3.1), 'cheerful ukulele music' (z +2.7) |
 
-The file is never edited, re-encoded or renamed. Every trim or conversion for the edit is a new file in `work/`.
+**What the measurements flag (for your judgement, not a verdict on taste):** the voice reads as synthetic, and its
+overall character leans cheerful, consistent with its library name "Fun, Encouraging Friend". For a dark thriller,
+check by ear that the anger reads as menace, not energy. The recorded human take of Line 18 measured the opposite:
+a strong 'angry man shouting' (z +4.2) and a real voice (>99%). If the generated lines keep reading bright, an
+ElevenLabs voice with a darker default character, or speech-to-speech driven by your own takes, may hold the tone
+better. I change nothing without your decision.
 
-**Please record for repeatability** (I could not read these from the file): the ElevenLabs voice name or ID, the model,
-the voice settings used (stability, similarity, style, speaker boost, speed) and the language setting. Every later
-Aadhi line must use exactly these. Also confirm the voice's licence on your ElevenLabs plan allows use in the film,
-and, if it is a cloned voice, that its owner consented. (earshot cannot check licence or provenance.)
+The reference file is never edited, re-encoded or renamed (only the local copy's name drops spaces). Every trim or
+conversion for the edit is a new file in `work/`.
+
+**Please record for repeatability:** the model used (the `v4` in the name?), any style, speed and speaker-boost
+settings, and the language setting. Every later Aadhi line must use exactly these. Also confirm that your ElevenLabs
+plan allows this Voice Library voice in the film (Voice Library voices carry their own sharing terms). earshot cannot
+check licence or provenance.
+
+**Also preserved (not the reference):** `L18_Aadhi_Take01.mp3.m4a` (Drive id `15MY1qZ-C7EM5Jp-BjRSqrPRMfoiAv4NV`, local
+read-only, sha256 `4a52a2659cb0ac98…`), a recorded take of Line 18 in a different, lower voice (median ~142 Hz, 1.74 s
+of speech). The duplicate `Poojaveli Thuruthan Kaval Road.m4a` has identical audio. Useful only as a timing and
+emotion guide if you want it; tell me if it should be used or set aside.
 
 ## 2. Voice identity lock (all Aadhi lines)
 
@@ -32,8 +50,8 @@ Fixed for every line, never changed between lines:
   approved (paste from this file, never retype).
 - **Accent and language:** Kerala Malayalam, the reference's accent; no English-accented vowels; pronunciation of
   ആദി (Aadhi), the conjuncts and doubled consonants (ട്ട, ന്ന, പ്പ) as in natural speech.
-- **Pitch:** the speaker's natural register. The reference is a shout; calm and whispered lines should sit lower and
-  narrower. I measure every take's median and range and flag any line whose register jumps against its neighbours in
+- **Pitch:** the speaker's natural register. The reference is a shout (median ~216 Hz); calm and whispered lines should
+  sit lower and narrower. I measure every take's median and range and flag any line whose register jumps against its neighbours in
   the same scene.
 - **Tone and style:** one man throughout: dry, close, unperformed; the emotion changes, the voice does not.
 - **Delivery format:** download each line as its own file at the best quality your plan gives (WAV or the highest MP3);
@@ -111,16 +129,16 @@ choose (a), (b) or keep as is.
 
 ## 6. First lip-sync test: Shot 5.7, Line 18
 
-Uses the approved take itself; the full shot package is `edits/the-other-side/tests/SHOT_5.7_TEST_PACKAGE.md`
+Uses the approved ElevenLabs voice. The full shot package is `edits/the-other-side/tests/SHOT_5.7_TEST_PACKAGE.md`
 (keyframe approved 11 Nov, location pending).
 
 | | |
 | --- | --- |
-| Audio for lip-sync | `L18_Aadhi_Take01.mp3.m4a` (approved reference) |
-| Trim for Kling Lip Sync | 0.27–2.41 s of the take (0.2 s before and after the speech; removes the 0.03 s click) → a new file, `work/tos/L18_aadhi_lipsync_trim.wav`, made only when you start this step |
-| Placement in the film | speech starts at 3:02.20 (plan) → take offset 0.47 s at 3:01.73; speech ends ≈3:03.94, inside the 3:02.0–3:05.0 slot and before Line 19 at 3:05.2 |
-| Plan vs take | plan window 3:02.2–3:04.4 (2.2 s); take speech 1.74 s; fits, nothing to re-time |
-| Mouth checkpoints | the package's seven; the take's pauses at 1.38–1.46 s and 1.72–1.77 s are likely word and consonant boundaries, the second a candidate for the പ്പ lip closure, to be confirmed against the picture |
-| Order | keyframe location recorded → your OK for Kling credits → `5.7_v1.mp4` → Kling Lip Sync with the trim → `5.7_v1_lipsync.mp4` → my check (±2 frames on the checkpoints) → flip, grade, mix, subtitle → your review |
+| Audio for lip-sync | the approved reference file, **if you confirm it speaks Line 18 exactly** (എന്റെ വീട്ടീന്ന് ഇറങ്ങിപ്പോടാ!). If it speaks other words, Line 18 must be generated in this voice with the same settings (needs your OK; no credits spent until then) |
+| Trim for Kling Lip Sync | 0.00–1.58 s of the file (0.09 s lead-in, the whole speech, 0.2 s after) → a new file, `work/tos/L18_aadhi_lipsync_trim.wav`, made only when you start this step |
+| Placement in the film | speech start at 3:02.20 (plan) → file offset 0.09 s at 3:02.11; speech ends ≈3:03.49, inside the 3:02.0–3:05.0 slot, well before Line 19 at 3:05.2 |
+| Plan vs take | plan window 3:02.2–3:04.4 (2.2 s); this take speaks for 1.29 s, about 0.9 s shorter. The shot is fitted to the take: the remaining ~1.5 s of 5.7 carries his breathing after the shout, as the Kling prompt already asks. No shot-length change needed |
+| Mouth checkpoints | the package's seven; the take's phrase break at 0.65–0.66 s is the likely boundary between വീട്ടീന്ന് and ഇറങ്ങിപ്പോടാ; the പ്പ lip closure falls inside the second phrase, to be found against the picture |
+| Order | you confirm the words → keyframe location recorded → your OK for Kling credits → `5.7_v1.mp4` → Kling Lip Sync with the trim → `5.7_v1_lipsync.mp4` → my check (±2 frames on the checkpoints) → flip, grade, mix, subtitle → your review |
 
 Nothing in this section is run until you approve each step.

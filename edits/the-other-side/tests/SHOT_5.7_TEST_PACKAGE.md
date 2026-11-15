@@ -10,7 +10,7 @@ prompt blocks, Scene 5 light), Dialogue Shot Map (Line 18 row), frozen character
 | --- | --- |
 | Keyframe `5.7_key_v1.png` | **APPROVED by the user (11 Nov), visual approval.** Approved image location: _pending, the user will provide it_ |
 | My keyframe checklist (section 6) | To run as a record once the file location is provided; the approval stands as given |
-| Line 18 audio | **Received and approved (15 Nov):** the ElevenLabs Aadhi voice take `L18_Aadhi_Take01.mp3.m4a`, also Aadhi's voice reference; frozen in `input/tos_voice/`. Lip-sync trim and placement in `AADHI_VOICE_CONTINUITY.md` section 6 |
+| Line 18 audio | Approved Aadhi voice = the ElevenLabs file `ElevenLabs_2026-11-15T15_54_09_Abhilash S …_pvc_s50_sim99_v4.mp3` (15 Nov), used for lip-sync if you confirm it speaks Line 18 exactly. Trim and placement: `AADHI_VOICE_CONTINUITY.md` section 6. (`L18_Aadhi_Take01.mp3.m4a` is a recorded human take, preserved, not the reference) |
 | Kling clip `5.7_v1.mp4` | NOT generated; waits for the user's explicit OK to spend credits. Prompts in section 3, ready |
 | Lip-sync `5.7_v1_lipsync.mp4` | Not started; needs the clip and the Line 18 take. Requirements in section 4, ready |
 | Identity references | Unchanged: the six frozen files in section 1 stay the references for every later stage |
