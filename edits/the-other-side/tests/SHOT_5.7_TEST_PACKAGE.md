@@ -8,7 +8,7 @@ prompt blocks, Scene 5 light), Dialogue Shot Map (Line 18 row), frozen character
 
 | Stage | State |
 | --- | --- |
-| Keyframe | **No keyframe approved yet for the test.** v4 `5.7_key_v4.png` reviewed (awaiting decision). **v5 prompt APPROVED (15 Nov), ready for image editing:** `SHOT_5.7_V5_PROMPT.md` (edit of v4: lamp and lamp-side light back to the original); output `5.7_key_v5.png`. v4, v3 and the original `C55A5E62-…png` unchanged |
+| Keyframe | **No keyframe approved yet for the test.** Candidates: v5 `5.7_key_v5.png` (17:56; lamp and lamp-side light restored; identity vs v4 0.86; review `SHOT_5.7_V5_REVIEW.md`) and v4 `5.7_key_v4.png` (`SHOT_5.7_V4_REVIEW.md`). Awaiting your decision. v4, v3 and the original `C55A5E62-…png` unchanged |
 | My keyframe checklist (section 6) | To run as a record once the file location is provided; the approval stands as given |
 | Line 18 audio | Approved Aadhi voice = the ElevenLabs file `ElevenLabs_2026-11-15T15_54_09_Abhilash S …_pvc_s50_sim99_v4.mp3` (15 Nov), used for lip-sync if you confirm it speaks Line 18 exactly. Trim and placement: `AADHI_VOICE_CONTINUITY.md` section 6. (`L18_Aadhi_Take01.mp3.m4a` is a recorded human take, preserved, not the reference) |
 | Kling clip `5.7_v1.mp4` | NOT generated; waits for the user's explicit OK to spend credits. Prompts in section 3, ready |

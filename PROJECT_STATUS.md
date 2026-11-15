@@ -235,6 +235,15 @@ Updated: 2026-11-10
   awaiting decision). v4 (4e185d7e71426919) and the original (e9d3a28fd9f959e4) unchanged. No image or video generated,
   no credits.
 
+- SHOT 5.7 KEYFRAME v5 REVIEWED (15 Nov, separate CANDIDATE, NOT approved): Drive Edit 5.7_key_v5.png (id
+  1uat9Zsp4Zae8O8hhDHe3RoOzT30jSSUo, 17:56), read-only copy input/tos_keyframes/5.7_key_v5.png (e5bf340c8de5696c).
+  RESTORED: lamp size/position (tall chimney at the right edge, top cropped) and warm key on the lamp side (lamp/far
+  side ratio 1.12 = original). PRESERVED from v4: identity (0.86 vs v4), face shape 1.10, head -31.3 / roll -1.0, eyes to
+  the mirror, lips 0.17, chin 0.38, beard, hair, shirt, framing. REMAINING: face-match vs A1/A2 slightly below v4
+  (0.53/0.59 vs 0.59/0.65; likely the harder side light); lamp glow brighter than the original (4.3% vs 2.8% of
+  frame, fixable in grade); head left of centre (kept by choice). Review: SHOT_5.7_V5_REVIEW.md. v4 and the original
+  unchanged. No video, no credits.
+
 ## Remaining
 - [x] User confirms the other 29 Malayalam lines -> lock screenplay (done 11 Nov)
 - [ ] User generates panels in ChatGPT (A1 first), uploads <panel>_vN.png to Drive Edit -> I check each against the
@@ -246,5 +255,5 @@ Updated: 2026-11-10
 - [ ] Generate shots scene by scene, check continuity, assemble, subtitles, sound, master (1080p24)
 
 ## Next recommended step
-User: run the approved v5 prompt in ChatGPT and upload 5.7_key_v5.png to Drive Edit. Me: compare v5 with v4, the original,
-A1/A2 using the prompt's acceptance checks; user approves a keyframe. Kling only after that and an explicit credit OK.
+User: decide the Shot 5.7 keyframe: approve v5, approve v4, or another adjustment. Then Kling 5.7 clip + Lip Sync only
+on an explicit OK to spend credits.

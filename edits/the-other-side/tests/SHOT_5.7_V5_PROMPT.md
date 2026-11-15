@@ -64,3 +64,5 @@ Avoid: a different face, a thinner or longer face, hollow cheeks, an older look,
 Note: relighting can tempt ChatGPT to redraw the face. If v5 shifts the face, v4 stays available as it is.
 
 Nothing is generated until you approve this prompt and say go.
+
+**Result (15 Nov):** `5.7_key_v5.png` received and reviewed: see `SHOT_5.7_V5_REVIEW.md`. Not approved yet.
