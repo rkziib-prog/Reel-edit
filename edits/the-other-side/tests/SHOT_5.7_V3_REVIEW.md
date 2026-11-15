@@ -1,6 +1,49 @@
 # THE OTHER SIDE — Shot 5.7 keyframe v3: comparison record (15 Nov)
 
-**Status: v3 is the CURRENT APPROVED keyframe (user approval, 15 Nov).** Approval is the user's decision and stands;
+## UPDATE 15 Nov 17:27: Drive changed; v3 status back to AWAITING YOUR APPROVAL
+
+- The 17:11 file reviewed below (Drive id `1QCOcDkXnH3pOK5F_x7G-kiEwCoDLXIHv`, sha256 `b1798599caabd250…`) is now **in
+  the Drive trash**. My local read-only copy keeps the name `input/tos_keyframes/5.7_key_v3.png`; it is that trashed
+  image, called "trashed 17:11 v3" here.
+- The file now named **`5.7_key_v3.png`** in Drive Edit (id `19OCPNtkPNOdKR-X_C1YvGsiHnK2-3NBp`, renamed 17:27) is
+  **byte-identical to the v2 image** (sha256 `4f45300c32c58797…`; first uploaded 17:03 as `086CA352…png`, then renamed
+  `5.7_key_v1.png`, now `5.7_key_v3.png`).
+- Approval is not recorded for either until you confirm. The original `C55A5E62…png` is unchanged
+  (`e9d3a28fd9f959e4…`).
+
+### Comparison of the current Drive `5.7_key_v3.png` (the v2 image)
+
+Face-match is support only; geometry ratios come from 106 face landmarks and shift with head angle and expression.
+
+| | Yaw | vs A1 | vs A2 | vs original | Face width / height | Mouth-to-chin / face height | Mouth width / eye distance | Lip opening / face height |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Original | +6.9° | 0.63 | 0.55 | 1.00 | 1.05 | 0.43 | 0.80 | 0.28 (shouting) |
+| **Current `5.7_key_v3.png`** | **+13.7°** | **0.60** | **0.53** | **0.86** | 1.12 | 0.39 | 0.78 | 0.17 |
+| Trashed 17:11 v3 | −27.3° | 0.40 | 0.41 | 0.59 | 1.13 | 0.39 | 0.78 | 0.14 |
+| A1 (front) | +1.5° | 1.00 | 0.78 | 0.63 | 1.19 | 0.43 | 0.85 | 0.14 |
+| A2 (three-quarter left) | −35.9° | 0.78 | 1.00 | 0.55 | 1.11 | 0.40 | 0.81 | 0.16 |
+| B4 (anger) | +0.4° | 0.85 | 0.73 | 0.70 | 1.17 | 0.40 | 0.77 | 0.13 |
+
+| Check | Current `5.7_key_v3.png` | Result |
+| --- | --- | --- |
+| Facial identity | 0.60 vs A1, 0.53 vs A2, 0.86 vs the original: same level as the approved original, far better than the trashed v3 (0.40). By eye the same man as the original: brows, nose, beard, moustache, hairline | ✅ (same as the original) |
+| Face shape | width/height 1.12: between A2 (1.11, same turn) and A1 (1.19); slightly narrower than A1, as the original's furrow and wet hair also make it | ✅ within range |
+| Lips | closed, lips just parted (0.17), close to A1/A2 at rest (0.14–0.16); mouth width matches B4's anger (0.78 vs 0.77) | ✅ |
+| Chin and lower face | mouth-to-chin 0.39 vs A2 0.40, A1 0.43, B4 0.40: within the reference range; beard covers the jawline as in A1 | ✅ |
+| **Head angle** | **yaw +13.7°: turned slightly toward frame-RIGHT** (the lamp side); target three-quarter toward frame-LEFT like A2 (−35.9°) | ❌ |
+| **Eye direction** | pupils near the lens / slightly left; not clearly on a mirror off frame-left | ❌ |
+| Head tilt | roll −11° (original −6°) | ⚠️ |
+| Costume | charcoal shirt, collar and top button open; no necklace | ✅ |
+| Lighting | amber lamp key from frame-right, teal shadows; lamp-side of the face brighter | ✅ |
+| Lamp position | same side, but **larger and closer** than in the original | ⚠️ |
+| Framing | MCU, 16:9, 1672×941, face 54% of height, centred | ✅ |
+
+The two fixes needed for 5.7 were the head turn to frame-left and the closed mouth. This file has the closed mouth
+and keeps the identity. The trashed 17:11 image had the head turn but lost the identity. Neither has both.
+
+---
+
+**(Superseded record, kept for history.)** Status at 17:11: v3 was recorded as the current approved keyframe (user approval, 15 Nov). Approval is the user's decision and stands;
 the identity finding below is recorded for the user's attention before any Kling credits are spent.
 
 | Version | File | Drive (Edit folder) | Local read-only copy (sha256) | Status |

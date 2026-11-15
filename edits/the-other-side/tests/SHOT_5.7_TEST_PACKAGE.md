@@ -8,7 +8,7 @@ prompt blocks, Scene 5 light), Dialogue Shot Map (Line 18 row), frozen character
 
 | Stage | State |
 | --- | --- |
-| Keyframe | **CURRENT APPROVED: v3 `5.7_key_v3.png`** (user, 15 Nov), Drive Edit id `1QCOcDkXnH3pOK5F_x7G-kiEwCoDLXIHv`, read-only copy `input/tos_keyframes/5.7_key_v3.png` (sha256 `b1798599caabd250…`). Head 3/4 to frame-left (yaw −27°), eyes to the mirror, mouth nearly closed, lamp and framing as the original. ⚠️ Identity drift flagged (face-match 0.40 vs A1, 0.41 vs A2; narrower, gaunter, older): see `SHOT_5.7_V3_REVIEW.md`. Original `C55A5E62-…png` kept unchanged as the original approved version; v2 superseded |
+| Keyframe | **AWAITING YOUR APPROVAL (17:27).** The 17:11 v3 (gaunt identity) is in the Drive trash. Drive Edit `5.7_key_v3.png` (id `19OCPNtkPNOdKR-X_C1YvGsiHnK2-3NBp`) is now the v2 image (sha256 `4f45300c32c58797…`): identity and mouth OK, head still turned toward frame-right. See `SHOT_5.7_V3_REVIEW.md`. Original `C55A5E62-…png` unchanged (the original approved version) |
 | My keyframe checklist (section 6) | To run as a record once the file location is provided; the approval stands as given |
 | Line 18 audio | Approved Aadhi voice = the ElevenLabs file `ElevenLabs_2026-11-15T15_54_09_Abhilash S …_pvc_s50_sim99_v4.mp3` (15 Nov), used for lip-sync if you confirm it speaks Line 18 exactly. Trim and placement: `AADHI_VOICE_CONTINUITY.md` section 6. (`L18_Aadhi_Take01.mp3.m4a` is a recorded human take, preserved, not the reference) |
 | Kling clip `5.7_v1.mp4` | NOT generated; waits for the user's explicit OK to spend credits. Prompts in section 3, ready |

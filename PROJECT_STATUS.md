@@ -196,12 +196,13 @@ Updated: 2026-11-10
 - 15 Nov re-check: no new keyframe uploaded. The v2 file (Drive id 19OCPNtkPNOdKR-X_C1YvGsiHnK2-3NBp, byte-identical) was
   renamed in Drive to "5.7_key_v1.png" at 17:04; it is still the PROPOSED v2, not the approved original. Review unchanged.
 
-- SHOT 5.7 KEYFRAME v3 = CURRENT APPROVED (user, 15 Nov): Drive Edit 5.7_key_v3.png (id 1QCOcDkXnH3pOK5F_x7G-kiEwCoDLXIHv,
-  17:11), read-only copy input/tos_keyframes/5.7_key_v3.png (sha256 b1798599caabd250). vs original: head 3/4 frame-left
-  (yaw -27.3, A2 -35.9), upright, eyes to the mirror, mouth nearly closed (0.082), lamp/lighting/shirt/framing as the
-  original: all corrections done. FLAG: identity drift (face-match A1 0.40, A2 0.41, original 0.59; narrower, gaunter,
-  older, sparser beard): user to decide keep v3 or make a v4 identity fix (no Kling credits). Original C55A5E62 unchanged
-  (e9d3a28fd9f959e4); v2 superseded. Record: edits/the-other-side/tests/SHOT_5.7_V3_REVIEW.md. No video, no credits.
+- SHOT 5.7 KEYFRAME (15 Nov 17:27): the 17:11 v3 (id 1QCOcDkXnH3pOK5F_x7G-kiEwCoDLXIHv, gaunt identity) is in the Drive
+  TRASH. Drive Edit "5.7_key_v3.png" is now the v2 image (id 19OCPNtkPNOdKR-X_C1YvGsiHnK2-3NBp, sha256 4f45300c32c58797):
+  identity OK (A1 0.60, original 0.86), face shape/lips/chin within the A1/A2/B4 range, mouth nearly closed, costume,
+  lighting, framing OK; BUT head turned toward frame-RIGHT (yaw +13.7, target ~-30 like A2), eyes near the lens, lamp
+  larger, more tilt. Neither image has both fixes. AWAITING USER APPROVAL; nothing marked approved. Original C55A5E62
+  unchanged (e9d3a28fd9f959e4). Local copy input/tos_keyframes/5.7_key_v3.png = the trashed 17:11 image. Record:
+  edits/the-other-side/tests/SHOT_5.7_V3_REVIEW.md. No video, no credits.
 
 ## Remaining
 - [x] User confirms the other 29 Malayalam lines -> lock screenplay (done 11 Nov)
@@ -214,5 +215,6 @@ Updated: 2026-11-10
 - [ ] Generate shots scene by scene, check continuity, assemble, subtitles, sound, master (1080p24)
 
 ## Next recommended step
-User: decide on the v3 identity flag (keep v3 or make a v4 identity-only fix in ChatGPT). Then, on explicit OK for
-credits: Kling 5.7 clip from the approved keyframe, then Lip Sync with the verified Line 18 ElevenLabs sample.
+User: decide the 5.7 keyframe: (a) approve the current 5.7_key_v3.png (v2 image) as is, (b) keep the original, or
+(c) one more ChatGPT edit of the current file: head ~30 deg to frame-left like A2, eyes to the mirror, keep face, mouth,
+lamp size. Kling only after approval and an explicit credit OK.
