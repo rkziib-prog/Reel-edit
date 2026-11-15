@@ -244,6 +244,14 @@ Updated: 2026-11-10
   frame, fixable in grade); head left of centre (kept by choice). Review: SHOT_5.7_V5_REVIEW.md. v4 and the original
   unchanged. No video, no credits.
 
+- SHOT 5.7 KEYFRAME APPROVED (15 Nov, user): FINAL = v5 `5.7_key_v5.png`, Drive Edit id 1uat9Zsp4Zae8O8hhDHe3RoOzT30jSSUo
+  (1,959,915 bytes, not trashed; Drive copy verified identical to input/tos_keyframes/5.7_key_v5.png, sha256
+  e5bf340c8de5696c). Approved: face identity, face shape, lips, chin, jawline, head angle (-31 deg, upright), eye
+  direction (mirror), lamp size/position, warm lighting direction. Grade note for later: lamp glow brighter than the
+  original (4.3% vs 2.8% of frame): tame in the lamp-night grade. Historical, unchanged: original C55A5E62
+  (e9d3a28fd9f959e4), v3 (4f45300c32c58797; trashed 17:11 v3 local b1798599caabd250), v4 (4e185d7e71426919).
+  No video, no credits.
+
 ## Remaining
 - [x] User confirms the other 29 Malayalam lines -> lock screenplay (done 11 Nov)
 - [ ] User generates panels in ChatGPT (A1 first), uploads <panel>_vN.png to Drive Edit -> I check each against the
@@ -255,5 +263,5 @@ Updated: 2026-11-10
 - [ ] Generate shots scene by scene, check continuity, assemble, subtitles, sound, master (1080p24)
 
 ## Next recommended step
-User: decide the Shot 5.7 keyframe: approve v5, approve v4, or another adjustment. Then Kling 5.7 clip + Lip Sync only
-on an explicit OK to spend credits.
+Prepare the three test shots: 5.7 (keyframe + Line 18 audio ready; needs Kling model/lengths + credit OK), 7.4 and 3.1
+(full packages like 5.7: references, keyframe prompts, Kling prompts, QC). Kling credits only on explicit user OK.

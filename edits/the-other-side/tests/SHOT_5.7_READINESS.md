@@ -3,10 +3,9 @@
 Audit only. Nothing generated, no credits spent, no approved asset, dialogue or identity reference changed. The test
 is **NOT started and NOT completed**.
 
-**Verdict: NOT READY to run.**
-- Missing: your confirmation of the keyframe file, the Kling model and clip lengths in your app, and your explicit OK to
-  spend credits.
-- To check before you approve: the keyframe's eyeline and its open mouth (section 6).
+**Update 15 Nov:** keyframe resolved: **v5 `5.7_key_v5.png` approved** (see `SHOT_5.7_V5_REVIEW.md`); the eyeline and
+open-mouth issues below are fixed in v5. Still needed to run: the Kling model and clip lengths in your app, and your
+explicit OK to spend credits.
 
 ## 1. Files
 

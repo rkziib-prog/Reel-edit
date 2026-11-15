@@ -1,7 +1,16 @@
 # THE OTHER SIDE — Shot 5.7 keyframe v5: comparison review (15 Nov)
 
-Status: **v5 is a separate CANDIDATE, NOT approved; awaiting your decision.** No image modified, no video, no Kling
-credits.
+Status: **APPROVED FINAL Shot 5.7 keyframe: v5 `5.7_key_v5.png` (user, 15 Nov).** Stored in Google Drive **Edit** folder
+(id `1uat9Zsp4Zae8O8hhDHe3RoOzT30jSSUo`, 1,959,915 bytes, not trashed; Drive download verified byte-identical to the
+read-only copy `input/tos_keyframes/5.7_key_v5.png`, sha256 `e5bf340c8de5696c…`).
+Approved: face identity, face shape, lips, chin, jawline, head angle (−31° to frame-left, upright), eye direction (to the
+mirror), lamp size and position, warm lighting direction. **Later, in the colour grade (minor):** lamp glow brighter than
+the original (4.3% vs 2.8% of the frame); tame it in the lamp-night grade. No new image needed.
+Historical versions, kept unchanged: original `C55A5E62-…png` (`e9d3a28fd9f959e4…`), v3 `5.7_key_v3.png` (the v2 image,
+`4f45300c32c58797…`), trashed 17:11 v3 (local `5.7_key_v3.png`, `b1798599caabd250…`), v4 `5.7_key_v4.png`
+(`4e185d7e71426919…`).
+
+No image modified, no video, no Kling credits. (Review below as written before approval.)
 
 | Version | Drive Edit file (id) | Local read-only copy (sha256) |
 | --- | --- | --- |
