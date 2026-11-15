@@ -252,6 +252,14 @@ Updated: 2026-11-10
   (e9d3a28fd9f959e4), v3 (4f45300c32c58797; trashed 17:11 v3 local b1798599caabd250), v4 (4e185d7e71426919).
   No video, no credits.
 
+- TEST PACKAGES 7.4 AND 3.1 PREPARED (15 Nov, prompts/planning only): edits/the-other-side/tests/SHOT_7.4_TEST_PACKAGE.md and
+  SHOT_3.1_TEST_PACKAGE.md: exact frozen references (with sha256), keyframe prompts (7.4_key_v1.png, 3.1_key_v1.png = K3),
+  Kling prompts (5 s, audio off), camera/motion, continuity + QC checklists. 7.4: real Aadhi day 7 (C6_v3 = the face; B5_v2
+  smile shape only), unflipped (lamp frame-LEFT, watch + ink on the RIGHT, eyes into the lens), keyframe = instant before
+  the forced smile. 3.1: deep wide low locked, flipped (moonlight key frame-RIGHT: my placement for the flip rule, user to
+  confirm), mirror empty; K3 also serves 3.6 (reflection to composite or a K3 variant: decide at 3.6). Shot 5.7 v5 unchanged
+  and approved. Nothing generated, no credits.
+
 ## Remaining
 - [x] User confirms the other 29 Malayalam lines -> lock screenplay (done 11 Nov)
 - [ ] User generates panels in ChatGPT (A1 first), uploads <panel>_vN.png to Drive Edit -> I check each against the
@@ -263,5 +271,5 @@ Updated: 2026-11-10
 - [ ] Generate shots scene by scene, check continuity, assemble, subtitles, sound, master (1080p24)
 
 ## Next recommended step
-Prepare the three test shots: 5.7 (keyframe + Line 18 audio ready; needs Kling model/lengths + credit OK), 7.4 and 3.1
-(full packages like 5.7: references, keyframe prompts, Kling prompts, QC). Kling credits only on explicit user OK.
+User: review the 7.4 and 3.1 packages; generate keyframes 7.4_key_v1.png and 3.1_key_v1.png in ChatGPT when ready; tell me the
+Kling model and clip lengths. Me: check keyframes. Kling (5.7, 7.4, 3.1) only on explicit OK for credits.
