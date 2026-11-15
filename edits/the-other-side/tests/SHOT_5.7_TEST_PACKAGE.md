@@ -8,7 +8,7 @@ prompt blocks, Scene 5 light), Dialogue Shot Map (Line 18 row), frozen character
 
 | Stage | State |
 | --- | --- |
-| Keyframe | **v3 APPROVED by the user (15 Nov) as the current version**: the latest ChatGPT keyframe. File **not yet received**: to be uploaded to Drive Edit as `5.7_key_v3.png`; comparison with the original and Identity Board V2 pending. Original approved keyframe `C55A5E62-52B4-4F3F-B83F-1E5265C1E023.png` kept unchanged (sha256 `e9d3a28fd9f959e4…`). v2 (`086CA352…`, now named `5.7_key_v1.png` in Drive) superseded |
+| Keyframe | **CURRENT APPROVED: v3 `5.7_key_v3.png`** (user, 15 Nov), Drive Edit id `1QCOcDkXnH3pOK5F_x7G-kiEwCoDLXIHv`, read-only copy `input/tos_keyframes/5.7_key_v3.png` (sha256 `b1798599caabd250…`). Head 3/4 to frame-left (yaw −27°), eyes to the mirror, mouth nearly closed, lamp and framing as the original. ⚠️ Identity drift flagged (face-match 0.40 vs A1, 0.41 vs A2; narrower, gaunter, older): see `SHOT_5.7_V3_REVIEW.md`. Original `C55A5E62-…png` kept unchanged as the original approved version; v2 superseded |
 | My keyframe checklist (section 6) | To run as a record once the file location is provided; the approval stands as given |
 | Line 18 audio | Approved Aadhi voice = the ElevenLabs file `ElevenLabs_2026-11-15T15_54_09_Abhilash S …_pvc_s50_sim99_v4.mp3` (15 Nov), used for lip-sync if you confirm it speaks Line 18 exactly. Trim and placement: `AADHI_VOICE_CONTINUITY.md` section 6. (`L18_Aadhi_Take01.mp3.m4a` is a recorded human take, preserved, not the reference) |
 | Kling clip `5.7_v1.mp4` | NOT generated; waits for the user's explicit OK to spend credits. Prompts in section 3, ready |

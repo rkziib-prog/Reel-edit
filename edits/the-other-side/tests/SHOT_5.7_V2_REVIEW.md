@@ -55,4 +55,4 @@ near frontal, not three-quarter to frame-left.
 
 Your choices: keep the original, approve v2 as is, or make a v3. Nothing is approved and nothing runs until you say so.
 
-**Update 15 Nov:** the user approved a newer ChatGPT keyframe (v3) as the current version; v2 is superseded. v3's file is not yet in Drive; its comparison is pending.
+**Update 15 Nov:** the user approved a newer ChatGPT keyframe (v3) as the current version; v2 is superseded. v3 is `5.7_key_v3.png` in Drive Edit; comparison in `SHOT_5.7_V3_REVIEW.md`.

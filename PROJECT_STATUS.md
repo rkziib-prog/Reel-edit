@@ -196,11 +196,12 @@ Updated: 2026-11-10
 - 15 Nov re-check: no new keyframe uploaded. The v2 file (Drive id 19OCPNtkPNOdKR-X_C1YvGsiHnK2-3NBp, byte-identical) was
   renamed in Drive to "5.7_key_v1.png" at 17:04; it is still the PROPOSED v2, not the approved original. Review unchanged.
 
-- SHOT 5.7 KEYFRAME v3 APPROVED by user (15 Nov) as the CURRENT version (latest ChatGPT image). FILE NOT RECEIVED: not in
-  Drive (nothing uploaded after 17:05) and not attached in chat; user to upload to Drive Edit as 5.7_key_v3.png. Then:
-  read-only copy to input/tos_keyframes/, comparison with the original C55A5E62 and Identity Board V2, results recorded.
-  Original C55A5E62 unchanged (sha256 e9d3a28fd9f959e4); v2 (086CA352, renamed 5.7_key_v1.png in Drive) superseded.
-  No video, no Kling credits.
+- SHOT 5.7 KEYFRAME v3 = CURRENT APPROVED (user, 15 Nov): Drive Edit 5.7_key_v3.png (id 1QCOcDkXnH3pOK5F_x7G-kiEwCoDLXIHv,
+  17:11), read-only copy input/tos_keyframes/5.7_key_v3.png (sha256 b1798599caabd250). vs original: head 3/4 frame-left
+  (yaw -27.3, A2 -35.9), upright, eyes to the mirror, mouth nearly closed (0.082), lamp/lighting/shirt/framing as the
+  original: all corrections done. FLAG: identity drift (face-match A1 0.40, A2 0.41, original 0.59; narrower, gaunter,
+  older, sparser beard): user to decide keep v3 or make a v4 identity fix (no Kling credits). Original C55A5E62 unchanged
+  (e9d3a28fd9f959e4); v2 superseded. Record: edits/the-other-side/tests/SHOT_5.7_V3_REVIEW.md. No video, no credits.
 
 ## Remaining
 - [x] User confirms the other 29 Malayalam lines -> lock screenplay (done 11 Nov)
@@ -213,5 +214,5 @@ Updated: 2026-11-10
 - [ ] Generate shots scene by scene, check continuity, assemble, subtitles, sound, master (1080p24)
 
 ## Next recommended step
-User: upload the approved v3 keyframe to Drive Edit as 5.7_key_v3.png. Me: copy read-only, compare with the original and
-Identity Board V2, record. Then Kling 5.7 clip + Lip Sync only on explicit user OK for credits.
+User: decide on the v3 identity flag (keep v3 or make a v4 identity-only fix in ChatGPT). Then, on explicit OK for
+credits: Kling 5.7 clip from the approved keyframe, then Lip Sync with the verified Line 18 ElevenLabs sample.
