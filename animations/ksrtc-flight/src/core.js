@@ -180,9 +180,17 @@ function centred(pts, draw) {
   let x0 = Infinity, x1 = -Infinity, y0 = Infinity, y1 = -Infinity;
   for (const [x, y] of pts) { if (x < x0) x0 = x; if (x > x1) x1 = x; if (y < y0) y0 = y; if (y > y1) y1 = y; }
   const cx = (x0 + x1) / 2, cy = (y0 + y1) / 2;
-  push(); translate(cx, cy); draw(pts.map(([x, y]) => [x - cx, y - cy])); pop();
+  // local patch: skip shapes that land fully off-canvas (p5.brush throws on them at flush, and they cost time)
+  const R = window._renderer || (p5.instance && p5.instance._renderer), m = R && R.states && R.states.uModelMatrix && (R.states.uModelMatrix.mat4 || R.states.uModelMatrix.matrix);
+  if (m) {
+    let a0 = Infinity, a1 = -Infinity, b0 = Infinity, b1 = -Infinity;
+    for (const [x, y] of [[x0, y0], [x1, y0], [x0, y1], [x1, y1]]) { const sx = m[0] * x + m[4] * y + m[12] + W / 2, sy = m[1] * x + m[5] * y + m[13] + H / 2; a0 = Math.min(a0, sx); a1 = Math.max(a1, sx); b0 = Math.min(b0, sy); b1 = Math.max(b1, sy); }
+    if (a1 < -40 || a0 > W + 40 || b1 < -40 || b0 > H + 40) return;
+  }
+  push(); translate(cx, cy); try { draw(pts.map(([x, y]) => [x - cx, y - cy])); } finally { pop(); }
 }
-function paint(pts, o = {}) { centred(pts, (P) => paintAt(P, o)); }
+// local patch: a shape that lands fully off-canvas makes p5.brush throw (OffscreenCanvas size); skip it instead of failing the frame
+function paint(pts, o = {}) { try { centred(pts, (P) => paintAt(P, o)); } catch (e) { if (!String(e).includes("OffscreenCanvas")) throw e; } }
 function paintAt(pts, o) {
   if (o.wash || o.fill || o.hatch) {
     if (o.wash) brush.wash(o.wash, o.washOp ?? 255); else brush.noWash();
@@ -199,7 +207,7 @@ function paintAt(pts, o) {
   }
 }
 function inkLine(pts, sw = 1, col = PAL.ink, br = 'ink', curv = .5) {
-  centred(pts, (P) => { brush.noFill(); brush.noWash(); brush.noHatch(); brush.set(br, col, sw); brush.spline(P, curv); });
+  try { centred(pts, (P) => { brush.noFill(); brush.noWash(); brush.noHatch(); brush.set(br, col, sw); brush.spline(P, curv); }); } catch (e) { if (!String(e).includes("OffscreenCanvas")) throw e; }   // local patch: see paint()
 }
 
 // ---------- lettering (drawn on the 2D compositor, under the paper grain) ----------

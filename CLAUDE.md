@@ -71,6 +71,10 @@ a reference reel the user shared; keep our own frame and captions, never copy th
 - Animation: user chose 2D cartoon made by me (`animations/ksrtc-flight/`, clawd-animation kit). Local kit patches there:
   `PROJECT.density` (.5 = half-res painting, ~2.5 s/frame instead of ~8), page-ready timeout 400 s. Render on twos:
   `--frames --fps=12 --workers=2`, then `--encode --fps=12`. Full-res frames are slow because SwiftShader paints them.
+  More local patches: off-canvas shapes are culled in `centred()` (core.js), and `patch_brush.sh` (re-run after
+  `npm install`) clamps a p5.brush mask size that crashes at density < 1. Palm keys may be strings (hashed to numbers).
+  Shots: `src/scenes/ksrtc.js`, set pieces + `person()` characters: `ksrtc_lib.js`, timing: `ksrtc_times.js` (from
+  `edits/ksrtc-flight/timeline.py`). Sound: `edits/ksrtc-flight/sound.py` (narration placement + synthesized SFX).
 - Voice: user chose free Meta MMS Malayalam TTS (`edits/ksrtc-flight/tts_sample.py`); needs torch (CPU), transformers, scipy.
 - Layers: `overlays.py <dir>` (frame + subtitle PNGs via Chromium, needs python playwright), `compose.sh` (card + subs + voice).
 
