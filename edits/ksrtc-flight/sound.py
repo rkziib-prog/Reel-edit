@@ -9,14 +9,19 @@ tl = json.load(open(f"{W}/timeline.json"))
 TOTAL = tl["total"]
 N = int(TOTAL * SR) + SR
 rng = np.random.default_rng(7)
-S = [0, 5.074, 10.58, 15.846, 19.88, 24.458, 28.556, 31.71, 36.272, 39.954, 44.564, 48.79, 55.864, 59.706]  # shot starts (KT.shots)
+S = tl.get("shots") or [0, 5.074, 10.58, 15.846, 19.88, 24.458, 28.556, 31.71, 36.272, 39.954, 44.564, 48.79, 55.864, 59.706]  # shot starts (KT.shots)
 
 # ---------- narration ----------
 voice = np.zeros(N)
-for i, st in enumerate(tl["starts"], 1):
-    sr, a = wf.read(f"{W}/voice/line_{i:02d}.wav")
-    a = resample_poly(a.astype(np.float64), SR, sr)
-    o = int((st + tl["lead"]) * SR); voice[o:o + len(a)] += a[:N - o]
+if "voice_file" in tl:   # one recording, used with its own pacing (timeline_el.py)
+    import subprocess
+    raw = subprocess.run(["ffmpeg", "-v", "error", "-i", tl["voice_file"], "-ac", "1", "-ar", str(SR), "-f", "f32le", "-"], capture_output=True, check=True).stdout
+    a = np.frombuffer(raw, np.float32).astype(np.float64); voice[:min(N, len(a))] = a[:N]
+else:
+    for i, st in enumerate(tl["starts"], 1):
+        sr, a = wf.read(f"{W}/voice/line_{i:02d}.wav")
+        a = resample_poly(a.astype(np.float64), SR, sr)
+        o = int((st + tl["lead"]) * SR); voice[o:o + len(a)] += a[:N - o]
 voice /= np.abs(voice).max() + 1e-9
 wf.write(f"{W}/voice_track.wav", SR, (voice * .9).astype(np.float32))
 
