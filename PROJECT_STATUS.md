@@ -260,6 +260,16 @@ Updated: 2026-11-10
   confirm), mirror empty; K3 also serves 3.6 (reflection to composite or a K3 variant: decide at 3.6). Shot 5.7 v5 unchanged
   and approved. Nothing generated, no credits.
 
+- SHOT 7.4 KEYFRAME APPROVED by user (15 Nov), recorded with FLAGGED ISSUES: Drive Edit 392FDC42-F994-4F48-B0D8-16ED3CB8DAE0.png
+  (id 1E2s6kUUqITtlKuP5PWB9HdqM27i9Rc6W, 18:17, 2,392,943 bytes), read-only copy input/tos_keyframes/ (7619234cd845fded).
+  Good: identity (0.75 vs C6_v3; face shape 1.19 = A1), eyes to the lens, lamp frame-left, costume. ISSUES: watch on his
+  LEFT wrist (locked rule + real-Aadhi clue), ink on the left hand; he holds a shard (7.1 imposter action) instead of fists
+  on the glass from behind; smile already formed (no forming action for Kling; usable as an end frame); PORTRAIT
+  1024x1536, not 16:9. Recommend a corrected 16:9 keyframe before Kling. Identity references and all 5.7 versions
+  unchanged.
+- TEST-SHOT READINESS: 5.7 keyframe v5 approved + Line 18 audio ready (needs Kling model + credit OK); 7.4 keyframe
+  approved with open issues (correction recommended); 3.1 keyframe K3 not made yet. No video, no credits.
+
 ## Remaining
 - [x] User confirms the other 29 Malayalam lines -> lock screenplay (done 11 Nov)
 - [ ] User generates panels in ChatGPT (A1 first), uploads <panel>_vN.png to Drive Edit -> I check each against the
@@ -271,5 +281,6 @@ Updated: 2026-11-10
 - [ ] Generate shots scene by scene, check continuity, assemble, subtitles, sound, master (1080p24)
 
 ## Next recommended step
-User: review the 7.4 and 3.1 packages; generate keyframes 7.4_key_v1.png and 3.1_key_v1.png in ChatGPT when ready; tell me the
-Kling model and clip lengths. Me: check keyframes. Kling (5.7, 7.4, 3.1) only on explicit OK for credits.
+User: decide on the 7.4 keyframe issues (watch on the left wrist, portrait, shard-holding action, smile already formed):
+keep, or make a corrected 16:9 keyframe; make the 3.1 K3 keyframe; tell me the Kling model/lengths. Kling only on an
+explicit credit OK.

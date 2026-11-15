@@ -8,7 +8,7 @@ map, the Dialogue Shot Map, the frozen panels, and the lessons from the Shot 5.7
 
 | Stage | State |
 | --- | --- |
-| Keyframe `7.4_key_v1.png` | Not made. Prompt ready (section 2) |
+| Keyframe | **APPROVED by the user (15 Nov): `392FDC42-F994-4F48-B0D8-16ED3CB8DAE0.png`**, with continuity issues flagged (section 7). Drive Edit id `1E2s6kUUqITtlKuP5PWB9HdqM27i9Rc6W` (18:17); read-only copy `input/tos_keyframes/392FDC42-F994-4F48-B0D8-16ED3CB8DAE0.png` (sha256 `7619234cd845fded…`). Not named `7.4_key_v1.png` |
 | Kling clip `7.4_v1.mp4` | Not generated; waits for an approved keyframe and your explicit OK to spend credits |
 | Lip-sync | None: no dialogue in 7.4 |
 
@@ -129,3 +129,28 @@ Edit test (by me, after approval):
 - [ ] Unflipped; lamp-night grade; shard mask, glass reflections and rain layered; near silence
 - [ ] Cut between 7.3 (the imposter's sunlit smile) and 7.5; the two smiles match in shape
 - [ ] Sent to you for approval
+
+## 7. Keyframe verification (15 Nov), approved by the user, with flagged issues
+
+File: `392FDC42-F994-4F48-B0D8-16ED3CB8DAE0.png`, Drive **Edit** folder, uploaded 15 Nov 18:17 (id
+`1E2s6kUUqITtlKuP5PWB9HdqM27i9Rc6W`, 2,392,943 bytes). It is the only image uploaded since the package; identified by
+content as the 7.4 keyframe. Check sheet: `output/tos_7.4_key_check.jpg`.
+
+| Check | Result |
+| --- | --- |
+| Identity | ✅ Same man; day-7 signs (red eyes, tears, damp hair) on an unchanged face. Face-match **0.75 vs C6_v3** (C6_v3 itself scores 0.74 vs A1), 0.64 vs A1, 0.71 vs B5_v2. Face width/height **1.19 = A1's**: no gaunt or aged drift |
+| Eyes, head | ✅ Frontal (yaw +0.8°), eyes into the lens, as planned |
+| Light | ✅ Warm lamp at frame-LEFT, lamp side of the face brighter (mean RGB 124/62/28 vs 85/50/32), teal shadows, night |
+| Costume | ✅ Charcoal shirt, collar open, pocket on his LEFT chest (so the image is not mirrored); no necklace |
+| **Watch** | ❌ **On his LEFT wrist.** The hand holding the shard is at frame-right, i.e. his left hand (confirmed by the pocket side). The locked rule: the watch on the RIGHT wrist in every generated frame. For the real Aadhi in the shard, the screenplay's clue ("watch and ink on the right") is the proof of who he is. Ink stains are also on the left hand's fingertips |
+| **Action / set-up** | ❌ He **holds a glass shard** beside his face, as the imposter does in 7.1. The plan's 7.2/7.4 set-up is the real Aadhi **behind the glass**, fists pressed against it, seen through the shard. There is no glass between him and the camera, and no fists on glass |
+| **Expression** | ⚠️ The closed-lip smile is **already formed**. The plan's 7.4 is the smile being forced onto his face during the shot, so a keyframe already smiling leaves Kling nothing to perform. It could serve as the END state of 7.4 (Kling's end frame), not the start |
+| **Format** | ❌ **1024×1536, portrait (2:3).** The film is 16:9 (1920×1080). A 16:9 crop (1024×576) keeps the face but loses most of the hand and watch, and must be upscaled about 1.9×. Kling animates in the start image's aspect ratio |
+
+**Before any Kling credits, I recommend one of:**
+1. A corrected keyframe: 16:9, behind the glass, fists pressed on it, watch and ink on the RIGHT, mouth closed before
+   the smile (the package's section 2 prompt; add "16:9 landscape" at the start, since this result came out portrait); or
+2. Keep this image as the identity reference for the corrected keyframe (its face is the best match yet) and use the
+   same prompt with it attached first.
+
+Recorded as the user's approved keyframe as instructed. These issues stay open until the user decides.
