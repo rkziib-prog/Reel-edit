@@ -196,6 +196,12 @@ Updated: 2026-11-10
 - 15 Nov re-check: no new keyframe uploaded. The v2 file (Drive id 19OCPNtkPNOdKR-X_C1YvGsiHnK2-3NBp, byte-identical) was
   renamed in Drive to "5.7_key_v1.png" at 17:04; it is still the PROPOSED v2, not the approved original. Review unchanged.
 
+- SHOT 5.7 KEYFRAME v3 APPROVED by user (15 Nov) as the CURRENT version (latest ChatGPT image). FILE NOT RECEIVED: not in
+  Drive (nothing uploaded after 17:05) and not attached in chat; user to upload to Drive Edit as 5.7_key_v3.png. Then:
+  read-only copy to input/tos_keyframes/, comparison with the original C55A5E62 and Identity Board V2, results recorded.
+  Original C55A5E62 unchanged (sha256 e9d3a28fd9f959e4); v2 (086CA352, renamed 5.7_key_v1.png in Drive) superseded.
+  No video, no Kling credits.
+
 ## Remaining
 - [x] User confirms the other 29 Malayalam lines -> lock screenplay (done 11 Nov)
 - [ ] User generates panels in ChatGPT (A1 first), uploads <panel>_vN.png to Drive Edit -> I check each against the
@@ -207,5 +213,5 @@ Updated: 2026-11-10
 - [ ] Generate shots scene by scene, check continuity, assemble, subtitles, sound, master (1080p24)
 
 ## Next recommended step
-User: licence checks (plan, official terms, the voice's own terms); pending ElevenLabs settings if visible; 5.7 keyframe
-location. Then, on explicit OK for credits: Kling 5.7 clip, then Lip Sync with the verified Line 18 sample.
+User: upload the approved v3 keyframe to Drive Edit as 5.7_key_v3.png. Me: copy read-only, compare with the original and
+Identity Board V2, record. Then Kling 5.7 clip + Lip Sync only on explicit user OK for credits.
