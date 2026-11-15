@@ -4,7 +4,22 @@ Preparation only: no audio or video generated, no credits spent, nothing purchas
 locked 10–11 Nov), the Dialogue Shot Map and the frozen identity references are unchanged. Line text below is copied
 by script from `edits/the-other-side/DIALOGUE_SHOT_MAP.md`.
 
-## 1. Approved voice reference (Aadhi)
+## Current status (15 Nov)
+
+| Item | State |
+| --- | --- |
+| Aadhi voice | ElevenLabs "Abhilash S - Fun, Encouraging Friend": **PROVISIONAL**. Also used for the Reflection (colder delivery) and Real Aadhi |
+| Original ElevenLabs sample | Preserved unchanged in Drive Audio and read-only in `input/tos_voice/` (sha256 `3d7143de9756b840…`) |
+| Your human recording (Line 18) | Preserved unchanged, read-only (sha256 `4a52a2659cb0ac98…`); the **emotional and timing reference** |
+| Exact Line 18 wording in the sample | **Unverified**: the meaning matches Line 18; the exact words are not confirmed (1a) |
+| Model and settings | Partly known: stability 50, similarity 99; **model and 7 other settings missing** (1b) |
+| Commercial licence | **UNRESOLVED**: stays so until checked against ElevenLabs' official terms and your actual subscription (7) |
+| Dr. Thomas | **Separate**: Google Cloud TTS, its own setup and key, never mixed with Aadhi's ElevenLabs voice (5) |
+| Generation | None: no audio or video generated or regenerated, no credits spent, approved dialogue unchanged |
+
+The checklist of what is needed from you to finish the voice setup is section 8.
+
+## 1. Provisional voice reference (Aadhi)
 
 **Correction (15 Nov):** the first version of this plan named `L18_Aadhi_Take01.mp3.m4a` as the ElevenLabs reference.
 That was wrong. The ElevenLabs sample is the file uploaded today at 16:03 (below). The L18 m4a, and its duplicate
@@ -157,7 +172,9 @@ Reflection *is* the real Aadhi, and Line 31 (Real Aadhi) is now the same voice h
   - the mix: drier and closer, with a faint glass early reflection, as already planned for the Reflection track.
 
   Any settings change for the Reflection needs your OK first.
-- **Dr. Thomas:** a separate voice (Google TTS test pending your key), always through the phone filter, never lip-synced.
+- **Dr. Thomas:** a separate voice on a separate system: Google Cloud Text-to-Speech, with its own API key stored as a
+  network secret for `texttospeech.googleapis.com`. It never uses the ElevenLabs voice or account and never shares
+  settings with Aadhi. Always through the phone filter, never lip-synced. Test pending your key.
 
 **Note on the screenplay's performance notes:** they describe the Reflection as "slower, sadder, never aggressive,
 exhausted, pleading". The colder delivery below keeps every word and stays non-aggressive. The coldness reads as
@@ -217,3 +234,51 @@ To settle it, please check or send:
 4. That every line used in the film is generated while a paid plan is active.
 
 Until then the voice stays provisional for the film.
+
+## 8. What I need from you to complete the voice setup
+
+Tick each item as you send it. Nothing is generated, regenerated or bought while these are open.
+
+**A. Line 18 wording in the ElevenLabs sample**
+
+- [ ] The exact text typed into ElevenLabs for this sample: a screenshot of its **History** item, or the text copied from it
+- [ ] Or your confirmation by ear that it says എന്റെ വീട്ടീന്ന് ഇറങ്ങിപ്പോടാ! word for word (if any word differs, say which)
+
+**B. Model and settings of the sample** (the same History item shows them all)
+
+- [ ] Model name (e.g. what the `v4` in the file name refers to)
+- [ ] Stability (file name says 50: please confirm)
+- [ ] Similarity (file name says 99: please confirm)
+- [ ] Style exaggeration
+- [ ] Speaker boost: on or off
+- [ ] Speed
+- [ ] Language setting, and text normalisation if shown
+- [ ] Seed, if the model shows one
+- [ ] Output format you downloaded (e.g. MP3 128 kbps or higher)
+
+**C. Licence: commercial use in the film** (stays UNRESOLVED until all four are checked)
+
+- [ ] Your current ElevenLabs plan name and status (Subscription page screenshot)
+- [ ] Confirmation from ElevenLabs' official Terms of Use and Voice Library terms that your plan allows commercial use
+      of Voice Library voices, for example a link or screenshot of the relevant section. Optionally, allow
+      `elevenlabs.io` in this environment's network settings so I can read the official pages myself
+- [ ] The **"Abhilash S - Fun, Encouraging Friend"** voice's own Voice Library page: any usage restrictions, notice
+      period or terms set by its creator
+- [ ] Whether every film line will be generated while a paid plan is active
+
+**D. Production decisions still open**
+
+- [ ] Lines 23a–23b (Reflection's panic): keep the scripted panic (current plan) or make them cold as well
+- [ ] Whether Line 18 may later be regenerated to match your recording's pacing and anger (1c); credits only on your OK
+
+**E. Dr. Thomas (separate from Aadhi)**
+
+- [ ] A Google Cloud API key with the Text-to-Speech API enabled, added in the claude.ai environment settings as a
+      network secret for `texttospeech.googleapis.com` (header `X-Goog-Api-Key`), or tell me to ask for it again
+      through the secure form. Never paste the key in chat
+
+**F. Shot 5.7 (first lip-sync test)**
+
+- [ ] The Drive location of the approved 5.7 keyframe (`5.7_key_v1.png` or its actual file name)
+- [ ] Later, your explicit OK to spend Kling credits on the 5.7 clip and Lip Sync
+

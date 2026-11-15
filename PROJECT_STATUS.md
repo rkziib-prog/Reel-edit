@@ -159,6 +159,12 @@ Updated: 2026-11-10
   account access, elevenlabs.io blocked; user to check plan, ToS/Voice Library addendum, the voice's own terms.
   AADHI_VOICE_CONTINUITY.md updated. No audio/video generated, no credits spent, dialogue unchanged.
 
+- VOICE PLAN UPDATED (15 Nov): status table and section 8 checklist (what the user must provide) added to
+  AADHI_VOICE_CONTINUITY.md: A Line 18 wording, B model/settings (9 items), C licence (4 checks; UNRESOLVED until
+  official terms + actual subscription), D open decisions (23a-b, Line 18 regeneration), E Dr. Thomas Google key
+  (separate from ElevenLabs), F 5.7 keyframe location + Kling OK. ElevenLabs voice stays PROVISIONAL; sample and
+  human take preserved (sha256 unchanged). No audio generated, no credits spent, dialogue unchanged.
+
 ## Remaining
 - [x] User confirms the other 29 Malayalam lines -> lock screenplay (done 11 Nov)
 - [ ] User generates panels in ChatGPT (A1 first), uploads <panel>_vN.png to Drive Edit -> I check each against the
