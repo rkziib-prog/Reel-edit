@@ -223,6 +223,13 @@ Updated: 2026-11-10
   original (glow 1.0% vs 2.8% of frame); warm key moved to the frame-left side of the face; head left of centre (less
   lead room). Options: approve v4 or a v5 lamp/light-only fix. Review: SHOT_5.7_V4_REVIEW.md. No video, no credits.
 
+- SHOT 5.7 v5 CORRECTION PROMPT prepared (15 Nov, not generated, awaiting user review):
+  edits/the-other-side/tests/SHOT_5.7_V5_PROMPT.md. ChatGPT edit of 5.7_key_v4.png (only face/pose/framing source) with
+  the original C55A5E62 attached for the lamp and light only: ONLY (1) lamp back to the original size/position, (2) warm
+  amber key back on the lamp side of the face, far side teal. Everything else from v4 preserved. Acceptance: identity vs
+  v4 ~0.85+, yaw/roll unchanged, lamp glow ~2.5-3% of frame, lamp-side of the face brighter. Output 5.7_key_v5.png.
+  v4 not approved yet. No video, no credits.
+
 ## Remaining
 - [x] User confirms the other 29 Malayalam lines -> lock screenplay (done 11 Nov)
 - [ ] User generates panels in ChatGPT (A1 first), uploads <panel>_vN.png to Drive Edit -> I check each against the
