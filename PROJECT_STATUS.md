@@ -230,6 +230,11 @@ Updated: 2026-11-10
   v4 ~0.85+, yaw/roll unchanged, lamp glow ~2.5-3% of frame, lamp-side of the face brighter. Output 5.7_key_v5.png.
   v4 not approved yet. No video, no credits.
 
+- SHOT 5.7 v5 PROMPT APPROVED by user exactly as written (15 Nov): READY FOR IMAGE EDITING (user, ChatGPT; attach
+  5.7_key_v4.png + C55A5E62 for lamp/light only; save as 5.7_key_v5.png in Drive Edit). No keyframe approved (v4 still
+  awaiting decision). v4 (4e185d7e71426919) and the original (e9d3a28fd9f959e4) unchanged. No image or video generated,
+  no credits.
+
 ## Remaining
 - [x] User confirms the other 29 Malayalam lines -> lock screenplay (done 11 Nov)
 - [ ] User generates panels in ChatGPT (A1 first), uploads <panel>_vN.png to Drive Edit -> I check each against the
@@ -241,5 +246,5 @@ Updated: 2026-11-10
 - [ ] Generate shots scene by scene, check continuity, assemble, subtitles, sound, master (1080p24)
 
 ## Next recommended step
-User: final decision on the 5.7 keyframe: approve v4 as is, or a v5 lamp/lighting-only edit of v4. Then Kling 5.7 clip
-+ Lip Sync only on explicit OK for credits.
+User: run the approved v5 prompt in ChatGPT and upload 5.7_key_v5.png to Drive Edit. Me: compare v5 with v4, the original,
+A1/A2 using the prompt's acceptance checks; user approves a keyframe. Kling only after that and an explicit credit OK.

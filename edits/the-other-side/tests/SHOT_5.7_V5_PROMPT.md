@@ -1,6 +1,6 @@
 # THE OTHER SIDE — Shot 5.7 keyframe v5: correction prompt (for your review)
 
-Status: **PROMPT ONLY, awaiting your review.** Nothing generated, nothing approved. No video, no Kling credits. v4, v3
+Status: **PROMPT APPROVED by the user exactly as written (15 Nov); ready for image editing in ChatGPT.** Nothing generated; no keyframe approved (v4 still awaiting a decision). No video, no Kling credits. v4, v3
 and the original approved keyframe stay unchanged.
 
 | | |
