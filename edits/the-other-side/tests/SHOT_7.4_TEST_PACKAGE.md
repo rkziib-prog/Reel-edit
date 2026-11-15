@@ -8,7 +8,7 @@ map, the Dialogue Shot Map, the frozen panels, and the lessons from the Shot 5.7
 
 | Stage | State |
 | --- | --- |
-| Keyframe | **APPROVED by the user (15 Nov): `392FDC42-F994-4F48-B0D8-16ED3CB8DAE0.png`**, with continuity issues flagged (section 7). Drive Edit id `1E2s6kUUqITtlKuP5PWB9HdqM27i9Rc6W` (18:17); read-only copy `input/tos_keyframes/392FDC42-F994-4F48-B0D8-16ED3CB8DAE0.png` (sha256 `7619234cd845fded…`). Not named `7.4_key_v1.png` |
+| Keyframe | **NEEDS A CORRECTED KEYFRAME.** Candidate `392FDC42-F994-4F48-B0D8-16ED3CB8DAE0.png` (Drive Edit id `1E2s6kUUqITtlKuP5PWB9HdqM27i9Rc6W`, 18:17) is **REJECTED / NEEDS CORRECTION** (user, 15 Nov); kept unchanged as a historical candidate, read-only copy `input/tos_keyframes/392FDC42-F994-4F48-B0D8-16ED3CB8DAE0.png` (sha256 `7619234cd845fded…`). Corrected prompt: section 8, output `7.4_key_v2.png` |
 | Kling clip `7.4_v1.mp4` | Not generated; waits for an approved keyframe and your explicit OK to spend credits |
 | Lip-sync | None: no dialogue in 7.4 |
 
@@ -130,7 +130,7 @@ Edit test (by me, after approval):
 - [ ] Cut between 7.3 (the imposter's sunlit smile) and 7.5; the two smiles match in shape
 - [ ] Sent to you for approval
 
-## 7. Keyframe verification (15 Nov), approved by the user, with flagged issues
+## 7. Keyframe verification (15 Nov): candidate REJECTED / NEEDS CORRECTION (user decision)
 
 File: `392FDC42-F994-4F48-B0D8-16ED3CB8DAE0.png`, Drive **Edit** folder, uploaded 15 Nov 18:17 (id
 `1E2s6kUUqITtlKuP5PWB9HdqM27i9Rc6W`, 2,392,943 bytes). It is the only image uploaded since the package; identified by
@@ -153,4 +153,55 @@ content as the 7.4 keyframe. Check sheet: `output/tos_7.4_key_check.jpg`.
 2. Keep this image as the identity reference for the corrected keyframe (its face is the best match yet) and use the
    same prompt with it attached first.
 
-Recorded as the user's approved keyframe as instructed. These issues stay open until the user decides.
+**Status corrected by the user (15 Nov): REJECTED / NEEDS CORRECTION.** It is not the 7.4 keyframe. The file is kept unchanged in Drive and locally as a historical candidate; not deleted, not overwritten.
+
+## 8. Corrected keyframe `7.4_key_v2.png` (prompt; not generated)
+
+Requirements (user, 15 Nov): 16:9 landscape · identity from **C6_v3 and A1** · the real Aadhi **behind the glass** ·
+**both fists pressed against the glass** · black digital watch on the **RIGHT** wrist · ink marks on the **RIGHT**
+fingertips · tears and a trembling expression · **mouth closed, no smile yet**. The cold smile develops only in the Kling
+animation (section 3), never in the start frame.
+
+### Attach, in this order (new ChatGPT chat)
+
+| # | Reference | File in Drive Edit | Use |
+| --- | --- | --- | --- |
+| 1 | **C6_v3** | `B6AA8B88-669F-4B7A-96BE-3A6F40DB2097.png` | **The face** (day 7) |
+| 2 | **A1** | `A49AE7DA-8122-41F1-8A52-67D603C8C121.PNG` | **Identity anchor** |
+| 3 | C4 | `5B48BC7A-5074-436F-B13E-7E3B78C14E3A.PNG` | Watch only: his own black digital watch, right wrist |
+| 4 | C7_v2 | `C85B0EF3-8449-49D6-AC01-B1553D116781.png` | Night colour only (amber against teal) |
+
+Not attached: the rejected candidate (it carries the watch on the left wrist and the smile, which would leak into the new
+image); B5_v2 (the smile belongs to the animation, not the start frame); the Identity Board (the face comes from C6_v3
+and A1 as you specified).
+
+### Prompt
+
+```text
+Create a 16:9 LANDSCAPE film still (wider than tall, like a cinema frame). Use the attached images as the only references for this man: his face is exactly the face in the FIRST image (panel C6_v3: the same man after seven days without sleep), with his identity anchored by the SECOND image (panel A1): the same face shape, cheeks, nose, brows, eyes, hairline, beard, moustache, skin tone and age. Seven days without sleep shows ONLY as bloodshot eyes, darker under-eyes, dry cracked lips and damp untidy hair; the face is not thinner, not hollow-cheeked, not older. Natural skin texture with pores, no beautification.
+
+Extreme close-up, eye level, the camera very close: he is BEHIND a pane of old mirror glass at night, as if trapped inside it, his face close to the glass, looking straight into the lens with wide, desperate, terrified eyes. BOTH of his fists are pressed flat against the glass at the lower part of the frame, one on each side of his face, still, as if they have just stopped pounding. His own black digital watch (square case, black strap, exactly as in the THIRD image) is on his RIGHT wrist; because he faces the camera, his right hand and the watch appear on the LEFT side of the image. Blue-black ink marks on the fingertips of his RIGHT hand (the hand on the left side of the image); his left hand has no ink and no watch. Tears run down both cheeks. His face trembles. His MOUTH IS CLOSED, lips pressed together and trembling. He is NOT smiling: no upturned corners, no teeth.
+
+Wardrobe at the edge of the frame: charcoal-grey cotton shirt, collar open. No necklace, no chain, no jewellery.
+
+Light: warm oil-lamp glow from frame-LEFT is the only light, amber on the left side of his face as we see it, the other side in deep teal shadow; dark night behind him; faint rain streaks and a soft reflection on the glass in front of him. Colour and mood as in the FOURTH image (panel C7_v2). Photorealistic, cinematic, 35 mm film look, very shallow depth of field.
+
+Avoid: portrait or vertical format, a smile, upturned mouth corners, teeth, an open mouth, the watch on his left wrist, ink on his left hand, holding a shard or any object, hands not on the glass, a different face, a thinner, longer or hollow-cheeked face, an older look, horror makeup, beautified or smoothed skin, extra fingers, distorted hands, a necklace or chain, text, letters, numerals, logos, watermark, a second person, a figure behind him, light from the right, cartoon, 3D render, illustration.
+```
+
+Save to Drive Edit as **`7.4_key_v2.png`** (a new file; the rejected candidate stays as it is).
+
+### What I check on `7.4_key_v2.png`
+
+- [ ] **16:9 landscape** (e.g. 1672×941 or wider than tall); fails if portrait or square
+- [ ] Identity: same man as C6_v3 and A1 (face-match vs C6_v3 about 0.7+, the rejected candidate scored 0.75; face
+      shape about A1's 1.19; no gaunt or aged drift)
+- [ ] Behind the glass: glass surface between him and the camera (reflection, rain streaks)
+- [ ] **Both fists pressed on the glass**, five fingers each, natural
+- [ ] Watch on his **RIGHT** wrist (appears on the image's left); **ink on the RIGHT** fingertips; none on the left hand
+- [ ] Tears on both cheeks; trembling, desperate eyes into the lens
+- [ ] **Mouth closed, no smile**, no teeth
+- [ ] Lamp glow from frame-LEFT, teal shadows, night; charcoal shirt, no necklace; no text
+
+The Kling prompt (section 3) is unchanged: the cold, closed-lip smile forms during the clip while the eyes stay
+desperate. No video and no credits until the corrected keyframe is approved and you give an explicit OK.
