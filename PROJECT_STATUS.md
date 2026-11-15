@@ -211,6 +211,11 @@ Updated: 2026-11-10
   checks listed (yaw -25..-35, face-match vs base ~0.8+, lips 0.17, chin 0.39). Open: keep v3's larger lamp or restore the
   original's. Output name 5.7_key_v4.png (new file). No video, no credits.
 
+- SHOT 5.7 v4 PROMPT APPROVED by user (15 Nov) with one adjustment: restore the original keyframe's lamp size and
+  position. Final prompt in SHOT_5.7_V4_PROMPT.md: base = Drive 5.7_key_v3.png (only face source), A2 = head direction
+  only, original C55A5E62 = lamp only; 3 changes (head ~30 deg frame-left, eyes to mirror, lamp as original); all else
+  preserved. NOT generated yet: waiting for the user's go. No video, no credits.
+
 ## Remaining
 - [x] User confirms the other 29 Malayalam lines -> lock screenplay (done 11 Nov)
 - [ ] User generates panels in ChatGPT (A1 first), uploads <panel>_vN.png to Drive Edit -> I check each against the
