@@ -180,6 +180,12 @@ Updated: 2026-11-10
   3:02.0-3:05.0. Prompts ready; Kling model/lengths unconfirmed. Needed: keyframe confirmation, keep-or-fix decision,
   Kling model, explicit credit OK.
 
+- SHOT 5.7 KEYFRAME CORRECTION PROPOSED (15 Nov, not generated): edits/the-other-side/tests/SHOT_5.7_KEYFRAME_CORRECTION.md
+  + brief output/tos_5.7_correction_brief.jpg. ChatGPT edit of the approved original C55A5E62...png (kept unchanged,
+  still the approved version): head 3/4 to frame-left toward the mirror, mouth nearly closed; everything else kept.
+  Result to be saved as 5.7_key_v2.png (Drive Edit). User generates; I check; user approves v2 or keeps the original.
+  No video, no Kling credits.
+
 ## Remaining
 - [x] User confirms the other 29 Malayalam lines -> lock screenplay (done 11 Nov)
 - [ ] User generates panels in ChatGPT (A1 first), uploads <panel>_vN.png to Drive Edit -> I check each against the
