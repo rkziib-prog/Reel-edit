@@ -172,6 +172,14 @@ Updated: 2026-11-10
   exact slider values. Voice still PROVISIONAL; licence UNRESOLVED. Sample cleared as Line 18 audio for the 5.7
   lip-sync test. No audio generated, no credits spent, dialogue unchanged.
 
+- SHOT 5.7 READINESS AUDIT (15 Nov): edits/the-other-side/tests/SHOT_5.7_READINESS.md. NOT READY / NOT STARTED.
+  Keyframe candidate (needs user confirmation): Drive Edit C55A5E62-52B4-4F3F-B83F-1E5265C1E023.png (11 Nov 10:06),
+  read-only copy input/tos_keyframes/; 5.7-type frame (MCU, lamp frame-right, teal, charcoal shirt, no necklace) but
+  head near-frontal (yaw ~-5 deg, not 3/4 frame-left) and mouth open mid-shout; face-match 0.63 A1 / 0.70 B4 (support).
+  Audio: ElevenLabs Line 18 sample 1.29 s speech (verified wording), human take 1.74 s; plan 2.2 s; fits slot
+  3:02.0-3:05.0. Prompts ready; Kling model/lengths unconfirmed. Needed: keyframe confirmation, keep-or-fix decision,
+  Kling model, explicit credit OK.
+
 ## Remaining
 - [x] User confirms the other 29 Malayalam lines -> lock screenplay (done 11 Nov)
 - [ ] User generates panels in ChatGPT (A1 first), uploads <panel>_vN.png to Drive Edit -> I check each against the
