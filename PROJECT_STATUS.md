@@ -149,6 +149,16 @@ Updated: 2026-11-10
   sample's words; model/settings; Voice Library licence; Reflection = real Aadhi decision (a)/(b)/keep; what to do
   with the human L18 take. No audio or video generated, no credits spent.
 
+- VOICE DECISIONS (15 Nov, user): ElevenLabs "Abhilash S" sample = PROVISIONAL Aadhi voice reference. Line 18 check:
+  Whisper translates sample and human take as "Get out of my house!" (meaning = Line 18); Malayalam transcription
+  unusable; MFCC/DTW vs human take 0.65 fwd vs 0.91 reversed: EXACT WORDING NOT VERIFIED (needs ElevenLabs History
+  text or the user's ear). Settings preserved: voice Abhilash S (PVC), stability 50, similarity 99; MISSING: model
+  ("v4" ambiguous), style, speaker boost, speed, language, seed, output format, input text (MP3 tags hold none).
+  Reflection = same voice identity, same settings, colder/unsettling delivery (10-line plan; 23a-b keep scripted panic).
+  Human take L18_Aadhi_Take01 = emotional + timing reference (1.74 s vs sample 1.29 s). Licence NOT verified: no
+  account access, elevenlabs.io blocked; user to check plan, ToS/Voice Library addendum, the voice's own terms.
+  AADHI_VOICE_CONTINUITY.md updated. No audio/video generated, no credits spent, dialogue unchanged.
+
 ## Remaining
 - [x] User confirms the other 29 Malayalam lines -> lock screenplay (done 11 Nov)
 - [ ] User generates panels in ChatGPT (A1 first), uploads <panel>_vN.png to Drive Edit -> I check each against the
@@ -160,5 +170,5 @@ Updated: 2026-11-10
 - [ ] Generate shots scene by scene, check continuity, assemble, subtitles, sound, master (1080p24)
 
 ## Next recommended step
-User: send the 5.7 keyframe location; record the ElevenLabs voice ID/model/settings; choose (a)/(b)/keep for the
-Reflection voice. Then, on explicit OK for credits: Kling 5.7 clip, then Kling Lip Sync with the Line 18 reference take.
+User: screenshot the ElevenLabs History item of the sample (text, model, all settings); confirm plan/licence; send the 5.7
+keyframe location. Then, on explicit OK: Kling 5.7 clip and lip-sync (Line 18 audio only once its wording is confirmed).

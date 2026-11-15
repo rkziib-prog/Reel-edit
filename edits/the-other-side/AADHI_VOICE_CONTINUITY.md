@@ -13,11 +13,11 @@ it stays preserved and is not the voice reference.
 
 | | |
 | --- | --- |
-| Status | **APPROVED by the user (15 Nov) as Aadhi's official voice reference** |
+| Status | **PROVISIONAL voice reference for Aadhi (user decision, 15 Nov)**; Reflection uses the same voice identity (section 5) |
 | Drive file (Audio folder) | `ElevenLabs_2026-11-15T15_54_09_Abhilash S - Fun, Encouraging Friend_pvc_s50_sim99_v4.mp3` · id `1mjhQ2UgRC_6eOTTQOr2SdczVhP7b7jYP` · uploaded 15 Nov 16:03 |
 | Frozen local copy | `input/tos_voice/ElevenLabs_2026-11-15T15_54_09_Abhilash_S_pvc_s50_sim99_v4.mp3` (spaces and the comma removed from the local name only), read-only, 44,522 bytes, sha256 `3d7143de9756b840…` |
 | Voice (from the file name) | ElevenLabs Voice Library voice **"Abhilash S - Fun, Encouraging Friend"**, a Professional Voice Clone (`pvc`). `s50` and `sim99` read as stability 50 and similarity 99 in ElevenLabs' download names; `v4` is not decodable from the name; please confirm the model and any style/speed settings |
-| Content | Please confirm which words it speaks. Its two speech phrases (0.09–0.65 s and 0.66–1.38 s) fit Line 18's shape (എന്റെ വീട്ടീന്ന് / ഇറങ്ങിപ്പോടാ!), but I cannot read Malayalam words from audio reliably |
+| Content | **Meaning = Line 18; exact Malayalam wording NOT verified** (see 1a) |
 | Format | MP3, 128 kbps, mono, 44.1 kHz, 1.72 s |
 | Measured (my analysis) | speech 0.09–1.38 s (1.29 s) · median pitch ~216 Hz (10th–90th percentile 150–278 Hz), a shouted register · −14.2 LUFS (earshot), −17.7 LUFS integrated (ffmpeg), −2.5 dBFS peak, noise floor −40 dBFS |
 | Listening check (earshot) | 'an angry man shouting': plausible (z +2.8; 99% vs calm man / woman shouting / frightened whisper). 'A synthetic text-to-speech voice': **strong** (z +4.3; 94% vs a real recorded voice). Closest overall descriptions: 'funk music', 'celebratory and joyful music' (z +3.1), 'cheerful ukulele music' (z +2.7) |
@@ -32,15 +32,50 @@ better. I change nothing without your decision.
 The reference file is never edited, re-encoded or renamed (only the local copy's name drops spaces). Every trim or
 conversion for the edit is a new file in `work/`.
 
-**Please record for repeatability:** the model used (the `v4` in the name?), any style, speed and speaker-boost
-settings, and the language setting. Every later Aadhi line must use exactly these. Also confirm that your ElevenLabs
-plan allows this Voice Library voice in the film (Voice Library voices carry their own sharing terms). earshot cannot
-check licence or provenance.
+### 1a. Does the sample contain the exact approved Line 18? Not verified; the meaning matches
 
-**Also preserved (not the reference):** `L18_Aadhi_Take01.mp3.m4a` (Drive id `15MY1qZ-C7EM5Jp-BjRSqrPRMfoiAv4NV`, local
-read-only, sha256 `4a52a2659cb0ac98…`), a recorded take of Line 18 in a different, lower voice (median ~142 Hz, 1.74 s
-of speech). The duplicate `Poojaveli Thuruthan Kaval Road.m4a` has identical audio. Useful only as a timing and
-emotion guide if you want it; tell me if it should be used or set aside.
+Target: **എന്റെ വീട്ടീന്ന് ഇറങ്ങിപ്പോടാ!** (Line 18, locked). Three checks, none of which can confirm exact Malayalam words:
+
+| Check | ElevenLabs sample | Your recording (control) | What it shows |
+| --- | --- | --- | --- |
+| Whisper large-v3, translate to English | "Get out of my house!" | "Get out of my house." | Same meaning as Line 18 in both |
+| Whisper large-v3, Malayalam transcription | എതെങ്ടിനെരംങേ ത്റംടാ (confidence ~0.54) | എടെ വീട്ടിംദ് രങ്ക് പോണ് | Not usable for exact words: it garbles even your take |
+| Phonetic alignment (MFCC + DTW) against your take | cost 0.65 forward vs 0.91 reversed, 0.90 shuffled | — | The two follow largely the same sound sequence |
+
+**Result:** consistent with Line 18, **exact wording unconfirmed**. The sample is not treated as containing the exact
+line until confirmed by either of these:
+(1) the **text field of this generation in your ElevenLabs History** (opens with the voice, model and settings), or
+(2) your ear, word by word, against the line above.
+
+### 1b. Model and settings: what is preserved, what is missing
+
+Preserved exactly from the file name; to be reused unchanged for every Aadhi and Reflection line:
+- Voice: **Abhilash S - Fun, Encouraging Friend**, Voice Library, Professional Voice Clone (`pvc`)
+- Stability **50**, Similarity **99** (`s50`, `sim99`)
+
+**Missing** (not in the file name, and the MP3 carries no settings: its only tag is `encoder=Lavf63.1.102`):
+- **Model.** The `v4` in the name is ambiguous: it is not proven to be the model, the voice version or the take
+- Style exaggeration
+- Speaker boost (on/off)
+- Speed
+- Language and text-normalisation setting
+- Seed, if your model exposes one
+- Output format chosen at download
+- The exact input text
+
+All of these sit in the same ElevenLabs History item: a screenshot of it closes every gap.
+
+
+### 1c. Emotional and timing reference: your recording (user decision, 15 Nov)
+
+`L18_Aadhi_Take01.mp3.m4a` (Drive id `15MY1qZ-C7EM5Jp-BjRSqrPRMfoiAv4NV`, local read-only, sha256 `4a52a2659cb0ac98…`;
+the duplicate `Poojaveli Thuruthan Kaval Road.m4a` has identical audio) is the **emotional and timing reference**.
+Every generated Aadhi or Reflection line is checked against how you perform it.
+
+For Line 18 the generated take is noticeably faster than yours: 1.29 s of speech against your 1.74 s (about 26% shorter).
+Your take also reads as the stronger angry shout (earshot z +4.2 against the sample's +2.8). The 5.7 test can use the sample
+as it is (the shot is fitted to the take), but your pacing and anger are the target if Line 18 is regenerated.
+Regenerating needs your OK; no credits are spent now.
 
 ## 2. Voice identity lock (all Aadhi lines)
 
@@ -110,22 +145,38 @@ After generating (my check, on the downloaded file):
 
 ## 5. Real Aadhi, Reflection and Dr. Thomas
 
-- **Real Aadhi (Line 31, V.O.):** the same approved Aadhi voice, same settings; delivery flat and numb (Distressed →
-  emptied). It must be audibly the same man as Line 1, which it repeats word for word.
-- **Reflection (Lines 14, 16, 17a, 17b, 19, 21, 22a, 22b, 23a, 23b):** a separate voice, as you directed; not part of
-  this plan; it needs its own voice reference and approval.
-- **Dr. Thomas (Lines 6, 8a–8c, 10a–10b, 12a–12b, 25, 27, 29):** a separate voice (Google TTS test pending your key),
-  always through the phone filter; never lip-synced.
+**Decision (15 Nov): Aadhi and the Reflection share one voice identity.** This keeps the twist coherent: the
+Reflection *is* the real Aadhi, and Line 31 (Real Aadhi) is now the same voice he used behind the glass.
 
-**Decision to confirm (story continuity):** in the screenplay the Reflection *is* the real Aadhi. The plan's dialogue
-track was "Aadhi and the Reflection, one actor, two performances", and Line 31 (Real Aadhi) uses Aadhi's voice under
-this plan. A different voice for the Reflection means the real Aadhi speaks with one voice in Scene 5 and another in
-Scene 7. Two ways to keep it coherent:
-(a) the Reflection uses the **same Aadhi voice**, made exhausted and hoarse by performance plus the glass treatment in the
-mix (my recommendation, true to the twist); or
-(b) a separate Reflection voice, and **Line 31 then uses the Reflection's voice** instead of Aadhi's.
-I have followed your instruction (separate Reflection voice; Real Aadhi = Aadhi) and changed nothing else; please
-choose (a), (b) or keep as is.
+- **Real Aadhi (Line 31, V.O.):** the same voice and settings; delivery flat and numb, audibly the same man as Line 1,
+  which it repeats word for word.
+- **Reflection (10 lines):** the same voice, model and settings as Aadhi (1b); only the delivery differs: **colder and
+  more unsettling.** Settings are not changed per character, so the identity holds. The difference comes from:
+  - performance direction in the generation (where your model supports it);
+  - pacing (slower, longer pauses), measured against your recorded performances;
+  - the mix: drier and closer, with a faint glass early reflection, as already planned for the Reflection track.
+
+  Any settings change for the Reflection needs your OK first.
+- **Dr. Thomas:** a separate voice (Google TTS test pending your key), always through the phone filter, never lip-synced.
+
+**Note on the screenplay's performance notes:** they describe the Reflection as "slower, sadder, never aggressive,
+exhausted, pleading". The colder delivery below keeps every word and stays non-aggressive. The coldness reads as
+drained stillness, which also strengthens the misdirection (the audience reads him as the threat; he is the victim).
+Lines 23a–23b keep the scripted panic, the first loss of control, so the break lands against the cold before it.
+Tell me if you want those two cold as well.
+
+| ID | Time (plan) | Shot | Lip-sync | Approved Malayalam | English subtitle | Colder delivery (performance only) |
+| --- | --- | --- | --- | --- | --- | --- |
+| 14 | 2:44.4–2:48.8 | 5.4 | YES | ആദീ... ഇത്തവണയെങ്കിലും നീ എന്നെ കേൾക്കുമോ? | Aadhi... will you listen to me this time, at least? | Hoarse, near-whisper, too even; a beat too long before ആദീ; no rise of pleading in the pitch. |
+| 16 | 2:53.4–2:55.4 | 5.6 | YES | നിന്റെ മുഖം... | Your face... | One dry exhale of a laugh, no warmth, then the words flat (the screenplay's tired, broken laugh, emptied). |
+| 17a | 2:56.2–2:58.7 | 5.6 | YES | ഏഴ് ദിവസമായി ഞാൻ ഉറങ്ങിയിട്ടില്ല. | I haven't slept in seven days. | Low, level, matter-of-fact; exhaustion stated, not felt; almost monotone. |
+| 17b | 2:58.8–3:01.8 | 5.6 | YES | കണ്ണടച്ചാൽ നീ കടന്നു വരുമെന്ന് എനിക്കറിയാം. | I know if I close my eyes, you'll come through. | Quiet certainty, slow, unblinking; the calm is the unsettling part. |
+| 19 | 3:05.2–3:07.7 | 5.8 | YES | നിന്റെ കൈയിലേക്കൊന്ന് നോക്ക്, ആദീ. | Look at your hand, Aadhi. | Soft and intimate, almost a whisper; gentleness that unnerves rather than comforts. |
+| 21 | 3:12.3–3:15.8 | 5.10 | YES | അല്ല. ഞാനാ എഴുതിയത്. നിനക്ക് വായിക്കാൻ വേണ്ടി. | No. I wrote them. For you to read. | Flat statement, no emphasis on any word; a small pause after അല്ല. |
+| 22a | 3:18.1–3:20.4 | 5.11 | No: wide shot, mouth too small (candidate) | ആ തുണിയെടുത്ത് ഈ കണ്ണാടി മൂട്. | Take that cloth and cover this mirror. | Controlled, low, words spaced; an instruction, not a plea. |
+| 22b | 3:20.5–3:22.6 | 5.11 (ends 0.6 s into 5.12) | No: wide shot, mouth too small (candidate) | എന്നിട്ട് തിരിച്ച് പോ. ദയവു ചെയ്ത്. | Then go back. Please. | Same control; ദയവു ചെയ്ത് barely voiced; the only crack in the coldness so far. |
+| 23a | 3:25.0–3:26.2 | 5.13 | YES | വേണ്ട! ആദീ, അരുത്! | No! Aadhi, don't! | The cold breaks: real panic, shouting for the first time (the screenplay's 'panic, for the first time'). |
+| 23b | 3:26.3–3:28.2 | 5.13 (ends 0.2 s into 5.14) | YES | ഇത് പൊട്ടിയാൽ പിന്നെ ആർക്കും തിരിച്ചു വരാൻ പറ്റില്ല! | If this breaks, no one can ever come back! | Panic continues, fast and raw; the contrast with the cold lines before is the point. |
 
 ## 6. First lip-sync test: Shot 5.7, Line 18
 
@@ -134,7 +185,7 @@ Uses the approved ElevenLabs voice. The full shot package is `edits/the-other-si
 
 | | |
 | --- | --- |
-| Audio for lip-sync | the approved reference file, **if you confirm it speaks Line 18 exactly** (എന്റെ വീട്ടീന്ന് ഇറങ്ങിപ്പോടാ!). If it speaks other words, Line 18 must be generated in this voice with the same settings (needs your OK; no credits spent until then) |
+| Audio for lip-sync | the provisional ElevenLabs sample, **only after its exact wording is confirmed** (1a). Its meaning already checks as Line 18. If it differs, Line 18 is generated again in the same voice and settings, paced to your recording (needs your OK; no credits now) |
 | Trim for Kling Lip Sync | 0.00–1.58 s of the file (0.09 s lead-in, the whole speech, 0.2 s after) → a new file, `work/tos/L18_aadhi_lipsync_trim.wav`, made only when you start this step |
 | Placement in the film | speech start at 3:02.20 (plan) → file offset 0.09 s at 3:02.11; speech ends ≈3:03.49, inside the 3:02.0–3:05.0 slot, well before Line 19 at 3:05.2 |
 | Plan vs take | plan window 3:02.2–3:04.4 (2.2 s); this take speaks for 1.29 s, about 0.9 s shorter. The shot is fitted to the take: the remaining ~1.5 s of 5.7 carries his breathing after the shout, as the Kling prompt already asks. No shot-length change needed |
@@ -142,3 +193,27 @@ Uses the approved ElevenLabs voice. The full shot package is `edits/the-other-si
 | Order | you confirm the words → keyframe location recorded → your OK for Kling credits → `5.7_v1.mp4` → Kling Lip Sync with the trim → `5.7_v1_lipsync.mp4` → my check (±2 frames on the checkpoints) → flip, grade, mix, subtitle → your review |
 
 Nothing in this section is run until you approve each step.
+
+## 7. ElevenLabs licence for this Voice Library voice: NOT verified
+
+I cannot verify your subscription:
+- I have no access to your ElevenLabs account.
+- elevenlabs.io is blocked from this session's network, so I could not read the official terms either.
+
+What third-party summaries say, unconfirmed against ElevenLabs' own pages:
+- Free plans are for non-commercial use only; paid plans (Starter upward) allow commercial use
+  ([costbench summary](https://www.costbench.com/software/ai-voice-tools/elevenlabs/free-plan/),
+  [licensing guide](https://licenseorg.com/blog/elevenlabs-licensing-guide-ai-voices)).
+- Sources disagree on whether output stays licensed after a subscription ends
+  ([terms.law](https://terms.law/ai-output-rights/elevenlabs/)).
+- Voice Library voices fall under a separate Voice Library addendum, and a voice's creator may set extra terms
+  ([licensing guide](https://licenseorg.com/blog/ai-voice-licensing-elevenlabs)). I found no film-specific rule.
+
+To settle it, please check or send:
+1. Your current plan name in ElevenLabs (Subscription page).
+2. The ElevenLabs Terms of Service and the Voice Library addendum ([elevenlabs.io/terms-of-use](https://elevenlabs.io/terms-of-use)).
+3. The **"Abhilash S - Fun, Encouraging Friend"** voice's own page in the Voice Library: any usage restrictions or notice
+   period its creator set.
+4. That every line used in the film is generated while a paid plan is active.
+
+Until then the voice stays provisional for the film.
