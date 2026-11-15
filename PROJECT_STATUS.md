@@ -216,6 +216,13 @@ Updated: 2026-11-10
   only, original C55A5E62 = lamp only; 3 changes (head ~30 deg frame-left, eyes to mirror, lamp as original); all else
   preserved. NOT generated yet: waiting for the user's go. No video, no credits.
 
+- SHOT 5.7 KEYFRAME v4 REVIEWED (15 Nov, AWAITING USER FINAL APPROVAL): Drive Edit 5.7_key_v4.png (id
+  1rsppXP2iYSwGfxFjJodcORngYe72H17f, 17:44), read-only copy input/tos_keyframes/5.7_key_v4.png (4e185d7e71426919).
+  FIXED: head yaw -30.3 to frame-left, upright (roll -0.3), eyes to the mirror; identity kept (A2 0.65 best yet, A1 0.59,
+  original 0.66), lips closed (0.16), chin/face shape in range, costume OK. REMAINING: lamp much smaller/lower than the
+  original (glow 1.0% vs 2.8% of frame); warm key moved to the frame-left side of the face; head left of centre (less
+  lead room). Options: approve v4 or a v5 lamp/light-only fix. Review: SHOT_5.7_V4_REVIEW.md. No video, no credits.
+
 ## Remaining
 - [x] User confirms the other 29 Malayalam lines -> lock screenplay (done 11 Nov)
 - [ ] User generates panels in ChatGPT (A1 first), uploads <panel>_vN.png to Drive Edit -> I check each against the
@@ -227,6 +234,5 @@ Updated: 2026-11-10
 - [ ] Generate shots scene by scene, check continuity, assemble, subtitles, sound, master (1080p24)
 
 ## Next recommended step
-User: decide the 5.7 keyframe: (a) approve the current 5.7_key_v3.png (v2 image) as is, (b) keep the original, or
-(c) one more ChatGPT edit of the current file: head ~30 deg to frame-left like A2, eyes to the mirror, keep face, mouth,
-lamp size. Kling only after approval and an explicit credit OK.
+User: final decision on the 5.7 keyframe: approve v4 as is, or a v5 lamp/lighting-only edit of v4. Then Kling 5.7 clip
++ Lip Sync only on explicit OK for credits.
