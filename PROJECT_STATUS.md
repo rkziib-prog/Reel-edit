@@ -186,6 +186,13 @@ Updated: 2026-11-10
   Result to be saved as 5.7_key_v2.png (Drive Edit). User generates; I check; user approves v2 or keeps the original.
   No video, no Kling credits.
 
+- SHOT 5.7 KEYFRAME v2 REVIEWED (15 Nov, NOT approved): Drive Edit 086CA352-00B1-4BCA-A7A9-7428FAE0BDA0.png (17:03;
+  no file named 5.7_key_v2.png: user to confirm), read-only copy in input/tos_keyframes/. Mouth FIXED (nearly closed).
+  MISMATCHES: head turned toward frame-RIGHT (yaw +13.7 deg; target ~-25..-35 like A2 at -35.9), eyes not clearly on the
+  frame-left mirror; minor: lamp larger/closer, more head tilt. Identity same as original (0.86; A1 0.60). Review:
+  edits/the-other-side/tests/SHOT_5.7_V2_REVIEW.md with a v3 prompt fix. Original C55A5E62 unchanged, still approved.
+  Readiness doc corrected (original yaw +6.9, not -5). No video, no credits.
+
 ## Remaining
 - [x] User confirms the other 29 Malayalam lines -> lock screenplay (done 11 Nov)
 - [ ] User generates panels in ChatGPT (A1 first), uploads <panel>_vN.png to Drive Edit -> I check each against the
