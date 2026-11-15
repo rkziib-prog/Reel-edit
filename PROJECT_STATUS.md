@@ -204,6 +204,13 @@ Updated: 2026-11-10
   unchanged (e9d3a28fd9f959e4). Local copy input/tos_keyframes/5.7_key_v3.png = the trashed 17:11 image. Record:
   edits/the-other-side/tests/SHOT_5.7_V3_REVIEW.md. No video, no credits.
 
+- SHOT 5.7 v4 CORRECTION PROMPT prepared (15 Nov, not generated, awaiting user review):
+  edits/the-other-side/tests/SHOT_5.7_V4_PROMPT.md. ChatGPT edit of the current Drive 5.7_key_v3.png (v2 image): ONLY head
+  ~30 deg to frame-left (A2 attached for direction only) + eyes to the frame-left mirror; face, mouth, chin, beard, hair,
+  expression, skin, shirt, lighting, lamp, framing preserved; Identity Board/A1 deliberately not attached. Acceptance
+  checks listed (yaw -25..-35, face-match vs base ~0.8+, lips 0.17, chin 0.39). Open: keep v3's larger lamp or restore the
+  original's. Output name 5.7_key_v4.png (new file). No video, no credits.
+
 ## Remaining
 - [x] User confirms the other 29 Malayalam lines -> lock screenplay (done 11 Nov)
 - [ ] User generates panels in ChatGPT (A1 first), uploads <panel>_vN.png to Drive Edit -> I check each against the
