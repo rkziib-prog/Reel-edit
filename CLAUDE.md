@@ -43,7 +43,8 @@ Malayalam psychological thriller short, 4:28 (268 s), 16:9 1920x1080, 24 fps, AI
 - Dialogue: Aadhi's voice = the user's approved ElevenLabs male voice (15 Nov; reference `ElevenLabs_2026-11-15T15_54_09_Abhilash S - Fun, Encouraging Friend_pvc_s50_sim99_v4.mp3`,
   Drive Audio, frozen in `input/tos_voice/`; `L18_Aadhi_Take01.mp3.m4a` is a recorded human take, NOT the reference; plan `edits/the-other-side/AADHI_VOICE_CONTINUITY.md`; PROVISIONAL; Real Aadhi and the
   Reflection use the same voice and settings, Reflection colder in delivery only; Dr. Thomas separate; the user's
-  human take `L18_Aadhi_Take01.mp3.m4a` is the emotional and timing reference; licence and exact Line 18 wording unverified). Shots fit to the takes; lip-sync only where the mouth is clearly
+  human take `L18_Aadhi_Take01.mp3.m4a` is the emotional and timing reference; settings: Eleven v4, stability ~50, similarity ~99,
+  clone strength 0, language Auto, MP3 44.1 kHz 128 kbps; Line 18 wording verified (`[angry]` tag); licence unverified). Shots fit to the takes; lip-sync only where the mouth is clearly
   visible. 29-line review: https://claude.ai/artifact/48jnz6JzsTKhmrHUfycwmD. ALL 31 LINES APPROVED and locked (11 Nov):
   never change dialogue wording or subtitles without the user. Per-shot dialogue, delivery and lip-sync:
   `edits/the-other-side/DIALOGUE_SHOT_MAP.md` (from `dialogue_shot_map.py`).

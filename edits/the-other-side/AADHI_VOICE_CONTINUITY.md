@@ -11,8 +11,8 @@ by script from `edits/the-other-side/DIALOGUE_SHOT_MAP.md`.
 | Aadhi voice | ElevenLabs "Abhilash S - Fun, Encouraging Friend": **PROVISIONAL**. Also used for the Reflection (colder delivery) and Real Aadhi |
 | Original ElevenLabs sample | Preserved unchanged in Drive Audio and read-only in `input/tos_voice/` (sha256 `3d7143de9756b840…`) |
 | Your human recording (Line 18) | Preserved unchanged, read-only (sha256 `4a52a2659cb0ac98…`); the **emotional and timing reference** |
-| Exact Line 18 wording in the sample | **Unverified**: the meaning matches Line 18; the exact words are not confirmed (1a) |
-| Model and settings | Partly known: stability 50, similarity 99; **model and 7 other settings missing** (1b) |
+| Exact Line 18 wording in the sample | **VERIFIED from the ElevenLabs screenshot (user, 15 Nov)**: input text `[angry] എന്റെ വീട്ടീന്ന് ഇറങ്ങിപ്പോടാ!` (1a) |
+| Model and settings | Recorded from the screenshot: Eleven v4, stability ~50, similarity ~99, clone strength 0, language Auto, MP3 44.1 kHz 128 kbps; **hidden settings pending** (1b) |
 | Commercial licence | **UNRESOLVED**: stays so until checked against ElevenLabs' official terms and your actual subscription (7) |
 | Dr. Thomas | **Separate**: Google Cloud TTS, its own setup and key, never mixed with Aadhi's ElevenLabs voice (5) |
 | Generation | None: no audio or video generated or regenerated, no credits spent, approved dialogue unchanged |
@@ -31,8 +31,8 @@ it stays preserved and is not the voice reference.
 | Status | **PROVISIONAL voice reference for Aadhi (user decision, 15 Nov)**; Reflection uses the same voice identity (section 5) |
 | Drive file (Audio folder) | `ElevenLabs_2026-11-15T15_54_09_Abhilash S - Fun, Encouraging Friend_pvc_s50_sim99_v4.mp3` · id `1mjhQ2UgRC_6eOTTQOr2SdczVhP7b7jYP` · uploaded 15 Nov 16:03 |
 | Frozen local copy | `input/tos_voice/ElevenLabs_2026-11-15T15_54_09_Abhilash_S_pvc_s50_sim99_v4.mp3` (spaces and the comma removed from the local name only), read-only, 44,522 bytes, sha256 `3d7143de9756b840…` |
-| Voice (from the file name) | ElevenLabs Voice Library voice **"Abhilash S - Fun, Encouraging Friend"**, a Professional Voice Clone (`pvc`). `s50` and `sim99` read as stability 50 and similarity 99 in ElevenLabs' download names; `v4` is not decodable from the name; please confirm the model and any style/speed settings |
-| Content | **Meaning = Line 18; exact Malayalam wording NOT verified** (see 1a) |
+| Voice | **Abhilash S – Fun, Encouraging Friend** (ElevenLabs Voice Library, Professional Voice Clone `pvc`), confirmed by the screenshot |
+| Content | **Line 18, exact wording VERIFIED from the ElevenLabs screenshot** (1a), spoken with the `[angry]` emotion tag |
 | Format | MP3, 128 kbps, mono, 44.1 kHz, 1.72 s |
 | Measured (my analysis) | speech 0.09–1.38 s (1.29 s) · median pitch ~216 Hz (10th–90th percentile 150–278 Hz), a shouted register · −14.2 LUFS (earshot), −17.7 LUFS integrated (ffmpeg), −2.5 dBFS peak, noise floor −40 dBFS |
 | Listening check (earshot) | 'an angry man shouting': plausible (z +2.8; 99% vs calm man / woman shouting / frightened whisper). 'A synthetic text-to-speech voice': **strong** (z +4.3; 94% vs a real recorded voice). Closest overall descriptions: 'funk music', 'celebratory and joyful music' (z +3.1), 'cheerful ukulele music' (z +2.7) |
@@ -47,39 +47,51 @@ better. I change nothing without your decision.
 The reference file is never edited, re-encoded or renamed (only the local copy's name drops spaces). Every trim or
 conversion for the edit is a new file in `work/`.
 
-### 1a. Does the sample contain the exact approved Line 18? Not verified; the meaning matches
+### 1a. Line 18 wording: VERIFIED from the ElevenLabs screenshot
 
-Target: **എന്റെ വീട്ടീന്ന് ഇറങ്ങിപ്പോടാ!** (Line 18, locked). Three checks, none of which can confirm exact Malayalam words:
+Source: the user's screenshot of the ElevenLabs Text-to-Speech settings for this sample (15 Nov). The values were
+read from the screenshot and reported by the user; the image itself was not available to me in Drive or in the chat,
+so this record rests on the user's reading.
 
-| Check | ElevenLabs sample | Your recording (control) | What it shows |
-| --- | --- | --- | --- |
-| Whisper large-v3, translate to English | "Get out of my house!" | "Get out of my house." | Same meaning as Line 18 in both |
-| Whisper large-v3, Malayalam transcription | എതെങ്ടിനെരംങേ ത്റംടാ (confidence ~0.54) | എടെ വീട്ടിംദ് രങ്ക് പോണ് | Not usable for exact words: it garbles even your take |
-| Phonetic alignment (MFCC + DTW) against your take | cost 0.65 forward vs 0.91 reversed, 0.90 shuffled | — | The two follow largely the same sound sequence |
+| | |
+| --- | --- |
+| Approved Line 18 | **എന്റെ വീട്ടീന്ന് ഇറങ്ങിപ്പോടാ!** (locked 10 Nov) |
+| Input text in ElevenLabs | `[angry] എന്റെ വീട്ടീന്ന് ഇറങ്ങിപ്പോടാ!` |
+| Emotion tag | `[angry]`: a delivery tag, not spoken and not part of the dialogue or subtitle |
+| Wording status | **VERIFIED**: matches the approved line exactly |
 
-**Result:** consistent with Line 18, **exact wording unconfirmed**. The sample is not treated as containing the exact
-line until confirmed by either of these:
-(1) the **text field of this generation in your ElevenLabs History** (opens with the voice, model and settings), or
-(2) your ear, word by word, against the line above.
+My earlier audio checks agree with this. Whisper translates the sample as "Get out of my house!", and its sound
+sequence aligns with your recording (DTW cost 0.65 against 0.91 reversed). The sample is now the Line 18 audio for the
+Shot 5.7 lip-sync test (section 6).
 
-### 1b. Model and settings: what is preserved, what is missing
+### 1b. Model and settings: recorded from the screenshot; hidden ones pending
 
-Preserved exactly from the file name; to be reused unchanged for every Aadhi and Reflection line:
-- Voice: **Abhilash S - Fun, Encouraging Friend**, Voice Library, Professional Voice Clone (`pvc`)
-- Stability **50**, Similarity **99** (`s50`, `sim99`)
+Every later Aadhi, Reflection and Real Aadhi line uses exactly these. Values are as the user read them from the
+screenshot; the sliders show approximate values.
 
-**Missing** (not in the file name, and the MP3 carries no settings: its only tag is `encoder=Lavf63.1.102`):
-- **Model.** The `v4` in the name is ambiguous: it is not proven to be the model, the voice version or the take
-- Style exaggeration
-- Speaker boost (on/off)
-- Speed
-- Language and text-normalisation setting
-- Seed, if your model exposes one
-- Output format chosen at download
-- The exact input text
+| Setting | Value | Status |
+| --- | --- | --- |
+| Voice | Abhilash S – Fun, Encouraging Friend (Voice Library, PVC) | Recorded (screenshot) |
+| Model | **Eleven v4** (explains the `v4` in the file name) | Recorded (screenshot) |
+| Stability | ~50 (file name `s50`) | Recorded, approximate (slider) |
+| Similarity | ~99 (file name `sim99`) | Recorded, approximate (slider) |
+| Clone strength | 0 | Recorded (screenshot) |
+| Language | Auto | Recorded (screenshot) |
+| Emotion tag (Line 18) | `[angry]` in the input text | Recorded (screenshot) |
+| Output format | MP3, 44.1 kHz, 128 kbps (matches the file: MP3, 44.1 kHz, 128 kbps, mono) | Recorded, confirmed by the file |
+| Style exaggeration | — | **PENDING**: not visible / not reported |
+| Speaker boost | — | **PENDING** |
+| Speed | — | **PENDING** |
+| Text normalisation | — | **PENDING** |
+| Seed | — | **PENDING** (if the model exposes one) |
+| Exact slider values (stability, similarity) | — | **PENDING** if you want them exact rather than approximate |
 
-All of these sit in the same ElevenLabs History item: a screenshot of it closes every gap.
+No value above was inferred or invented; a pending setting stays blank until you report it. Language "Auto" means the
+model detects Malayalam from the text. Keep it on Auto for every line so all lines are generated the same way.
 
+**Emotion tags for the other lines:** Line 18 uses `[angry]`. Which tags Eleven v4 accepts for the other bands
+(calm, frightened, distressed, cold) is not verified here. Each tag is recorded per line only when you use and approve
+it; tags are never added to the dialogue or subtitles.
 
 ### 1c. Emotional and timing reference: your recording (user decision, 15 Nov)
 
@@ -202,12 +214,12 @@ Uses the approved ElevenLabs voice. The full shot package is `edits/the-other-si
 
 | | |
 | --- | --- |
-| Audio for lip-sync | the provisional ElevenLabs sample, **only after its exact wording is confirmed** (1a). Its meaning already checks as Line 18. If it differs, Line 18 is generated again in the same voice and settings, paced to your recording (needs your OK; no credits now) |
+| Audio for lip-sync | the provisional ElevenLabs sample, **Line 18 wording verified from the screenshot** (1a). Your recording stays the timing and emotion reference (1c); regenerating Line 18 to its pacing needs your OK |
 | Trim for Kling Lip Sync | 0.00–1.58 s of the file (0.09 s lead-in, the whole speech, 0.2 s after) → a new file, `work/tos/L18_aadhi_lipsync_trim.wav`, made only when you start this step |
 | Placement in the film | speech start at 3:02.20 (plan) → file offset 0.09 s at 3:02.11; speech ends ≈3:03.49, inside the 3:02.0–3:05.0 slot, well before Line 19 at 3:05.2 |
 | Plan vs take | plan window 3:02.2–3:04.4 (2.2 s); this take speaks for 1.29 s, about 0.9 s shorter. The shot is fitted to the take: the remaining ~1.5 s of 5.7 carries his breathing after the shout, as the Kling prompt already asks. No shot-length change needed |
 | Mouth checkpoints | the package's seven; the take's phrase break at 0.65–0.66 s is the likely boundary between വീട്ടീന്ന് and ഇറങ്ങിപ്പോടാ; the പ്പ lip closure falls inside the second phrase, to be found against the picture |
-| Order | you confirm the words → keyframe location recorded → your OK for Kling credits → `5.7_v1.mp4` → Kling Lip Sync with the trim → `5.7_v1_lipsync.mp4` → my check (±2 frames on the checkpoints) → flip, grade, mix, subtitle → your review |
+| Order | keyframe location recorded → your OK for Kling credits → `5.7_v1.mp4` → Kling Lip Sync with the trim → `5.7_v1_lipsync.mp4` → my check (±2 frames on the checkpoints) → flip, grade, mix, subtitle → your review |
 
 Nothing in this section is run until you approve each step.
 
@@ -241,20 +253,22 @@ Tick each item as you send it. Nothing is generated, regenerated or bought while
 
 **A. Line 18 wording in the ElevenLabs sample**
 
-- [ ] The exact text typed into ElevenLabs for this sample: a screenshot of its **History** item, or the text copied from it
-- [ ] Or your confirmation by ear that it says എന്റെ വീട്ടീന്ന് ഇറങ്ങിപ്പോടാ! word for word (if any word differs, say which)
+- [x] The exact text typed into ElevenLabs for this sample: `[angry] എന്റെ വീട്ടീന്ന് ഇറങ്ങിപ്പോടാ!` (screenshot, 15 Nov)
+- [x] Line 18 wording verified (from the screenshot; no separate check by ear needed)
 
 **B. Model and settings of the sample** (the same History item shows them all)
 
-- [ ] Model name (e.g. what the `v4` in the file name refers to)
-- [ ] Stability (file name says 50: please confirm)
-- [ ] Similarity (file name says 99: please confirm)
+- [x] Model: Eleven v4
+- [x] Stability ~50 (exact value pending if wanted)
+- [x] Similarity ~99 (exact value pending if wanted)
 - [ ] Style exaggeration
 - [ ] Speaker boost: on or off
 - [ ] Speed
-- [ ] Language setting, and text normalisation if shown
+- [x] Language: Auto
+- [ ] Text normalisation (pending)
 - [ ] Seed, if the model shows one
-- [ ] Output format you downloaded (e.g. MP3 128 kbps or higher)
+- [x] Output format: MP3, 44.1 kHz, 128 kbps
+- [x] Clone strength: 0
 
 **C. Licence: commercial use in the film** (stays UNRESOLVED until all four are checked)
 

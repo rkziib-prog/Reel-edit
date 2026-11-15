@@ -165,6 +165,13 @@ Updated: 2026-11-10
   (separate from ElevenLabs), F 5.7 keyframe location + Kling OK. ElevenLabs voice stays PROVISIONAL; sample and
   human take preserved (sha256 unchanged). No audio generated, no credits spent, dialogue unchanged.
 
+- ELEVENLABS SETTINGS RECORDED (15 Nov, from the user's screenshot; image not seen by me: not in Drive or chat):
+  Line 18 input text "[angry] എന്റെ വീട്ടീന്ന് ഇറങ്ങിപ്പോടാ!" = approved Line 18: WORDING VERIFIED. Voice Abhilash S -
+  Fun, Encouraging Friend; model Eleven v4; stability ~50; similarity ~99; clone strength 0; language Auto; output MP3
+  44.1 kHz 128 kbps (matches the file). PENDING: style exaggeration, speaker boost, speed, text normalisation, seed,
+  exact slider values. Voice still PROVISIONAL; licence UNRESOLVED. Sample cleared as Line 18 audio for the 5.7
+  lip-sync test. No audio generated, no credits spent, dialogue unchanged.
+
 ## Remaining
 - [x] User confirms the other 29 Malayalam lines -> lock screenplay (done 11 Nov)
 - [ ] User generates panels in ChatGPT (A1 first), uploads <panel>_vN.png to Drive Edit -> I check each against the
@@ -176,5 +183,5 @@ Updated: 2026-11-10
 - [ ] Generate shots scene by scene, check continuity, assemble, subtitles, sound, master (1080p24)
 
 ## Next recommended step
-User: screenshot the ElevenLabs History item of the sample (text, model, all settings); confirm plan/licence; send the 5.7
-keyframe location. Then, on explicit OK: Kling 5.7 clip and lip-sync (Line 18 audio only once its wording is confirmed).
+User: licence checks (plan, official terms, the voice's own terms); pending ElevenLabs settings if visible; 5.7 keyframe
+location. Then, on explicit OK for credits: Kling 5.7 clip, then Lip Sync with the verified Line 18 sample.
