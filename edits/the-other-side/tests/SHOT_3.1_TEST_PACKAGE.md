@@ -8,7 +8,7 @@ panels, and the lessons from the Shot 5.7 keyframe rounds.
 
 | Stage | State |
 | --- | --- |
-| Keyframe K3 `3.1_key_v1.png` | Prompt FINAL (moonlight side confirmed 16 Nov); being made by the user in ChatGPT (5 references, section 1 order). K3 is reused for shot 3.6 |
+| Keyframe K3 | **APPROVED FINAL: `3.1_key_v1.png`** (user, 16 Nov), Drive **Edit** id `11-9lE-qj2yx_OJIn_GwDHiCCAPyUZOLb`, uploaded 16 Nov 07:33, 2,176,764 bytes; original file preserved unchanged. **Approval basis: the user's own visual review** (identity, costume, right-wrist watch, phone, hall composition, courtyard rain, moonlight, distant oil lamp, empty mirror: all acceptable). My own pixel check and read-only local copy are **pending**: the download was blocked by a temporary tool-check failure on 16 Nov, so I have not inspected the image. I will copy it read-only and record measurements when access returns. K3 is reused for shot 3.6 |
 | Kling clip `3.1_v1.mp4` | Not generated; waits for an approved keyframe and your explicit OK to spend credits |
 | Lip-sync | None: no dialogue in 3.1 (two phone buzzes only) |
 

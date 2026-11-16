@@ -265,8 +265,8 @@ Updated: 2026-11-10
   historical candidate (not deleted/overwritten). Reasons: watch + ink on the LEFT, portrait, holds a shard, smile already
   formed. Corrected prompt ready: SHOT_7.4_TEST_PACKAGE.md section 8 -> 7.4_key_v2.png (16:9; C6_v3 + A1 identity; behind
   the glass, both fists on it; watch + ink RIGHT; tears, trembling, mouth closed, no smile; smile only in the Kling clip).
-- TEST-SHOT READINESS: 5.7 keyframe v5 approved + Line 18 audio ready (needs Kling model + credit OK); 7.4 keyframe
-  APPROVED (7.4_key_v2.png; needs Kling model + credit OK); 3.1 keyframe K3 not made yet. No video, no credits.
+- TEST-SHOT READINESS (16 Nov): ALL THREE KEYFRAMES APPROVED. 5.7 v5 + Line 18 audio ready; 7.4 v2 approved; 3.1 K3
+  approved. Each still needs the Kling model/lengths and an explicit credit OK. No video, no credits.
 
 - SHOT 7.4 CORRECTED KEYFRAME CHECKED (16 Nov, AWAITING USER REVIEW, not approved): Drive Edit 7.4_key_v2.png
   (id 1TuXnXkR95-Pwzoyv3dUkH3_0ClKPmrjg, 05:41), read-only copy input/tos_keyframes/7.4_key_v2.png (359e56c6fccc9f30).
@@ -283,6 +283,12 @@ Updated: 2026-11-10
   keyframe (screen-left after the flip). Prompt unchanged (SHOT_3.1_TEST_PACKAGE.md section 2). User is creating
   3.1_key_v1.png with the 5 references in order. No video, no credits.
 
+- SHOT 3.1 KEYFRAME K3 APPROVED (user, 16 Nov): FINAL = 3.1_key_v1.png, Drive Edit id 11-9lE-qj2yx_OJIn_GwDHiCCAPyUZOLb
+  (07:33, 2,176,764 bytes), original preserved unchanged. Approval basis: the USER'S visual review in ChatGPT (identity,
+  costume, right-wrist watch, phone, hall composition, courtyard rain, moonlight, distant oil lamp, empty mirror all
+  acceptable). My pixel check and read-only local copy PENDING: download blocked by a temporary tool-check failure; to
+  do when access returns (record only, approval stands). No video, no credits.
+
 ## Remaining
 - [x] User confirms the other 29 Malayalam lines -> lock screenplay (done 11 Nov)
 - [ ] User generates panels in ChatGPT (A1 first), uploads <panel>_vN.png to Drive Edit -> I check each against the
@@ -294,5 +300,5 @@ Updated: 2026-11-10
 - [ ] Generate shots scene by scene, check continuity, assemble, subtitles, sound, master (1080p24)
 
 ## Next recommended step
-Shot 3.1 keyframe K3: user confirms the moonlight side (frame-right) and generates 3.1_key_v1.png from SHOT_3.1_TEST_PACKAGE.md;
-I check it. Kling for 5.7 / 7.4 / 3.1 only on an explicit credit OK (and the Kling model/lengths).
+All three test keyframes approved. User: tell me the Kling model and clip lengths, then give an explicit credit OK per
+test clip (5.7 + Lip Sync, 7.4, 3.1). Me: copy 3.1_key_v1.png read-only and record its check when the tool check works.
