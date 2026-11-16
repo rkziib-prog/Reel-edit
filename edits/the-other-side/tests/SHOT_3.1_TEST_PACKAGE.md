@@ -8,7 +8,7 @@ panels, and the lessons from the Shot 5.7 keyframe rounds.
 
 | Stage | State |
 | --- | --- |
-| Keyframe K3 `3.1_key_v1.png` | Not made. Prompt ready (section 2). K3 is reused for shot 3.6 |
+| Keyframe K3 `3.1_key_v1.png` | Prompt FINAL (moonlight side confirmed 16 Nov); being made by the user in ChatGPT (5 references, section 1 order). K3 is reused for shot 3.6 |
 | Kling clip `3.1_v1.mp4` | Not generated; waits for an approved keyframe and your explicit OK to spend credits |
 | Lip-sync | None: no dialogue in 3.1 (two phone buzzes only) |
 
@@ -28,7 +28,7 @@ panels, and the lessons from the Shot 5.7 keyframe rounds.
 
 **Light, as the plan sets it:** blue moonlight through the open courtyard (nadumuttam) is the key; one oil lamp far
 away is the only warm accent. To obey the flip rule, this package puts the courtyard and its moonlight on frame-**RIGHT**.
-The plan's own 3.1 prompt gives no side, so this is my placement for the rule; tell me if you want it otherwise.
+The plan's own 3.1 prompt gives no side. **Confirmed by the user (16 Nov):** courtyard and moonlight at frame-RIGHT in the generated keyframe, so after the flip the light sits on the left of the final screen. Prompt unchanged.
 
 ## 1. Approved reference images (exact files)
 

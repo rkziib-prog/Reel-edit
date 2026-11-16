@@ -279,6 +279,10 @@ Updated: 2026-11-10
   read-only copy input/tos_keyframes/7.4_key_v2.png, 359e56c6fccc9f30). POST notes: soften the watch digits; review the
   ink on the finger backs. Rejected candidate 392FDC42...png kept as historical reference. No video, no credits.
 
+- SHOT 3.1 K3: moonlight placement CONFIRMED by user (16 Nov): courtyard + moonlight at frame-RIGHT in the generated
+  keyframe (screen-left after the flip). Prompt unchanged (SHOT_3.1_TEST_PACKAGE.md section 2). User is creating
+  3.1_key_v1.png with the 5 references in order. No video, no credits.
+
 ## Remaining
 - [x] User confirms the other 29 Malayalam lines -> lock screenplay (done 11 Nov)
 - [ ] User generates panels in ChatGPT (A1 first), uploads <panel>_vN.png to Drive Edit -> I check each against the
