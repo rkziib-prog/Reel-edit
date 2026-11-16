@@ -76,6 +76,8 @@ a reference reel the user shared; keep our own frame and captions, never copy th
   Shots: `src/scenes/ksrtc.js`, set pieces + `person()` characters: `ksrtc_lib.js`, timing: `ksrtc_times.js` (from
   `edits/ksrtc-flight/timeline.py`). Sound: `edits/ksrtc-flight/sound.py` (narration placement + synthesized SFX).
 - Voice: v2 uses the user's ElevenLabs recording (voice "Akhil"), timed by `timeline_el.py`; earlier: free Meta MMS Malayalam TTS (`edits/ksrtc-flight/tts_sample.py`); needs torch (CPU), transformers, scipy.
+- Reel #2 "The 2 AM Call" (mystery thriller): `animations/phone-call/`, `edits/phone-call/` (STATUS.md there). Account name
+  chosen by the user: "Pathira Chindhakal"; exact handle not confirmed yet (frame shows `@pathira.chindhakal`).
 - Layers: `overlays.py <dir>` (frame + subtitle PNGs via Chromium, needs python playwright), `compose.sh` (card + subs + voice).
 
 ## Skills
