@@ -41,6 +41,7 @@ Malayalam psychological thriller short, 4:28 (268 s), 16:9 1920x1080, 24 fps, AI
 - Video tool: Kling AI (user, iPad), image-to-video from ChatGPT keyframes built on the frozen panels; clips <= 10 s;
   never spend Kling credits without user OK. Tests first (5.7, 7.4, 3.1): https://claude.ai/artifact/4TxzAyd9mATow64pAEPbBS.
   Shot 5.7 keyframe APPROVED: v5 `5.7_key_v5.png` (Drive Edit; read-only in `input/tos_keyframes/`); older versions historical
+  Shot 7.4 keyframe APPROVED: `7.4_key_v2.png` (post: soften watch digits, review ink); rejected candidate historical
 - Dialogue: Aadhi's voice = the user's approved ElevenLabs male voice (15 Nov; reference `ElevenLabs_2026-11-15T15_54_09_Abhilash S - Fun, Encouraging Friend_pvc_s50_sim99_v4.mp3`,
   Drive Audio, frozen in `input/tos_voice/`; `L18_Aadhi_Take01.mp3.m4a` is a recorded human take, NOT the reference; plan `edits/the-other-side/AADHI_VOICE_CONTINUITY.md`; PROVISIONAL; Real Aadhi and the
   Reflection use the same voice and settings, Reflection colder in delivery only; Dr. Thomas separate; the user's

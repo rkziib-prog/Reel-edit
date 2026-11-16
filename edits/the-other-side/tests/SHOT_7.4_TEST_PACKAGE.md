@@ -8,7 +8,7 @@ map, the Dialogue Shot Map, the frozen panels, and the lessons from the Shot 5.7
 
 | Stage | State |
 | --- | --- |
-| Keyframe | **Corrected candidate `7.4_key_v2.png` received (16 Nov 05:41), checked: all section 8 requirements met; AWAITING YOUR REVIEW (not approved).** Drive Edit id `1TuXnXkR95-Pwzoyv3dUkH3_0ClKPmrjg`; read-only copy `input/tos_keyframes/7.4_key_v2.png` (sha256 `359e56c6fccc9f30…`). See section 9. Rejected candidate `392FDC42-…png` kept as history |
+| Keyframe | **APPROVED FINAL: `7.4_key_v2.png`** (user, 16 Nov). Drive Edit id `1TuXnXkR95-Pwzoyv3dUkH3_0ClKPmrjg`; read-only copy `input/tos_keyframes/7.4_key_v2.png` (sha256 `359e56c6fccc9f30…`). **Post-production notes:** (1) soften the watch digits; (2) review how the ink reads on the finger backs. Historical: rejected candidate `392FDC42-…png`, kept unchanged |
 | Kling clip `7.4_v1.mp4` | Not generated; waits for an approved keyframe and your explicit OK to spend credits |
 | Lip-sync | None: no dialogue in 7.4 |
 
@@ -206,7 +206,7 @@ Save to Drive Edit as **`7.4_key_v2.png`** (a new file; the rejected candidate s
 The Kling prompt (section 3) is unchanged: the cold, closed-lip smile forms during the clip while the eyes stay
 desperate. No video and no credits until the corrected keyframe is approved and you give an explicit OK.
 
-## 9. Check of `7.4_key_v2.png` (16 Nov), awaiting your review, NOT approved
+## 9. Check of `7.4_key_v2.png` (16 Nov): APPROVED by the user as the final Shot 7.4 keyframe
 
 File: Drive **Edit** `7.4_key_v2.png` (id `1TuXnXkR95-Pwzoyv3dUkH3_0ClKPmrjg`, uploaded 16 Nov 05:41, 2,240,196 bytes);
 read-only copy `input/tos_keyframes/7.4_key_v2.png` (sha256 `359e56c6fccc9f30…`). Sheet: `output/tos_7.4_v2_check.jpg`.
@@ -228,4 +228,4 @@ read-only copy `input/tos_keyframes/7.4_key_v2.png` (sha256 `359e56c6fccc9f30…
 
 **Result: passes every section 8 requirement.** Two minor notes: legible watch digits, and the ink on the finger backs.
 Neither blocks Kling. The smile is left entirely to the Kling clip (section 3), as specified.
-Not approved until you review it.
+**APPROVED (user, 16 Nov).** Post-production notes kept: soften the watch digits; review the ink appearance.
