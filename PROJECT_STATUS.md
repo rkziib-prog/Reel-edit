@@ -265,8 +265,15 @@ Updated: 2026-11-10
   historical candidate (not deleted/overwritten). Reasons: watch + ink on the LEFT, portrait, holds a shard, smile already
   formed. Corrected prompt ready: SHOT_7.4_TEST_PACKAGE.md section 8 -> 7.4_key_v2.png (16:9; C6_v3 + A1 identity; behind
   the glass, both fists on it; watch + ink RIGHT; tears, trembling, mouth closed, no smile; smile only in the Kling clip).
-- TEST-SHOT READINESS: 5.7 keyframe v5 approved + Line 18 audio ready (needs Kling model + credit OK); 7.4 NEEDS A
-  CORRECTED KEYFRAME (7.4_key_v2.png, prompt ready); 3.1 keyframe K3 not made yet. No video, no credits.
+- TEST-SHOT READINESS: 5.7 keyframe v5 approved + Line 18 audio ready (needs Kling model + credit OK); 7.4 corrected
+  keyframe 7.4_key_v2.png checked, awaiting user review; 3.1 keyframe K3 not made yet. No video, no credits.
+
+- SHOT 7.4 CORRECTED KEYFRAME CHECKED (16 Nov, AWAITING USER REVIEW, not approved): Drive Edit 7.4_key_v2.png
+  (id 1TuXnXkR95-Pwzoyv3dUkH3_0ClKPmrjg, 05:41), read-only copy input/tos_keyframes/7.4_key_v2.png (359e56c6fccc9f30).
+  Passes all section 8 checks: 16:9 1672x941; identity C6_v3 0.75 / A1 0.67, face shape 1.18; behind wet glass, both
+  fists pressed on it; watch + ink on his RIGHT hand (image left), left hand clean; tears, trembling; mouth closed, no
+  smile (corner-lift -0.003); eyes to the lens; lamp frame-left; charcoal shirt, no necklace. Minor: watch digits partly
+  legible; ink shows on the finger backs. Rejected candidate kept as history. No video, no credits.
 
 ## Remaining
 - [x] User confirms the other 29 Malayalam lines -> lock screenplay (done 11 Nov)
@@ -279,5 +286,5 @@ Updated: 2026-11-10
 - [ ] Generate shots scene by scene, check continuity, assemble, subtitles, sound, master (1080p24)
 
 ## Next recommended step
-User: make 7.4_key_v2.png with the corrected prompt (package section 8) and the 3.1 K3 keyframe; tell me the Kling model and
-lengths. Me: check each. Kling only on an explicit credit OK.
+User: review 7.4_key_v2.png (approve or adjust); make the 3.1 K3 keyframe; tell me the Kling model/lengths. Kling only on an
+explicit credit OK.

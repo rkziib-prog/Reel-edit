@@ -8,7 +8,7 @@ map, the Dialogue Shot Map, the frozen panels, and the lessons from the Shot 5.7
 
 | Stage | State |
 | --- | --- |
-| Keyframe | **NEEDS A CORRECTED KEYFRAME.** Candidate `392FDC42-F994-4F48-B0D8-16ED3CB8DAE0.png` (Drive Edit id `1E2s6kUUqITtlKuP5PWB9HdqM27i9Rc6W`, 18:17) is **REJECTED / NEEDS CORRECTION** (user, 15 Nov); kept unchanged as a historical candidate, read-only copy `input/tos_keyframes/392FDC42-F994-4F48-B0D8-16ED3CB8DAE0.png` (sha256 `7619234cd845fded…`). Corrected prompt: section 8, output `7.4_key_v2.png` |
+| Keyframe | **Corrected candidate `7.4_key_v2.png` received (16 Nov 05:41), checked: all section 8 requirements met; AWAITING YOUR REVIEW (not approved).** Drive Edit id `1TuXnXkR95-Pwzoyv3dUkH3_0ClKPmrjg`; read-only copy `input/tos_keyframes/7.4_key_v2.png` (sha256 `359e56c6fccc9f30…`). See section 9. Rejected candidate `392FDC42-…png` kept as history |
 | Kling clip `7.4_v1.mp4` | Not generated; waits for an approved keyframe and your explicit OK to spend credits |
 | Lip-sync | None: no dialogue in 7.4 |
 
@@ -205,3 +205,27 @@ Save to Drive Edit as **`7.4_key_v2.png`** (a new file; the rejected candidate s
 
 The Kling prompt (section 3) is unchanged: the cold, closed-lip smile forms during the clip while the eyes stay
 desperate. No video and no credits until the corrected keyframe is approved and you give an explicit OK.
+
+## 9. Check of `7.4_key_v2.png` (16 Nov), awaiting your review, NOT approved
+
+File: Drive **Edit** `7.4_key_v2.png` (id `1TuXnXkR95-Pwzoyv3dUkH3_0ClKPmrjg`, uploaded 16 Nov 05:41, 2,240,196 bytes);
+read-only copy `input/tos_keyframes/7.4_key_v2.png` (sha256 `359e56c6fccc9f30…`). Sheet: `output/tos_7.4_v2_check.jpg`.
+
+| Section 8 check | Result |
+| --- | --- |
+| 16:9 landscape | ✅ 1672×941 (the rejected candidate was 1024×1536 portrait) |
+| Identity (C6_v3, A1) | ✅ Same man; face-match **0.75 vs C6_v3** (C6_v3 itself 0.74 vs A1), **0.67 vs A1**, the best A1 score of any keyframe; face width/height **1.18** (A1 1.19, C6_v3 1.15): natural shape, no gaunt or aged drift. Day-7 signs only: red eyes, wet hair, tears |
+| Behind the glass | ✅ Wet glass with rain streaks and drops between him and the camera; his knuckles are pressed and wet on its surface |
+| Both fists pressed against the glass | ✅ Both fists raised beside his face, pressed flat to the glass, still. Five fingers each, natural |
+| Watch on the RIGHT wrist | ✅ His own black digital watch on the hand at the image's left, which is his right wrist (he faces the camera). ⚠️ Minor: the display is large and its digits are partly legible; the plan wants it small and unreadable. Unflipped shot, so nothing mirrors; soften it in post if it draws the eye |
+| Ink on the RIGHT fingertips | ✅ Blue-black ink on the right hand only; the left hand is clean. ⚠️ Minor: in a fist the fingertips are hidden, so the ink shows as blotches on the backs of the fingers, which could read as marks or tattoos rather than ink |
+| Tears, trembling | ✅ Tears on the cheeks, red-rimmed eyes, brows drawn up and together: pleading, trembling |
+| Mouth closed, no smile | ✅ Mouth closed, corners neutral to slightly down (corner-lift −0.003; the rejected smiling candidate +0.022); no teeth |
+| Eyes into the lens | ✅ Frontal (yaw +0.1°, roll −2.8°) |
+| Lamp from frame-LEFT, night | ✅ Oil lamp at the left edge, lamp side of the face brighter (mean RGB 116/60/30 vs 77/46/31), teal at the right |
+| Costume | ✅ Charcoal shirt, collar open; no necklace or chain |
+| Text, extra people | ✅ None (apart from the watch digits above) |
+
+**Result: passes every section 8 requirement.** Two minor notes: legible watch digits, and the ink on the finger backs.
+Neither blocks Kling. The smile is left entirely to the Kling clip (section 3), as specified.
+Not approved until you review it.
