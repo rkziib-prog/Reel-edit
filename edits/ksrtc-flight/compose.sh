@@ -4,7 +4,7 @@
 #   subs are PNGs from overlays.py (transparent, full 1080x1920), times in seconds.
 set -euo pipefail
 ANIM=$1 VOICE=$2 SUBS=$3 OUT=$4
-OV=/home/user/Reel-edit/work/ksrtc/overlays
+OV=${OV:-/home/user/Reel-edit/work/ksrtc/overlays}   # set OV=<dir> to use another reel's overlays
 inputs=(-loop 1 -i "$OV/frame.png" -i "$ANIM" -loop 1 -i "$OV/cardmask.png" -i "$VOICE")
 fc="[1:v]fps=30,scale=1000:563,format=rgba[a];[2:v]format=gray[m];[a][m]alphamerge[card];[0:v][card]overlay=40:600:shortest=1[v0]"
 i=4; last=v0
