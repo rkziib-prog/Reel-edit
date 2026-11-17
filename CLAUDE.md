@@ -78,6 +78,9 @@ a reference reel the user shared; keep our own frame and captions, never copy th
 - Voice: v2 uses the user's ElevenLabs recording (voice "Akhil"), timed by `timeline_el.py`; earlier: free Meta MMS Malayalam TTS (`edits/ksrtc-flight/tts_sample.py`); needs torch (CPU), transformers, scipy.
 - Reel #2 "The 2 AM Call" (mystery thriller): `animations/phone-call/`, `edits/phone-call/` (STATUS.md there). Account name
   chosen by the user: "Pathira Chindhakal"; exact handle not confirmed yet (frame shows `@pathira.chindhakal`).
+- Reel #3 "The Last Boat" (mystery thriller): `animations/last-boat/`, `edits/last-boat/` (STATUS.md there).
+  Recipe for new reels: copy the latest project (no `out/`), split the user's ElevenLabs file per line with silencedetect
+  (AI ignores break tags), re-space with `timeline.py`, shots per line, `sound.py`, `overlays.py`, `compose.sh` with `OV=`.
 - Layers: `overlays.py <dir>` (frame + subtitle PNGs via Chromium, needs python playwright), `compose.sh` (card + subs + voice).
 
 ## Skills
