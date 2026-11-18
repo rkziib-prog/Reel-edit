@@ -38,7 +38,7 @@ Start every panel prompt with this identity lock:
 Then add the panel line, then the shared Avoid line.
 
 When her thighs are visible (shorts, short dresses), add to the lock:
-> She has one small dark mole on the front of her right thigh, slightly to the outer side, about a hand-width above the knee.
+> She has one small dark mole on the upper front of her right thigh, toward the outer side, a few centimetres below the hem of her shorts.
 
 - **S1 front smile:** Head and shoulders, facing the camera directly, warm natural smile showing a little teeth, plain black fitted top. Vertical 4:5.
 - **S2 three-quarter:** Head and shoulders, head turned 45 degrees to her left (face toward frame-right), eyes to the camera, relaxed expression, plain black fitted top. Vertical 4:5.
@@ -64,3 +64,4 @@ S1, S2, S4, S5, S6 v1 pass. S3 v1 rejected (stud on wrong nostril, prompt error)
 Local read-only copies: `input/meera_sheet/` (S3 v2 saved as `meera_S3_v2.png`; Drive name still `meera_S3_v1.png`).
 **ALL PANELS APPROVED and FROZEN (18 Nov).** Never regenerate. Character sheet: `output/meera_character_sheet.jpg`
 from `edits/meera-persona/character_sheet.py`. Use the sheet + master as references for every new image/keyframe.
+- S7 shorts full body (18 Nov) APPROVED: thigh-mole reference `input/meera_sheet/meera_S7_shorts_v1.png`.

@@ -18,8 +18,8 @@ Fictional AI persona. Labelled "AI info" on every post; bio says AI creator. Loo
 
 ## Body and look details (beyond the sheet)
 - 5'6", ~55 kg, slim athletic, upright dancer's posture.
-- Thigh mole: one small dark mole on the front of her RIGHT thigh, slightly to the outer side, about a
-  hand-width above the knee (image-left when she faces the camera); visible in shorts and short dresses.
+- Thigh mole: one small dark mole on the upper front of her RIGHT thigh, toward the outer side, a few cm
+  below the hem of short shorts (image-left when she faces the camera). Reference: S7 `meera_S7_shorts_v1.png`.
   Add it to prompts only when that part of her leg is visible.
 - Light freckles across the cheeks and nose, visible skin texture (keep it, never airbrushed).
 - Hands: slim fingers, short almond nails, nude or maroon polish. Gold hoops + left nose stud always.
