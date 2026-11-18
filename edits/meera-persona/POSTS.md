@@ -99,3 +99,7 @@ Negative: face change, morphing, extra limbs, distorted hands, flicker, slow mot
 ### Edit (Claude, after approval)
 0-7 s Kling clip -> 7-10 s same clip dimmed to ~35% with Meera's Instagram handle + logo fading in -> end.
 1080x1920, 30 fps, music from Drive Audio (user picks), loudness -14 LUFS. Output `output/meera_P03_v1.mp4`.
+**Kling v1 (1920x1080) rejected: landscape, cropped at waist. Kling v2 APPROVED 18 Nov: `meera_P03A_kling_v2.mp4`**
+(1080x1920, 24 fps, 10.04 s). Two shots: 0-5.04 s full-body back view (no face), cut at 5.04 s to a closer shot:
+head turn, smile, glance down, glance back (face matches master; stud correct side). Jasmine shape differs between
+the shots (crown vs side clip): hidden by the cut.
