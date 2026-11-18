@@ -81,6 +81,8 @@ a reference reel the user shared; keep our own frame and captions, never copy th
 - Reel #3 "The Last Boat" (mystery thriller): `animations/last-boat/`, `edits/last-boat/` (STATUS.md there).
   Recipe for new reels: copy the latest project (no `out/`), split the user's ElevenLabs file per line with silencedetect
   (AI ignores break tags), re-space with `timeline.py`, shots per line, `sound.py`, `overlays.py`, `compose.sh` with `OV=`.
+- Reel #4 MS Dhoni biography: `animations/dhoni-bio/`, `edits/dhoni-bio/` (STATUS.md). Real people: factual tribute only, no
+  team logos, no invented quotes or events.
 - Layers: `overlays.py <dir>` (frame + subtitle PNGs via Chromium, needs python playwright), `compose.sh` (card + subs + voice).
 
 ## Skills
