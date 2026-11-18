@@ -70,3 +70,31 @@ with one hand. Maroon two-piece bikini with a cream sarong tied loosely at her h
 skin texture, candid iPhone photo taken by a friend, slight grain.
 Negative: different face, plastic skin, airbrushed, beauty filter, heavy makeup, necklace, tattoos, glasses,
 cartoon, CGI, text, watermark, extra fingers, distorted hands, distorted feet, deformed body.
+
+## Post 03 — over-the-shoulder glance (style of the Drive "Reference" reel, 18 Nov)
+Reference analysed: `input/meera_ref/ref01.mp4` (another creator's reel; style only, never reuse their footage,
+location or handle). One continuous telephoto shot, 0-7 s: woman with her back to camera at a colourful street
+stall, gentle sway, repeated glances over her shoulder with a small smile; 7-11 s: same shot dimmed, Instagram
+logo + handle. Ours: different dress, Kerala location, Meera's handle.
+
+### Keyframe 03A (ChatGPT, new chat; attach master + character sheet v2)
+Create a NEW photograph of this same woman, matching the references exactly for her face, hair, skin, facial
+mole, nose stud and hoops. Fort Kochi street at golden hour: an old heritage shopfront with a sea-green wooden
+door, red-oxide walls, a hanging string of marigolds and a small brass lamp, softly out of focus. She stands with
+her back three-quarters to the camera and looks over her left shoulder toward the camera with a small, warm
+smile. Long hair in a loose low bun with jasmine. Emerald-green satin halter maxi dress with an open back, a few
+thin gold bangles on her right wrist. Shot from a distance on a telephoto lens, shallow depth of field, natural
+skin texture, candid fashion photo. Vertical 9:16.
+Avoid: a different face, plastic skin, beauty filter, heavy makeup, necklace, tattoos, glasses, text, watermark,
+extra fingers, distorted hands.
+(If ChatGPT refuses: change "with an open back" to "with a low back"; if still refused, use Kling AI Images.)
+
+### Kling (image-to-video, 10 s, 1080p, Professional)
+Prompt: She stands with her back to the camera and gently sways her hips side to side to soft music, then slowly
+turns her head to look over her left shoulder at the camera with a small smile, looks away, and glances back
+again. Telephoto lens, slight handheld camera movement, the background stays soft. Natural, real-time speed.
+Negative: face change, morphing, extra limbs, distorted hands, flicker, slow motion, cartoon, blur.
+
+### Edit (Claude, after approval)
+0-7 s Kling clip -> 7-10 s same clip dimmed to ~35% with Meera's Instagram handle + logo fading in -> end.
+1080x1920, 30 fps, music from Drive Audio (user picks), loudness -14 LUFS. Output `output/meera_P03_v1.mp4`.
