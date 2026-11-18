@@ -87,6 +87,7 @@ thin gold bangles on her right wrist. Shot from a distance on a telephoto lens, 
 skin texture, candid fashion photo. Vertical 9:16.
 Avoid: a different face, plastic skin, beauty filter, heavy makeup, necklace, tattoos, glasses, text, watermark,
 extra fingers, distorted hands.
+**03A APPROVED 18 Nov: `meera_P03A_v1.png`** (bangles came out on her left wrist: fine).
 (If ChatGPT refuses: change "with an open back" to "with a low back"; if still refused, use Kling AI Images.)
 
 ### Kling (image-to-video, 10 s, 1080p, Professional)
