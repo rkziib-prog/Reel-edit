@@ -72,3 +72,4 @@ curved backside, toned legs. Natural, realistic proportions."
 APPROVED: S7 v2 `meera_S7_v2.png` (front, shorts; alt `meera_S7_v2_alt.png`), S8 `meera_S8_back_v1.png` (back view).
 Retired as body refs: S4 v1, S5 v1, S7 v1 (old slim body). Face panels unchanged.
 Watch: S8 eyes drift lighter/hazel; eyes must stay dark brown.
+- S7 v3 `meera_S7_v3.png` (18 Nov): extra curvy front / thigh-mole ref (same as S7 v2 pose). Old `meera_S7_shorts_v1.png` = slim v1, retired.
