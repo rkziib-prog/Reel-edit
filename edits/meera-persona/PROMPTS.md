@@ -59,3 +59,5 @@ Upload as `meera_S1_v1.png` ... `meera_S6_v1.png` to Drive Edit. Check: the mole
 ## Sheet review (18 Nov)
 S1, S2, S4, S5, S6 v1 pass. S3 v1 rejected (stud on wrong nostril, prompt error); S3 v2 passes.
 Local read-only copies: `input/meera_sheet/` (S3 v2 saved as `meera_S3_v2.png`; Drive name still `meera_S3_v1.png`).
+**ALL PANELS APPROVED and FROZEN (18 Nov).** Never regenerate. Character sheet: `output/meera_character_sheet.jpg`
+from `edits/meera-persona/character_sheet.py`. Use the sheet + master as references for every new image/keyframe.
