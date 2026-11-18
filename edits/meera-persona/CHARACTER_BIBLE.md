@@ -17,7 +17,8 @@ Fictional AI persona. Labelled "AI info" on every post; bio says AI creator. Loo
 - Habit: always a coffee cup or a book in café shots; tucks hair behind her ear when she smiles.
 
 ## Body and look details (beyond the sheet)
-- 5'6", ~55 kg, slim athletic, upright dancer's posture.
+- 5'6", ~60 kg, curvy hourglass figure: fuller bust, narrow defined waist, wider rounded hips, full shapely
+  backside, toned legs; upright dancer's posture. Body refs: S7 v2 (front, shorts) and S8 (back view).
 - Thigh mole: one small dark mole on the upper front of her RIGHT thigh, toward the outer side, a few cm
   below the hem of short shorts (image-left when she faces the camera). Reference: S7 `meera_S7_shorts_v1.png`.
   Add it to prompts only when that part of her leg is visible.

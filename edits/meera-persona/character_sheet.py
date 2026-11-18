@@ -14,8 +14,8 @@ PANELS = [
     ("S2 three-quarter", SHEET / "meera_S2_v1.png"),
     ("S3 profile (left side)", SHEET / "meera_S3_v2.png"),
     ("S6 confident close-up", SHEET / "meera_S6_v1.png"),
-    ("S4 full body front", SHEET / "meera_S4_v1.png"),
-    ("S5 full body 3/4", SHEET / "meera_S5_v1.png"),
+    ("S7 full body front (body ref)", SHEET / "meera_S7_v2.png"),
+    ("S8 back view (body ref)", SHEET / "meera_S8_back_v1.png"),
 ]
 NOTES = [
     "MEERA  (AI persona, 24)",
@@ -34,7 +34,9 @@ NOTES = [
     "  centre part",
     "Light-medium brown skin,",
     "  natural texture",
-    "5'6\", slim athletic build",
+    "Thigh mole: upper front RIGHT",
+    "  thigh, outer side",
+    "5'6\", curvy hourglass figure",
     "",
     "No necklace, no tattoos,",
     "no glasses",
@@ -68,7 +70,7 @@ def main():
     height = 120 + 900 + LABEL_H + GAP + 1200 + LABEL_H + GAP
     page = Image.new("RGB", (width, height), BG)
     d = ImageDraw.Draw(page)
-    d.text((GAP, 30), "MEERA  -  Character identity sheet  (locked 18 Nov 2026, AI-generated)",
+    d.text((GAP, 30), "MEERA  -  Character identity sheet  (v2 body, 18 Nov 2026, AI-generated)",
            font=font(52, True), fill=FG)
     y = 120
     for items, h in ((top, 900), (bottom, 1200)):

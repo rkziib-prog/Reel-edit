@@ -7,7 +7,7 @@ Fictional adult (24). Every post labelled "AI info" on Instagram; bio says AI cr
   small mole on her RIGHT cheek just beside the right corner of her mouth (image-left on a front shot),
   warm light-medium brown skin with natural texture (skin tone follows the master image).
 - Hair: long wavy black hair, centre part, past the shoulders.
-- Body: 5'6", slim athletic build, defined waist, long legs.
+- Body (v2, 18 Nov): 5'6", curvy hourglass figure (see Body v2 below). S4/S5 prompts below are the old slim v1.
 - Signature: thin gold nose stud (left nostril), small gold hoop earrings, red-brown lip shade.
 - Persona: 24, from Kochi, lives in Bangalore; fashion / travel / lifestyle; confident, warm, playful.
 
@@ -65,3 +65,10 @@ Local read-only copies: `input/meera_sheet/` (S3 v2 saved as `meera_S3_v2.png`; 
 **ALL PANELS APPROVED and FROZEN (18 Nov).** Never regenerate. Character sheet: `output/meera_character_sheet.jpg`
 from `edits/meera-persona/character_sheet.py`. Use the sheet + master as references for every new image/keyframe.
 - S7 shorts full body (18 Nov) APPROVED: thigh-mole reference `input/meera_sheet/meera_S7_shorts_v1.png`.
+
+## Body v2 (18 Nov, user decision): curvy hourglass
+Body prompt line: "Curvy hourglass figure: fuller bust, narrow defined waist, wider rounded hips and a full, shapely
+curved backside, toned legs. Natural, realistic proportions."
+APPROVED: S7 v2 `meera_S7_v2.png` (front, shorts; alt `meera_S7_v2_alt.png`), S8 `meera_S8_back_v1.png` (back view).
+Retired as body refs: S4 v1, S5 v1, S7 v1 (old slim body). Face panels unchanged.
+Watch: S8 eyes drift lighter/hazel; eyes must stay dark brown.
