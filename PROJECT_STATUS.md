@@ -290,6 +290,13 @@ Updated: 2026-11-10
   16:9 1672x941, identity A1 0.72, watch + phone right, moonlight frame-right, lamp, empty mirror all confirmed. Post note:
   possible ring on a right-hand finger: check, remove in post if present. No video, no credits.
 
+- SHOT 5.7 KLING CLIP CHECKED (18 Nov, awaiting user review, not approved): Drive Edit "2026-11-18 22:44:18.MP4" (id
+  1cu1l8Uz_YH64F5nCdRcThZpo6TJ4RjXZ), read-only copy input/tos_clips/2026-11-18_22-44-18.mp4 (5566a73ca43db350). 1080p24,
+  10.04 s (planned 5), Kling audio present (mute). Identity 0.93-0.96 vs keyframe when the mouth is closed, dips only in
+  the shout; head -32..-39 deg to frame-left, eyes on the mirror; glare -> clench -> shout (~4.0 s) -> breathing; lamp,
+  light, costume OK. Usable 3 s window ~2.4-5.4 s. Next: Kling Lip Sync with Line 18 (needs credit OK). Review:
+  edits/the-other-side/tests/SHOT_5.7_CLIP_REVIEW.md.
+
 ## Remaining
 - [x] User confirms the other 29 Malayalam lines -> lock screenplay (done 11 Nov)
 - [ ] User generates panels in ChatGPT (A1 first), uploads <panel>_vN.png to Drive Edit -> I check each against the
