@@ -59,3 +59,14 @@ Negative: face change, morphing, extra limbs, distorted hands, flicker, slow mot
 
 ### Caption
 varkala, you have my whole heart 🌊☀️ (AI info label on)
+
+### Keyframe 02A — Kling AI Images version (ChatGPT refused swimwear twice, 18 Nov)
+Reference: `meera_master_v1.png` as face/character reference, strength high. 9:16, 4 images.
+Prompt: Photorealistic photo of the same young South Indian woman from the reference image, same face, long wavy
+black hair with centre part, small mole beside the right corner of her mouth, thin gold nose stud in her left
+nostril, small gold hoop earrings. Varkala beach in Kerala, red cliffs and palm trees behind her, turquoise sea,
+late-afternoon golden sun. She walks out of the shallow water toward the camera, laughing, pushing her hair back
+with one hand. Maroon two-piece bikini with a cream sarong tied loosely at her hip. Curvy natural figure. Natural
+skin texture, candid iPhone photo taken by a friend, slight grain.
+Negative: different face, plastic skin, airbrushed, beauty filter, heavy makeup, necklace, tattoos, glasses,
+cartoon, CGI, text, watermark, extra fingers, distorted hands, distorted feet, deformed body.
