@@ -45,3 +45,35 @@ A. Cheap (no Kling): I cut the 6 photos on the beat with a push-in, flash/whip t
    handheld wobble. Looks like a photo-dump reel.
 B. Premium (Kling, 6 x 5 s): each look gets a small motion, "she sways slightly and touches her hair, smiles at
    the camera, slight handheld movement"; I use ~1.7 s of each, cut on a hand swipe / spin on the beat.
+
+## T7 — Casual -> reveal jump cut (style of reference 2, 18 Nov)
+Reference: `input/meera_ref/ref02.mp4` (another creator; style only). Phone propped in a bedroom, no effects.
+0-3.3 casual look, steps back from phone | 3.3 jump cut, same framing, new outfit + hair down | 5.1-6.9 side
+angle by wardrobe | 6.9-10.5 front again, poses, waves | 10.5-14.6 dimmed outro, IG glyph + handle.
+
+Keyframes (ONE ChatGPT chat; attach master + character sheet v2):
+K1: Create a NEW photograph of this same woman, matching the references exactly for her face, hair, skin, facial
+mole, nose stud, hoops and curvy hourglass figure. Her Bangalore bedroom in daylight: white walls, a tall wooden
+wardrobe on the right, a small framed print, a bed with a colourful kantha quilt on the left, a potted plant.
+Shot from a phone propped at waist height, wide, slightly low angle. Full body, head to feet, she stands in the
+middle of the room facing the camera with a shy smile. Oversized olive-green t-shirt, loose cream cotton pants,
+hair up in a messy claw clip, barefoot. Natural daylight, candid phone video still. Vertical 9:16.
+Avoid: a different face, plastic skin, beauty filter, heavy makeup, necklace, tattoos, glasses, text, watermark,
+extra fingers, distorted hands or feet.
+K2 (same chat): Same photo, same pose, framing, light and room. Change only her outfit and hair: rust-orange satin
+co-ord (draped short-sleeve top and fitted maxi skirt), thin gold bangles, strappy heels, hair down, long and wavy.
+K3 (same chat): Same woman, same rust-orange outfit and room. Closer shot from the side, three-quarter view, she
+stands by the wooden wardrobe, one hand in her hair, looking down with a soft smile. Vertical 9:16.
+Upload: meera_T7_K1_v1.png, meera_T7_K2_v1.png, meera_T7_K3_v1.png.
+
+Kling (image-to-video, 5 s each, 9:16, 1080p, Professional):
+C1 (K1): She walks backward a few steps away from the camera into the room, stops, adjusts her t-shirt and smiles
+  shyly at the camera. Static phone camera. Natural, real-time speed.
+C2 (K2): She stands in the room, shifts her weight, touches her hair, smiles and gives a small wave and peace sign
+  at the camera. Static phone camera. Natural, real-time speed.
+C3 (K3): She runs her hand through her hair and turns her head slowly toward the camera with a soft smile. Slight
+  handheld movement. Natural, real-time speed.
+All: add "Keep her face exactly the same. No morphing, no distorted hands, no flicker, no slow motion."
+
+Edit (Claude): C1 0-3.3 | jump cut C2 3.3-5.1 | C3 5.1-6.9 | C2 rest 6.9-10.5 | dim outro + handle 10.5-14.5.
+Audio: reference 2's track via Instagram "Use audio"; preview with its audio. Output output/meera_T7_v1.mp4.
