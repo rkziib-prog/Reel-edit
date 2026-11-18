@@ -20,6 +20,8 @@ crowds looking at camera, text, watermark, extra fingers, distorted hands or fee
 Same woman, same outfit and place. Medium close-up: she stops, tucks her hair behind her ear and laughs
 toward the camera, golden sun behind her. Vertical 9:16.
 
+**01B APPROVED 18 Nov: `meera_P01B_v1.png`** (sandals moved to her right hand: natural, she freed her left to tuck her hair).
+
 ### Kling (image-to-video, 01A / 01B as start frame; 5 s, 1080p, Professional mode)
 01A motion: She walks slowly toward the camera along the wet sand, hair and shirt moving in the sea breeze,
 small waves wash over her feet, handheld camera slowly walks backward with her. Natural, real-time speed.
