@@ -39,7 +39,8 @@ Then add the panel line, then the shared Avoid line.
 
 - **S1 front smile:** Head and shoulders, facing the camera directly, warm natural smile showing a little teeth, plain black fitted top. Vertical 4:5.
 - **S2 three-quarter:** Head and shoulders, head turned 45 degrees to her left (face toward frame-right), eyes to the camera, relaxed expression, plain black fitted top. Vertical 4:5.
-- **S3 profile:** Head and shoulders, exact side profile facing frame-right (her left side, showing the nose stud), neutral expression, hair tucked behind the ear. Vertical 4:5.
+- **S3 profile:** Head and shoulders, exact side profile facing frame-left (her left side visible, nose stud visible, the mole is on the hidden side), neutral expression, hair tucked behind the ear. Vertical 4:5.
+  (Facing frame-right shows her RIGHT side: mole visible, stud hidden. v1 got this wrong; v2 is correct.)
 - **S4 full body front:** Full body head to feet, standing straight facing the camera, arms relaxed, 5'6" slim athletic build, defined waist, long legs, fitted black t-shirt, high-waisted blue jeans, white sneakers. Vertical 9:16.
 - **S5 full body three-quarter:** Full body head to feet, body turned 45 degrees, one hand on hip, looking over at the camera, same outfit as a fitted black t-shirt, high-waisted blue jeans, white sneakers, same build. Vertical 9:16.
 - **S6 confident close-up:** Tight close-up of the face, serious confident expression, direct eye contact, slight head tilt. Vertical 4:5.
@@ -54,3 +55,7 @@ Upload as `meera_S1_v1.png` ... `meera_S6_v1.png` to Drive Edit. Check: the mole
 ## Extra references (approved identity, not sheet panels)
 - `meera_extra01_kurta.png` (18 Nov): white chikankari kurta, indoor window light, looking off-camera, closed smile.
   Identity match confirmed (mole, nose stud, hoops, brows, hair). Usable as a post / Kling start frame.
+
+## Sheet review (18 Nov)
+S1, S2, S4, S5, S6 v1 pass. S3 v1 rejected (stud on wrong nostril, prompt error); S3 v2 passes.
+Local read-only copies: `input/meera_sheet/` (S3 v2 saved as `meera_S3_v2.png`; Drive name still `meera_S3_v1.png`).
