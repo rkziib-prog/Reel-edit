@@ -37,8 +37,8 @@ Start every panel prompt with this identity lock:
 
 Then add the panel line, then the shared Avoid line.
 
-When her lower legs are visible (dresses, beach, shorts), add to the lock:
-> She has one small dark mole on the outer side of her right calf, about a hand-width above the ankle.
+When her thighs are visible (shorts, short dresses), add to the lock:
+> She has one small dark mole on the front of her right thigh, slightly to the outer side, about a hand-width above the knee.
 
 - **S1 front smile:** Head and shoulders, facing the camera directly, warm natural smile showing a little teeth, plain black fitted top. Vertical 4:5.
 - **S2 three-quarter:** Head and shoulders, head turned 45 degrees to her left (face toward frame-right), eyes to the camera, relaxed expression, plain black fitted top. Vertical 4:5.

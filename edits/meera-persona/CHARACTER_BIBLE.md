@@ -18,8 +18,9 @@ Fictional AI persona. Labelled "AI info" on every post; bio says AI creator. Loo
 
 ## Body and look details (beyond the sheet)
 - 5'6", ~55 kg, slim athletic, upright dancer's posture.
-- Leg mole: one small dark mole on the outer side of her RIGHT calf, about a hand-width above the ankle
-  (image-left when she faces the camera). Add it to prompts only when her lower legs are visible.
+- Thigh mole: one small dark mole on the front of her RIGHT thigh, slightly to the outer side, about a
+  hand-width above the knee (image-left when she faces the camera); visible in shorts and short dresses.
+  Add it to prompts only when that part of her leg is visible.
 - Light freckles across the cheeks and nose, visible skin texture (keep it, never airbrushed).
 - Hands: slim fingers, short almond nails, nude or maroon polish. Gold hoops + left nose stud always.
 - Makeup: minimal; thin kajal, red-brown lips. Festival looks: winged kajal, small black or red bindi.
