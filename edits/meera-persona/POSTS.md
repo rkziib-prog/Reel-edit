@@ -14,6 +14,8 @@ Vertical 9:16.
 Avoid: a different face, plastic or airbrushed skin, beauty filter, heavy makeup, necklace, tattoos, glasses,
 crowds looking at camera, text, watermark, extra fingers, distorted hands or feet.
 
+**01A APPROVED 18 Nov: `meera_P01A_v1.png`** (read-only in `input/meera_posts/`).
+
 ### Keyframe 01B (same chat after 01A is approved)
 Same woman, same outfit and place. Medium close-up: she stops, tucks her hair behind her ear and laughs
 toward the camera, golden sun behind her. Vertical 9:16.
