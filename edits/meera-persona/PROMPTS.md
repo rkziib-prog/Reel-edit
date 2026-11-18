@@ -50,3 +50,7 @@ distorted hands.
 
 Upload as `meera_S1_v1.png` ... `meera_S6_v1.png` to Drive Edit. Check: the mole must be on her right cheek
 (image-left in front shots); ChatGPT sometimes mirrors it.
+
+## Extra references (approved identity, not sheet panels)
+- `meera_extra01_kurta.png` (18 Nov): white chikankari kurta, indoor window light, looking off-camera, closed smile.
+  Identity match confirmed (mole, nose stud, hoops, brows, hair). Usable as a post / Kling start frame.
