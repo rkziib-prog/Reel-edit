@@ -32,3 +32,30 @@ Negative: face change, morphing, extra limbs, distorted hands, flicker, slow mot
 ### Caption
 hi, i'm meera 🤍 kochi girl living in bangalore. fashion, coffee and a lot of sunsets. stay a while? 🌊
 (turn on Instagram "AI info" label)
+
+## Post 02 — Varkala beach day (swimwear)
+Reel ~10-15 s from 2 Kling clips. Tasteful beach-editorial, never explicit. Thigh mole must show.
+
+### Keyframe 02A (ChatGPT, new chat; attach master + character sheet v2 + S7 v2 + S8 back)
+Create a NEW photograph of this same woman, matching the references exactly for her face, hair, skin, facial
+mole, nose stud, hoops and curvy hourglass body. She has one small dark mole on the upper front of her right
+thigh, toward the outer side. Varkala beach in Kerala, red laterite cliffs and palm trees behind her, turquoise
+sea, late-afternoon sun. She walks out of the shallow water toward the camera, laughing, pushing her wet hair
+back with both hands. Maroon two-piece bikini, a sheer cream sarong knotted loosely at her hip, gold hoops.
+Wet skin with natural texture, water droplets, looks like an iPhone photo taken by a friend. Vertical 9:16.
+Avoid: a different face, plastic or airbrushed skin, beauty filter, heavy makeup, necklace, tattoos, glasses,
+exaggerated proportions, text, watermark, extra fingers, distorted hands or feet.
+
+### Keyframe 02B (same chat)
+Same woman, same outfit and place. She sits on a beach towel on the sand, knees up, looking out at the sea
+over her shoulder with a soft smile, wind in her hair, golden light. Vertical 9:16.
+
+### Kling (5 s, 1080p, Professional)
+02A: She walks out of the shallow water toward the camera, small waves breaking around her legs, she pushes
+her wet hair back and laughs, the sarong moves in the wind, handheld camera. Natural, real-time speed.
+02B: She turns her head from the sea to the camera and smiles, wind moves her hair, waves roll in behind her,
+slight handheld movement.
+Negative: face change, morphing, extra limbs, distorted hands, flicker, slow motion, cartoon, blur, nudity.
+
+### Caption
+varkala, you have my whole heart 🌊☀️ (AI info label on)
