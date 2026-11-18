@@ -73,6 +73,7 @@ Malayalam psychological thriller short, 4:28 (268 s), 16:9 1920x1080, 24 fps, AI
 Fictional AI woman (24, Kochi/Bangalore, fashion/travel/lifestyle) for a new Instagram account; non-explicit only;
 every post labelled "AI info", bio says AI creator. Identity and prompts: `edits/meera-persona/PROMPTS.md`.
 Workflow: user makes master face in ChatGPT -> character sheet from it -> Kling image-to-video from keyframes.
+Character bible (backstory, wardrobe, places, voice): `edits/meera-persona/CHARACTER_BIBLE.md`.
 Master + S1-S6 APPROVED and FROZEN (18 Nov); sheet `output/meera_character_sheet.jpg` (`character_sheet.py`).
 Never generate images here; check each upload against the locked identity.
 
