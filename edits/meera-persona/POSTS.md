@@ -103,3 +103,5 @@ Negative: face change, morphing, extra limbs, distorted hands, flicker, slow mot
 (1080x1920, 24 fps, 10.04 s). Two shots: 0-5.04 s full-body back view (no face), cut at 5.04 s to a closer shot:
 head turn, smile, glance down, glance back (face matches master; stud correct side). Jasmine shape differs between
 the shots (crown vs side clip): hidden by the cut.
+
+### Edit v1 (18 Nov): `output/meera_P03_v1.mp4` (reference audio, preview) + `_noaudio.mp4` (post, add audio in Instagram). Handle placeholder @meera.nair.ai (`--handle` to change).
