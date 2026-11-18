@@ -286,8 +286,9 @@ Updated: 2026-11-10
 - SHOT 3.1 KEYFRAME K3 APPROVED (user, 16 Nov): FINAL = 3.1_key_v1.png, Drive Edit id 11-9lE-qj2yx_OJIn_GwDHiCCAPyUZOLb
   (07:33, 2,176,764 bytes), original preserved unchanged. Approval basis: the USER'S visual review in ChatGPT (identity,
   costume, right-wrist watch, phone, hall composition, courtyard rain, moonlight, distant oil lamp, empty mirror all
-  acceptable). My pixel check and read-only local copy PENDING: download blocked by a temporary tool-check failure; to
-  do when access returns (record only, approval stands). No video, no credits.
+  acceptable). My check done 18 Nov (record only): read-only copy input/tos_keyframes/3.1_key_v1.png (8e3f5c17bbc3ca56),
+  16:9 1672x941, identity A1 0.72, watch + phone right, moonlight frame-right, lamp, empty mirror all confirmed. Post note:
+  possible ring on a right-hand finger: check, remove in post if present. No video, no credits.
 
 ## Remaining
 - [x] User confirms the other 29 Malayalam lines -> lock screenplay (done 11 Nov)
@@ -301,4 +302,4 @@ Updated: 2026-11-10
 
 ## Next recommended step
 All three test keyframes approved. User: tell me the Kling model and clip lengths, then give an explicit credit OK per
-test clip (5.7 + Lip Sync, 7.4, 3.1). Me: copy 3.1_key_v1.png read-only and record its check when the tool check works.
+test clip (5.7 + Lip Sync, 7.4, 3.1).
