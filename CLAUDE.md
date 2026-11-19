@@ -83,6 +83,8 @@ a reference reel the user shared; keep our own frame and captions, never copy th
   (AI ignores break tags), re-space with `timeline.py`, shots per line, `sound.py`, `overlays.py`, `compose.sh` with `OV=`.
 - Reel #4 MS Dhoni biography: `animations/dhoni-bio/`, `edits/dhoni-bio/` (STATUS.md). Real people: factual tribute only, no
   team logos, no invented quotes or events.
+- Reel #5 "Hairpin 9": `animations/hairpin9/`, `edits/hairpin9/`. Paint a flat base colour under every shot (see its
+  STATUS.md): full-frame brush washes are sometimes dropped.
 - Layers: `overlays.py <dir>` (frame + subtitle PNGs via Chromium, needs python playwright), `compose.sh` (card + subs + voice).
 
 ## Skills
