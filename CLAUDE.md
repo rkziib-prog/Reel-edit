@@ -85,6 +85,8 @@ a reference reel the user shared; keep our own frame and captions, never copy th
   team logos, no invented quotes or events.
 - Reel #5 "Hairpin 9": `animations/hairpin9/`, `edits/hairpin9/`. Paint a flat base colour under every shot (see its
   STATUS.md): full-frame brush washes are sometimes dropped.
+- Reel #6 "How FASTag works" (explainer format): `animations/fastag/`, `edits/fastag/` (STATUS.md). Explainers use bright
+  scenes + `card()` labels and a light music bed; keep facts checkable and flag rules that change.
 - Layers: `overlays.py <dir>` (frame + subtitle PNGs via Chromium, needs python playwright), `compose.sh` (card + subs + voice).
 
 ## Skills
