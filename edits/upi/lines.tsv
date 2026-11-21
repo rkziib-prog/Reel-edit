@@ -1,0 +1,15 @@
+1	ചായക്കടയിൽ ക്യൂആർ സ്കാൻ ചെയ്ത് പത്ത് രൂപ അയക്കുന്നു. രണ്ട് സെക്കൻഡിൽ "ടിങ്!" ആ പൈസ ശരിക്കും എങ്ങനെ പോകുന്നു?	You scan a QR at a tea shop and send ₹10. Two seconds later: "Ting!" <span>How does that money actually travel?</span>
+2	ആ ക്യൂആർ കോഡിൽ ഒരു കാര്യം ഒളിച്ചിരിപ്പുണ്ട്. കടക്കാരന്റെ യുപിഐ ഐഡി.	That QR code hides one thing: <span>the shop owner's UPI ID.</span>
+3	യുപിഐ ഐഡി എന്നാൽ ഒരു വിലാസം പോലെ. ഉദാഹരണം: ചായക്കട അറ്റ് ബാങ്ക്.	A UPI ID is like an address. For example: chayakada@bank.
+4	നിങ്ങൾ തുക അടിച്ച് പിൻ നൽകുന്നു. ആ പിൻ നിങ്ങളുടെ ഫോണിൽ നിന്ന് എൻക്രിപ്റ്റ് ചെയ്താണ് പോകുന്നത്.	You type the amount and your PIN. The PIN leaves your phone <span>encrypted.</span>
+5	നിങ്ങളുടെ ആപ്പ് ആ റിക്വസ്റ്റ് എൻ പി സി ഐ എന്ന സെൻട്രൽ സ്വിച്ചിലേക്ക് അയക്കുന്നു.	Your app sends the request to <span>NPCI</span>, a central switch.
+6	എൻ പി സി ഐ ആണ് എല്ലാ ബാങ്കുകളെയും ബന്ധിപ്പിക്കുന്ന ഹൈവേ.	NPCI is the highway that connects all the banks.
+7	ആദ്യം നിങ്ങളുടെ ബാങ്കിനോട് ചോദിക്കുന്നു: പിൻ ശരിയാണോ? ബാലൻസ് ഉണ്ടോ?	First it asks your bank: Is the PIN correct? Is there balance?
+8	ശരിയാണെങ്കിൽ, നിങ്ങളുടെ അക്കൗണ്ടിൽ നിന്ന് പത്ത് രൂപ കുറയ്ക്കുന്നു.	If yes, your bank debits ₹10 from your account.
+9	ഉടനെ എൻ പി സി ഐ കടക്കാരന്റെ ബാങ്കിനോട് പറയുന്നു: പത്ത് രൂപ ക്രെഡിറ്റ് ചെയ്യൂ.	Immediately NPCI tells the shop owner's bank: <span>credit ₹10.</span>
+10	രണ്ട് പേർക്കും മെസേജ് പോകുന്നു. ഇതെല്ലാം വെറും രണ്ടോ മൂന്നോ സെക്കൻഡിനുള്ളിൽ.	Both of you get a message. <span>All of this in just two or three seconds.</span>
+11	ഇതിനിടയിൽ ഒറ്റ പൈസ പോലും ആപ്പിന്റെ കയ്യിൽ ഇരിക്കുന്നില്ല. ബാങ്കിൽ നിന്ന് നേരെ ബാങ്കിലേക്ക്.	The app never holds your money. <span>It goes straight from bank to bank.</span>
+12	അതുകൊണ്ടാണ് ഏത് യുപിഐ ആപ്പ് ഉപയോഗിച്ചാലും, ഏത് ബാങ്കിലേക്കും അയക്കാൻ പറ്റുന്നത്.	That's why any UPI app can send to any bank.
+13	പക്ഷേ ഒരു കാര്യം ഓർക്കുക: പൈസ സ്വീകരിക്കാൻ ഒരിക്കലും പിൻ നൽകേണ്ട.	But remember: <span>you never need to enter your PIN to receive money.</span>
+14	ആരെങ്കിലും "പൈസ കിട്ടാൻ പിൻ അടിക്കൂ" എന്ന് പറഞ്ഞാൽ, അത് തട്ടിപ്പാണ്.	If someone says "enter your PIN to get the money", <span>it's a scam.</span>
+15	ഇതുപോലുള്ള കൂടുതൽ അറിവുകൾക്ക് പാതിര ചിന്തകൾ ഫോളോ ചെയ്യൂ.	For more explainers like this, <span>follow Pathira Chindhakal.</span>
