@@ -1,0 +1,15 @@
+1	റോഡിൽ പോലീസ് ഇല്ല. പക്ഷേ ഹെൽമെറ്റ് ഇല്ലാതെ പോയാൽ ഫോണിലേക്ക് ഫൈൻ വരും. ആര് കണ്ടു?	No police on the road. But ride without a helmet, and a fine reaches your phone. <span>Who saw you?</span>
+2	ഉത്തരം: റോഡരികിലെ എ ഐ ക്യാമറ.	The answer: <span>the AI camera by the roadside.</span>
+3	ആദ്യം ക്യാമറ ഓരോ വണ്ടിയുടെയും ഫോട്ടോ എടുക്കുന്നു. രാത്രിയിൽ ഇൻഫ്രാറെഡ് ലൈറ്റിന്റെ സഹായത്തോടെ.	First, the camera photographs every vehicle. At night, with the help of infrared light.
+4	പിന്നെ എ ഐ ആ ഫോട്ടോ പരിശോധിക്കുന്നു. ഇതിനെ കമ്പ്യൂട്ടർ വിഷൻ എന്ന് പറയും.	Then the AI examines that photo. This is called <span>computer vision.</span>
+5	ആയിരക്കണക്കിന് ഫോട്ടോകൾ കണ്ട് പഠിച്ചതാണ് ഈ എ ഐ. ഹെൽമെറ്റ് എങ്ങനെയിരിക്കും, സീറ്റ് ബെൽറ്റ് എങ്ങനെയിരിക്കും എന്നെല്ലാം.	This AI learned from thousands of photos: what a helmet looks like, what a seat belt looks like.
+6	അത് ഫോട്ടോയിൽ ബോക്സുകൾ വരയ്ക്കുന്നു: ബൈക്ക്, റൈഡർ, തല.	It draws boxes on the photo: bike, rider, head.
+7	തലയിൽ ഹെൽമെറ്റ് ഇല്ലെങ്കിൽ? നിയമലംഘനം എന്ന് മാർക്ക് ചെയ്യുന്നു.	No helmet on the head? <span>It's marked as a violation.</span>
+8	ഇതുപോലെ സീറ്റ് ബെൽറ്റ്, ഡ്രൈവിങ്ങിനിടെ ഫോൺ, ബൈക്കിൽ മൂന്ന് പേർ, എല്ലാം കണ്ടുപിടിക്കും.	The same way it catches no seat belt, phone while driving, three on a bike.
+9	അടുത്തത് നമ്പർ പ്ലേറ്റ്. ക്യാമറ അക്ഷരങ്ങൾ വായിച്ചെടുക്കുന്നു. ഇതാണ് എ എൻ പി ആർ.	Next, the number plate. The camera reads the letters. This is <span>ANPR.</span>
+10	ആ നമ്പർ വെച്ച് വാഹന ഡാറ്റാബേസിൽ നിന്ന് ഉടമയുടെ വിവരം എടുക്കുന്നു.	With that number, the owner's details are pulled from the vehicle database.
+11	പക്ഷേ എ ഐക്കും തെറ്റ് പറ്റാം. അതുകൊണ്ട് കൺട്രോൾ റൂമിൽ ഒരു ഉദ്യോഗസ്ഥൻ ഫോട്ടോ നോക്കി ഉറപ്പിക്കുന്നു.	But AI can make mistakes. So an officer in a control room checks the photo to confirm.
+12	ഉറപ്പായാൽ, ഉടമയുടെ ഫോണിലേക്ക് ഇ ചലാൻ മെസേജ്. ഫോട്ടോ സഹിതം.	Once confirmed, an <span>e-challan</span> message goes to the owner's phone, with the photo.
+13	വണ്ടി മറ്റാരെങ്കിലും ഓടിച്ചാലും ഫൈൻ വരുന്നത് ഉടമയ്ക്കാണ്.	Even if someone else was driving, <span>the fine comes to the owner.</span>
+14	ഓർക്കുക: ഹെൽമെറ്റും സീറ്റ് ബെൽറ്റും ക്യാമറയ്ക്ക് വേണ്ടിയല്ല, നിങ്ങളുടെ ജീവന് വേണ്ടിയാണ്.	Remember: helmets and seat belts aren't for the camera. <span>They're for your life.</span>
+15	ഇതുപോലുള്ള കൂടുതൽ അറിവുകൾക്ക് പാതിര ചിന്തകൾ ഫോളോ ചെയ്യൂ.	For more explainers like this, <span>follow Pathira Chindhakal.</span>
