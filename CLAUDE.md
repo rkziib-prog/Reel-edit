@@ -89,6 +89,7 @@ a reference reel the user shared; keep our own frame and captions, never copy th
   question, how it works step by step with labelled cards, a "remember" tip list, follow CTA). Facts must be checkable.
 - Reel #6 "How FASTag works" (explainer format): `animations/fastag/`, `edits/fastag/` (STATUS.md). Explainers use bright
   scenes + `card()` labels and a light music bed; keep facts checkable and flag rules that change.
+- Reel #7 "How UPI works": `animations/upi/`, `edits/upi/`. Next script ready: monsoon onset in Kerala (awaiting audio).
 - Layers: `overlays.py <dir>` (frame + subtitle PNGs via Chromium, needs python playwright), `compose.sh` (card + subs + voice).
 
 ## Skills
