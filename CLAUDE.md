@@ -87,6 +87,9 @@ a reference reel the user shared; keep our own frame and captions, never copy th
   STATUS.md): full-frame brush washes are sometimes dropped.
 - **Standing direction (user, 21 Nov): from now on every new script is an informative explainer like the FASTag reel** (hook
   question, how it works step by step with labelled cards, a "remember" tip list, follow CTA). Facts must be checkable.
+- **Hook rule (user, 22 Nov): every script opens with a strong hook**: line 1 is a surprising fact, a bold claim or a
+  "you're doing it wrong" style question (not a plain "how does X work?"), and the reel shows a big on-screen hook text
+  (3-6 words) in the first ~2.5 s, plus a payoff tease ("the last part will surprise you") when it fits.
 - Reel #6 "How FASTag works" (explainer format): `animations/fastag/`, `edits/fastag/` (STATUS.md). Explainers use bright
   scenes + `card()` labels and a light music bed; keep facts checkable and flag rules that change.
 - Reel #7 "How UPI works": `animations/upi/`, `edits/upi/`. Reel #8 "AI traffic cameras": `animations/aicam/`, `edits/aicam/`.
