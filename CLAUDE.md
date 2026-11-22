@@ -96,6 +96,12 @@ a reference reel the user shared; keep our own frame and captions, never copy th
   Reel #9 "Water inside a coconut": `animations/coconut/`, `edits/coconut/`. Reel #10 "Pressure cooker" (first with `hook()`
   banner): `animations/cooker/`, `edits/cooker/`.
   Next script ready: monsoon onset in Kerala (awaiting audio).
+- **New standard format (user, 22 Nov): "Pathira Puzzle" (പാതിര പസിൽ #N) comment-bait IQ / logic puzzles**, modelled on 4
+  reference reels the user put in Drive folder "Pathura chindhakal" (`1ve4ZF2a81rNrgWbuehKooH5cUykOK2QZ`; local copies in
+  `input/refs_pc/`): FULL-SCREEN 9:16 (no frame/card), hook line + on-screen hook text, countdown timer always visible, clue
+  cards stacking up, "comment your answer / tag a friend" CTA, answer revealed at the start of the NEXT reel, follow CTA.
+  Puzzles must be original (never copy the reference reels' puzzles) and have exactly one checked answer.
+  Puzzle #1 script written 22 Nov: "Who ate the last unniyappam?" (answer: Kichu), awaiting audio.
 - Layers: `overlays.py <dir>` (frame + subtitle PNGs via Chromium, needs python playwright), `compose.sh` (card + subs + voice).
 
 ## Skills
