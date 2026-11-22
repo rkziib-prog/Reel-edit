@@ -93,7 +93,8 @@ a reference reel the user shared; keep our own frame and captions, never copy th
 - Reel #6 "How FASTag works" (explainer format): `animations/fastag/`, `edits/fastag/` (STATUS.md). Explainers use bright
   scenes + `card()` labels and a light music bed; keep facts checkable and flag rules that change.
 - Reel #7 "How UPI works": `animations/upi/`, `edits/upi/`. Reel #8 "AI traffic cameras": `animations/aicam/`, `edits/aicam/`.
-  Reel #9 "Water inside a coconut": `animations/coconut/`, `edits/coconut/`.
+  Reel #9 "Water inside a coconut": `animations/coconut/`, `edits/coconut/`. Reel #10 "Pressure cooker" (first with `hook()`
+  banner): `animations/cooker/`, `edits/cooker/`.
   Next script ready: monsoon onset in Kerala (awaiting audio).
 - Layers: `overlays.py <dir>` (frame + subtitle PNGs via Chromium, needs python playwright), `compose.sh` (card + subs + voice).
 
