@@ -95,7 +95,9 @@ a reference reel the user shared; keep our own frame and captions, never copy th
 - Reel #7 "How UPI works": `animations/upi/`, `edits/upi/`. Reel #8 "AI traffic cameras": `animations/aicam/`, `edits/aicam/`.
   Reel #9 "Water inside a coconut": `animations/coconut/`, `edits/coconut/`. Reel #10 "Pressure cooker" (first with `hook()`
   banner): `animations/cooker/`, `edits/cooker/`.
+  Reel #11 "Lightning before thunder" (first full-screen explainer): `animations/lightning/`, `edits/lightning/`.
   Next script ready: monsoon onset in Kerala (awaiting audio).
+- **All new reels are FULL-SCREEN 1080x1920 (user, 23 Nov)**, explainers too: use the puzzle2/lightning template.
 - **New standard format (user, 22 Nov): "Pathira Puzzle" (പാതിര പസിൽ #N) comment-bait IQ / logic puzzles**, modelled on 4
   reference reels the user put in Drive folder "Pathura chindhakal" (`1ve4ZF2a81rNrgWbuehKooH5cUykOK2QZ`; local copies in
   `input/refs_pc/`): FULL-SCREEN 9:16 (no frame/card), hook line + on-screen hook text, countdown timer always visible, clue
