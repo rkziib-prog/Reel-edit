@@ -104,6 +104,7 @@ a reference reel the user shared; keep our own frame and captions, never copy th
   cards stacking up, "comment your answer / tag a friend" CTA, answer revealed at the start of the NEXT reel, follow CTA.
   Puzzles must be original (never copy the reference reels' puzzles) and have exactly one checked answer.
   Puzzle #1 script written 22 Nov: "Who ate the last unniyappam?" (answer: Kichu), awaiting audio.
+  Puzzle #3 "Chayakkada bench" (answer: Dinu drinks kaapi) DONE 24 Nov: `animations/puzzle3/`, `edits/puzzle3/`.
   Puzzle #2 "Ammooma's lock code" (answer 719) DONE: `animations/puzzle2/` = template for full-screen reels (1080x1920 kit
   patch, `edits/puzzle2/subs_full.py` + `compose_full.sh`). Next puzzle opens with the previous answer.
 - Layers: `overlays.py <dir>` (frame + subtitle PNGs via Chromium, needs python playwright), `compose.sh` (card + subs + voice).
