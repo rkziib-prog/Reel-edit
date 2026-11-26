@@ -107,6 +107,7 @@ a reference reel the user shared; keep our own frame and captions, never copy th
   Puzzle #3 "Chayakkada bench" (answer: Dinu drinks kaapi) DONE 24 Nov: `animations/puzzle3/`, `edits/puzzle3/`.
   Puzzle #4 "Chayakkada maths" (answer 53) DONE 24 Nov: `animations/puzzle4/`. User: #3 was too hard; keep puzzles simple
   (one quick trick, 10 s timer).
+  Puzzle #5 "Ammooma's market" (answer 22) DONE 26 Nov: `animations/puzzle5/`, `edits/puzzle5/`.
   Puzzle #2 "Ammooma's lock code" (answer 719) DONE: `animations/puzzle2/` = template for full-screen reels (1080x1920 kit
   patch, `edits/puzzle2/subs_full.py` + `compose_full.sh`). Next puzzle opens with the previous answer.
 - Layers: `overlays.py <dir>` (frame + subtitle PNGs via Chromium, needs python playwright), `compose.sh` (card + subs + voice).
